@@ -1,6 +1,7 @@
 module.exports = {
     siteMetadata: {
       title: "Megan Burleson",
+      description: "Designer & Developer",
     },
     plugins: [
       "gatsby-plugin-image",
