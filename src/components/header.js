@@ -1,8 +1,6 @@
-// Step 1: Import React. This lets you use JSX inside your .js file.
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import MbLogo from '../components/mblogo'
-import MbLogoType from '../components/mblogotype'
+import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import {
   siteTitle,
   navLinks,
@@ -10,14 +8,26 @@ import {
   navLinkText,
 } from './header.module.css'
 
-/* Step 2: Define your component. Note that your
-component name should start with a capital letter. */
+
 const Header = () => {
   return (
     <header>
       <div className={siteTitle}>
-      <Link to="/"><MbLogoType></MbLogoType></Link>
-      <Link to ="/"><MbLogo></MbLogo></Link>
+        <Link to="/">
+          <StaticImage src="../images/mblogotype.png" 
+            alt="megan burleson designer developer" 
+            placeholder="blurred"
+            layout="fixed"
+            width={300}/>    
+        </Link>
+        <Link to ="/">
+          <StaticImage src="../images/mblogo.png" 
+            alt="meganburlesonlogo" 
+            placeholder="blurred"
+            layout="fixed"
+            width={60}
+            height={60}/>
+        </Link>
       </div>
       <nav>
        <ul className={navLinks}>
@@ -48,6 +58,4 @@ const Header = () => {
   )
 }
 
-/* Step 3: Export your component so it
-can be used by other parts of your app. */
 export default Header
