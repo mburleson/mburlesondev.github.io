@@ -19,8 +19,6 @@ const Header = () => {
             placeholder="blurred"
             layout="fixed"
             width={300}/>    
-        </Link>
-        <Link to ="/">
           <StaticImage src="../images/mblogo.png" 
             alt="meganburlesonlogo" 
             placeholder="blurred"
