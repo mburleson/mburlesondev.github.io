@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+
+}
+
+
+.social-section{
+  display: flex;
+  background-color: black;
+}
+
+.contact-section{
+  display: flex;
+  background-color: #856FFB;
+}
