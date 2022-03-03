@@ -20,11 +20,6 @@ header {
   align-items: center;
 }
 
-.site-title a {
-  text-decoration: none;
-  color:#fff;
-}
-
 .site-title img {
   display: flex;
 }

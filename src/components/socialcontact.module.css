@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+.social-contact {
+  background-color: black;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-self: stretch;
+}
+
+
+.social-section{
+  display: inline-flex;
+  align-items: center;
+  flex-flow: column;
+  flex-grow: 1;
+  background-color: black;
+  font-family: 'Dosis', sans-serif;
+}
+
+.social-section h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFCC00;
+}
+
+.social-section ul {
+  padding:0;
+}
+
+.social-section-item{
+  display: flex;
+  flex-flow: column;
+  
+}
+
+li.social-section-item {
+  display: flex;
+  flex-flow:row;
+  align-items: center;
+}
+
+
+.social-section-item a {
+  display: flex;
+  text-decoration: none;
+  color:#856FFB;
+  
+}
+
+.social-section-item p{
+  margin-left: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.contact-section{
+  display: flex;
+  flex-flow:column wrap;
+  align-items: center;
+  flex-grow: 1;
+  padding:20px;
+  background-color: #856FFB;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact-section h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #45D8DD;
+  padding:10px 25px;
+  border-radius: 10px;
+  border: 3px black solid;
+  cursor:pointer;
+}

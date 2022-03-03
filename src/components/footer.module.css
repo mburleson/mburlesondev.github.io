@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
 footer {
   display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
+  flex-flow:column;
+  font-family: 'Dosis', sans-serif;
+
 }
 
-
-.social-section{
+.thanks-end{
   display: flex;
-  background-color: black;
+  padding:20px;
+  background-color: #333;
+  font-weight: 600;
+  color: #F2B21B;
+  justify-content: center;
+
 }
 
-.contact-section{
+.footer-end {
   display: flex;
-  background-color: #856FFB;
+  font-weight: 600;
+  color: black;
+  background-image: url(../images/footer-bg.png);
+  background-size: 20%;
+  padding:20px 0 0 20px;
 }
