@@ -8,11 +8,10 @@
   align-self: stretch;
 }
 
-
 .social-section{
   display: inline-flex;
   align-items: center;
-  flex-flow: column;
+  flex-flow: column wrap;
   flex-grow: 1;
   background-color: black;
   font-family: 'Dosis', sans-serif;
@@ -39,7 +38,6 @@ li.social-section-item {
   flex-flow:row;
   align-items: center;
 }
-
 
 .social-section-item a {
   display: flex;
