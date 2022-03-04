@@ -8,13 +8,13 @@
   background-color: #333;
   background-image: url(../images/happiness.svg);
   background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: -200px 5px;
-    overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: -200px 5px;
+  overflow: hidden;
 }
 .hero-item1{
   display: inline-flex;
-  flex-grow: 1;
+  flex-grow: 2;
   justify-content: flex-start;
   align-items: center;
   padding: 150px 0 0 0;
@@ -29,6 +29,7 @@
 
 .cnc-container{
   background-color: black;
-  padding:20px 25px;
+  padding:20px 45px;
   height:80px;
 }
+

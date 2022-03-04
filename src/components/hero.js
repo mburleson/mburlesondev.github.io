@@ -6,7 +6,6 @@ import {
   heroItem1,
   heroItem2,
   cncContainer,
-  uniContainer,
 } from './hero.module.css'
 
 const Hero = () => {
@@ -14,21 +13,23 @@ const Hero = () => {
     <div className={hero}>
       <div className={heroItem1}>
         <div className={cncContainer}>
-          <StaticImage src="../images/cnc.png" 
+          <StaticImage src="../images/cnc.svg" 
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="fixed"
-                width={600}>
+                width={600}
+                breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
           </StaticImage>
         </div>
       </div>
       <div className={heroItem2}>
-        <div className={uniContainer}>
+        <div>
           <StaticImage src="../images/bigunicorn.svg" 
                 alt="unicorn" 
                 placeholder="blurred"
                 layout="fixed"
-                width={380}>
+                width={380}
+                breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
           </StaticImage>
         </div>
       </div>
