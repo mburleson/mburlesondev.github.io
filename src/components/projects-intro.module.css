@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+.projects-intro {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #856ffb;
+}
+
+.projects-intro h2 {
+  display: flex;
+  flex-flow: row nowrap;
+  font-family: 'Dosis', sans-serif;
+  font-size: 3rem;
+  color:black;
+  margin-bottom: 0;
+}
+
+.projects-intro p {
+  display: flex;
+  font-family: 'Dosis', sans-serif;
+  color:#fff;
+  margin-top: 0;
+}

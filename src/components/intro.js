@@ -11,14 +11,14 @@ const Intro = () => {
   return (
     <section className={introSection}>
     <h1>Hi!</h1>
-    <h2>My Name is Megan Burleson, 
-    and I am a Designer & Developer</h2>
-    <h2>I spread happiness by combining</h2>
-    <StaticImage src="../images/cnc.svg" 
+    <h2>My Name is Megan Burleson,</h2>
+    <h2>and I am a Designer & Developer</h2>
+    <h3>I spread happiness by combining</h3>
+    <StaticImage src="../images/cnc2.svg" 
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="fixed"
-                width={300}
+                width={600}
                 breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
           </StaticImage>
     </section>

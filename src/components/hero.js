@@ -17,6 +17,7 @@ const Hero = () => {
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="fixed"
+                quality={100}
                 width={600}
                 breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
           </StaticImage>
@@ -28,6 +29,7 @@ const Hero = () => {
                 alt="unicorn" 
                 placeholder="blurred"
                 layout="fixed"
+                quality={100}
                 width={380}
                 breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
           </StaticImage>
