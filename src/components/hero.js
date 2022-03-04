@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
       <div className={heroItem2}>
         <div className={uniContainer}>
-          <StaticImage src="../images/bigunicorn.png" 
+          <StaticImage src="../images/bigunicorn.svg" 
                 alt="unicorn" 
                 placeholder="blurred"
                 layout="fixed"
