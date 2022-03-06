@@ -2,6 +2,7 @@
 
 .swiper-container {
   background-color: #856FFB;
+  z-index: 0;
 }
 
 .swiper-slide-container {
@@ -12,26 +13,42 @@
 
 .slide-left{
   display: flex;
-  flex-flow: column wrap;
-  padding:0 25px 25px;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   flex-grow: 1;
-  word-break: break-all;
 }
+
+
+.slide-left-content {
+  width: 500px;
+  padding:0 20px;
+}
+
 
 .slide-left h2{
   font-family: 'Dosis', sans-serif;
   color:#fff;
   font-size: 2rem;
+  margin:0 0 10px 0;
 }
 
 .slide-left p{
   font-family: 'Dosis', sans-serif;
-  font-size: 1.5rem;
-  width:400px;
+  font-size: 1.5rem;   
   margin:0;
 }
 
 .slide-right{
   display: flex;
-  flex-grow: 2;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+span.swiper-pagination-bullet {
+  width: 50px;
+  height: 50px;
+}
+
+span.swiper-pagination-bullet-active {
+  background:#856FFB;
 }
