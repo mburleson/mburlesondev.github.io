@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
 
 .swiper-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-self: stretch;
   background-color: #856FFB;
-  z-index: 0;
 }
 
 .swiper-slide-container {
   display: flex;
   flex-flow: row wrap;
-
+  min-height: 510px;
+  padding:50px 0 0 0;
 }
 
 .slide-left{
@@ -44,11 +47,4 @@
   flex-grow: 1;
 }
 
-span.swiper-pagination-bullet {
-  width: 50px;
-  height: 50px;
-}
 
-span.swiper-pagination-bullet-active {
-  background:#856FFB;
-}

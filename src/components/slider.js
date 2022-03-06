@@ -5,18 +5,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-import { Pagination } from "swiper";
-
+import "./pagination-style.css";
 import * as swiperStyles from './slider.module.css';
 
+import { Autoplay, Pagination } from "swiper";
+
 const Slider = () => {
+  
   return (
     <section className={swiperStyles.swiperContainer}>
       <Swiper 
-        pagination={pagination}
-        modules={[Pagination]}
-        
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+        type: "bullets",
+        bulletClass:"custom-bullet",
+        bulletActiveClass:"custom-bullet-active",
+        clickableClass:"custom-bullet-clickable",
+      }}
+      modules={[Autoplay, Pagination]}
       >
         <SwiperSlide>
           <div className={swiperStyles.swiperSlideContainer}>
@@ -119,10 +129,9 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <button>Check Out My Work!</button>
     </section>
   );
 }
 
-/* Step 3: Export your component so it
-can be used by other parts of your app. */
 export default Slider
