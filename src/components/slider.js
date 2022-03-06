@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -129,7 +130,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <button>Check Out My Work!</button>
+     <Link to="/projects"><button>see more</button></Link>
     </section>
   );
 }
