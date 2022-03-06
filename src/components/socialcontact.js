@@ -2,22 +2,17 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import {
-  socialContact,
-  socialSection,
-  socialSectionItem,
-  contactSection,
-} from './socialcontact.module.css'
+import * as socialStyles from './socialcontact.module.css'
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
 const SocialContact = () => {
   return (
-    <div className={socialContact}>
-    <section className={socialSection}>
+    <div className={socialStyles.socialContact}>
+    <section className={socialStyles.socialSection}>
         <h2>Want to be Friends?</h2>
         <ul>
-          <li className={socialSectionItem}>
+          <li className={socialStyles.socialSectionItem}>
          <Link to="/">
           <StaticImage src="../images/facebook-icon.png" 
             alt="megan burleson facebook" 
@@ -28,7 +23,7 @@ const SocialContact = () => {
           </Link>
           <Link to="/"><p>@CodeandCreativity</p></Link>  
           </li>
-          <li className={socialSectionItem}>
+          <li className={socialStyles.socialSectionItem}>
           <Link to="/">
           <StaticImage src="../images/instagram-icon.png" 
             alt="megan burleson instagram" 
@@ -38,7 +33,7 @@ const SocialContact = () => {
           </Link>
           <Link to="/"><p>@CreativityandCode</p></Link>
           </li>
-          <li className={socialSectionItem}>
+          <li className={socialStyles.socialSectionItem}>
           <Link to="/">
           <StaticImage src="../images/twitter-icon.png" 
             alt="megan burleson twitter" 
@@ -52,7 +47,7 @@ const SocialContact = () => {
           </li>
         </ul>
       </section>
-      <section className={contactSection}>
+      <section className={socialStyles.contactSection}>
       <StaticImage src="../images/keyboard.png" 
             alt="megan burleson contact me" 
             placeholder="blurred"

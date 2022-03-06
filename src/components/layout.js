@@ -3,9 +3,7 @@ import {useStaticQuery, graphql } from 'gatsby'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SocialContact from '../components/socialcontact'
-import {
-  container
-} from './layout.module.css'
+import * as layoutStyles from './layout.module.css'
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -19,7 +17,7 @@ const Layout = ({ pageTitle, children }) => {
     }
   `)
   return (
-    <div className={container}>
+    <div className={layoutStyles.container}>
       <Header></Header>
       <title>{pageTitle} | {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
       <main>

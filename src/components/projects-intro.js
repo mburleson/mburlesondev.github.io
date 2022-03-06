@@ -1,13 +1,11 @@
 
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import {
-  projectsIntro,
-} from './projects-intro.module.css'
+import * as projectsIntrostyles from './projects-intro.module.css'
 
 const ProjectsIndex = () => {
   return (
-    <div className={projectsIntro}>
+    <div className={projectsIntrostyles.projectsIntro}>
       <h2>
         <StaticImage src="../images/projectseye.png"
         alt="megan burleson designer developer" 

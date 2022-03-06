@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Intro from '../components/intro'
 import ProjectsIntro from '../components/projects-intro'
+import Slider from '../components/slider'
 
 
 const IndexPage = () => {
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Hero></Hero>
       <Intro></Intro>
       <ProjectsIntro></ProjectsIntro>
+      <Slider></Slider>
     </Layout>
   )
 }

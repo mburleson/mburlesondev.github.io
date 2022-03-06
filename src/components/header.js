@@ -1,18 +1,13 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import {
-  siteTitle,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-} from './header.module.css'
+import * as headerStyles from './header.module.css'
 
 
 const Header = () => {
   return (
     <header>
-      <div className={siteTitle}>
+      <div className={headerStyles.siteTitle}>
         <Link to="/">
           <StaticImage src="../images/mblogotype.png" 
             alt="megan burleson designer developer" 
@@ -30,24 +25,24 @@ const Header = () => {
         </Link>
       </div>
       <nav>
-       <ul className={navLinks}>
-       <li className={navLinkItem}>
-         <Link to="/about" className={navLinkText}>
+       <ul className={headerStyles.navLinks}>
+       <li className={headerStyles.navLinkItem}>
+         <Link to="/about" className={headerStyles.navLinkText}>
            About
          </Link>
        </li>
-       <li className={navLinkItem}>
-         <Link to="/projects" className={navLinkText}>
+       <li className={headerStyles.navLinkItem}>
+         <Link to="/projects" className={headerStyles.navLinkText}>
            Projects
          </Link>
        </li>
-       <li className={navLinkItem}>
-         <Link to="/blog" className={navLinkText}>
+       <li className={headerStyles.navLinkItem}>
+         <Link to="/blog" className={headerStyles.navLinkText}>
            Blog
          </Link>
        </li>
-       <li className={navLinkItem}>
-         <Link to="/contact" className={navLinkText}>
+       <li className={headerStyles.navLinkItem}>
+         <Link to="/contact" className={headerStyles.navLinkText}>
            Contact
          </Link>
        </li>
