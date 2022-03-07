@@ -1,10 +1,12 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import * as headerStyles from './header.module.css'
 
-
 const Header = () => {
+
+  
   return (
     <header>
       <div className={headerStyles.siteTitle}>
@@ -27,13 +29,18 @@ const Header = () => {
       <nav>
        <ul className={headerStyles.navLinks}>
        <li className={headerStyles.navLinkItem}>
-         <Link to="/about" className={headerStyles.navLinkText}>
-           About
-         </Link>
+       <AnchorLink to="/#projects" title="projects">
+    <span className={headerStyles.navLinkText}>Projects</span>
+  </AnchorLink>
        </li>
        <li className={headerStyles.navLinkItem}>
-         <Link to="https://www.behance.net/meganburleson" className={headerStyles.navLinkText}>
-           Projects
+       <AnchorLink to="/#testimonials" title="projects">
+    <span className={headerStyles.navLinkText}>Testimonials</span>
+  </AnchorLink>
+       </li>
+       <li className={headerStyles.navLinkItem}>
+         <Link to="/about" className={headerStyles.navLinkText}>
+           About Me
          </Link>
        </li>
        <li className={headerStyles.navLinkItem}>

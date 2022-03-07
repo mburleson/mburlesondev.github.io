@@ -8,6 +8,7 @@ import Testimonials from '../components/testimonials'
 
 
 const IndexPage = () => {
+
   return (
     <Layout pageTitle="Home Page">
       <Hero></Hero>

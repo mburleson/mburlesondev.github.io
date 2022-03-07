@@ -6,7 +6,12 @@ header {
   flex-flow: row wrap;
   padding:20px;
   align-content: stretch;
-  top:0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  width:100%;
  
 }
 

@@ -14,7 +14,8 @@ const Testimonials = () => {
         alt="megan burleson designer developer" 
         placeholder="blurred"
         layout="fixed"
-        width={50}/>
+        width={50}
+        id="testimonials"/>
       <h2>Testimonials</h2>
       <blockquote>
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />

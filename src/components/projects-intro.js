@@ -6,7 +6,7 @@ import * as projectsIntrostyles from './projects-intro.module.css'
 const ProjectsIndex = () => {
   return (
     <div className={projectsIntrostyles.projectsIntro}>
-      <h2>
+      <h2 id="projects">
         <StaticImage src="../images/projectseye.png"
         alt="megan burleson designer developer" 
         placeholder="blurred"

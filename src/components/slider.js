@@ -14,6 +14,7 @@ import { Autoplay, Pagination } from "swiper";
 const Slider = () => {
   
   return (
+      
     <section className={swiperStyles.swiperContainer}>
       <Swiper 
       autoplay={{
@@ -33,23 +34,22 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Blog Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-              magna aliquyam erat, sed diam voluptua. 
-              At vero eos et accusam et justo duo dolores 
-              et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit.
+                <h2>Web Design and Development</h2>
+                  <p>
+                    I spread happiness by designing and developing websites and apps 
+                    that that are attractive, usable and accessible to everyone.
+                    Over the course of my career, I have been lucky enough to work for small businesses, entreprenuers, design agencies, 
+                    as well as corporations doing what I love. 
                   </p>
                 </div>
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/sliderplaceholder.png" 
+               src="../images/responsiveweb.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={450}    
+               width={460}    
             />
             </div>
           </div>
@@ -58,23 +58,20 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Blog Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-              magna aliquyam erat, sed diam voluptua. 
-              At vero eos et accusam et justo duo dolores 
-              et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit.
+                <h2>Graphic Design for Print and Web</h2>
+                  <p>I have a degree in graphic design, and have experience with 
+                    brand design, package design, brochure design -- you name it! 
+                    I've probably done it! 
                   </p>
                 </div>
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/sliderplaceholder.png" 
+               src="../images/graphicdesign.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={450}    
+               width={500}    
             />
             </div>
           </div>
@@ -83,48 +80,19 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Blog Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-              magna aliquyam erat, sed diam voluptua. 
-              At vero eos et accusam et justo duo dolores 
-              et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit.
+                <h2>And More!</h2>
+                  <p>Snazzy E-mail template? Need help designing your Facebook page? Are you a streamer in need of some awesome graphics?
+                  Does your team need a unicorn? I can help!
                   </p>
                 </div>
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/sliderplaceholder.png" 
+               src="../images/andmore.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={450}    
-            />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={swiperStyles.swiperSlideContainer}>
-            <div className={swiperStyles.slideLeft}>
-                <div className={swiperStyles.slideLeftContent}>
-                <h2>Blog Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-              magna aliquyam erat, sed diam voluptua. 
-              At vero eos et accusam et justo duo dolores 
-              et ea rebum. Stet clita kasd gubergren, 
-              no sea takimata sanctus est Lorem ipsum dolor sit.
-                  </p>
-                </div>
-              </div>
-            <div className={swiperStyles.slideRight}>
-            <StaticImage 
-               src="../images/sliderplaceholder.png" 
-               alt="code and creativity" 
-               placeholder="blurred"
-               layout="fixed"
-               width={450}    
+               width={500}    
             />
             </div>
           </div>
