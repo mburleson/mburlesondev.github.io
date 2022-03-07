@@ -13,6 +13,7 @@ const Footer = () => {
       </section>
       <section className={footerStyles.footerEnd}>
       <Link to="/"><p>2022 MeganBurleson.Dev</p></Link>
+      <p>Built with Gatsby and React</p>
       </section>
     </footer>
   )
