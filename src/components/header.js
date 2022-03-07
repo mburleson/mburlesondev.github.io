@@ -32,7 +32,7 @@ const Header = () => {
          </Link>
        </li>
        <li className={headerStyles.navLinkItem}>
-         <Link to="/projects" className={headerStyles.navLinkText}>
+         <Link to="https://www.behance.net/meganburleson" className={headerStyles.navLinkText}>
            Projects
          </Link>
        </li>

@@ -1,5 +1,8 @@
 // Step 1: Import React. This lets you use JSX inside your .js file.
 import * as React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as socialStyles from './socialcontact.module.css'
@@ -12,29 +15,16 @@ const SocialContact = () => {
     <section className={socialStyles.socialSection}>
         <h2>Want to be Friends?</h2>
         <ul>
-          <li className={socialStyles.socialSectionItem}>
+          <li className={socialStyles.socialSectionItem}> 
+          <FontAwesomeIcon icon={faFacebook} size='1x' />
           <Link to="/"><p>@CodeandCreativity</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>
-          <Link to="/">
-          <StaticImage src="../images/instagram-icon.png" 
-            alt="megan burleson instagram" 
-            placeholder="blurred"
-            layout="fixed"
-            width={25}/>
-          </Link>
+          <FontAwesomeIcon icon={faTwitter} size='1x' />
           <Link to="/"><p>@CreativityandCode</p></Link>
           </li>
           <li className={socialStyles.socialSectionItem}>
-          <Link to="/">
-          <StaticImage src="../images/twitter-icon.png" 
-            alt="megan burleson twitter" 
-            placeholder="blurred"
-            layout="fixed"
-            width={25}
-            padding={20}
-            />
-          </Link>
+          <FontAwesomeIcon icon={faInstagram} size='1x' />
           <Link to="/"><p>@CreativityandCode</p></Link>  
           </li>
         </ul>

@@ -130,7 +130,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-     <Link to="/projects"><button>see more</button></Link>
+     <Link to="https://www.behance.net/meganburleson"><button>see more on Behance</button></Link>
     </section>
   );
 }

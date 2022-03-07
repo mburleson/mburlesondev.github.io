@@ -33,6 +33,8 @@
   
 }
 
+svg { color:#ffffff }
+
 li.social-section-item {
   display: flex;
   flex-flow:row;
