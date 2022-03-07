@@ -13,14 +13,6 @@ const SocialContact = () => {
         <h2>Want to be Friends?</h2>
         <ul>
           <li className={socialStyles.socialSectionItem}>
-         <Link to="/">
-          <StaticImage src="../images/facebook-icon.png" 
-            alt="megan burleson facebook" 
-            placeholder="blurred"
-            layout="fixed"
-            width={25}
-            />
-          </Link>
           <Link to="/"><p>@CodeandCreativity</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>

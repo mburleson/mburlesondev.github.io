@@ -13,3 +13,21 @@
   color: #FFCC00;
   font-size: 3rem;
 }
+
+blockquote{
+  display: flex;
+  flex-flow: row;
+  font-family: 'Dosis', sans-serif;
+  border: #FFCC00 solid 2px;
+  border-radius: 20px;
+  padding:20px;
+  color:#CCCCCC;
+  font-size: 1rem;
+}
+
+blockquote:before {
+  color: #FFCC00;
+  font-family: 'Dosis', sans-serif;
+  font-size: 3rem;
+  content: open-quote;
+}
