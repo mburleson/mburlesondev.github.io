@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
+
+.about-section{
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  background-color: #333333;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  color:#F2B21B;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Dosis', sans-serif;
+  color:#F2B21B;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color:#ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about-section-top {
+  padding: 0 0 50px 0;
+}
+
+.about-section-top p {
+  font-family: 'Dosis', sans-serif;
+  color:#CCCCCC;
+  font-size: 1.35rem;
+  width:700px;
+  float:left;
+  text-align: left;
+  line-height: 35px;
+}
+
+.about-section-top img {
+  text-align: right;
+}
+
+.about-section-skills {
+  display:flex;
+  flex-flow:column;
+  align-self: stretch;
+  align-items: center;
+  background-color: black;
+}
+
+.about-section-skills-item {
+  display: flex;
+  align-items: center;
+  flex-flow:column;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+
+.about-section-skills-item h2 {
+  margin:10px 0;
+  color:#ffffff;
+}
+
+.about-section-skills-item p {
+  font-family: 'Dosis', sans-serif;
+  color:#CCCCCC;
+  font-size: 1.5rem;
+  padding: 0 175px;
+}
+
+.about-section-learning {
+  display:flex;
+  flex-flow:column;
+  align-self: stretch;
+  align-items: center;
+  background-color: #333333;
+}
+
+.about-section-learning ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 100px 0;
+}
+
+li.about-section-learning-item {
+  display: flex;
+  flex-flow:column;
+  align-items: center;
+}
+
+.about-section-learning p {
+  margin-left: 5px;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  color:#CCCCCC;
+  font-size: 1.5rem;
+ padding: 0 25px;
+}
+
+
+.books p{
+  float:right;
+  text-align: right;
+  width:700px;
+}
+
+.books img{
+  text-align: right;
+}
+
+.pink {
+  color: #ff44a9;
+}
+
+.purple {
+  color: #856ffb;
+}
+
+.green {
+  color: #45d8dd;
+}
+
+.yellow {
+  color:#F2B21B;
+}
+
+h2.pink {
+  color: #ff44a9;
+}
+
+h2.purple {
+  color: #856ffb;
+}
+
+h2.green {
+  color: #45d8dd;
+}
+
+h2.yellow {
+  color:#F2B21B;
+}

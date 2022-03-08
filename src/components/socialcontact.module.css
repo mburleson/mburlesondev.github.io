@@ -80,3 +80,19 @@ button {
   border: 3px black solid;
   cursor:pointer;
 }
+
+a.pink {
+  color: #ff44a9;
+}
+
+a.purple {
+  color: #856ffb;
+}
+
+a.green {
+  color: #45d8dd;
+}
+
+a.yellow {
+  color:#F2B21B;
+}
