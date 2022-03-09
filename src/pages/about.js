@@ -13,14 +13,16 @@ const AboutPage = () => {
       <section className={aboutStyles.aboutSection}>
         <h1>About Me</h1>
         <div className={aboutStyles.aboutSectionTop}>
-          <h2>how my story began...</h2>
-          <p>I was raised on science fiction movies, books and video games. So, it wasn’t a surprise to my parents when after getting my first computer when I was 5 – a Commodore 64 – I exclaimed that I was going to be a <span className={aboutStyles.pink}>graphic designer</span> when I grew up. I really liked <span className={aboutStyles.green}>Print Shop</span> and <span className={aboutStyles.green}>Color Me</span>.  After drawing my way through high school, I went on to college to earn my degree in Graphic Design.</p>
-          <StaticImage src="../images/c64.png" 
-            alt="megan burleson designer developer" 
-            placeholder="blurred"
-            layout="fixed"
-            width={250}/>
-           <div className={aboutStyles.books}>
+        <h2>how my story began...</h2>
+          <div className={aboutStyles.aboutSectionTopItem}>
+            <p>I was raised on science fiction movies, books and video games. So, it wasn’t a surprise to my parents when after getting my first computer when I was 5 – a Commodore 64 – I exclaimed that I was going to be a <span className={aboutStyles.pink}>graphic designer</span> when I grew up. I really liked <span className={aboutStyles.green}>Print Shop</span> and <span className={aboutStyles.green}>Color Me</span>.  After drawing my way through high school, I went on to college to earn my degree in Graphic Design.</p>
+           <StaticImage src="../images/c64.png" 
+              alt="megan burleson designer developer" 
+              placeholder="blurred"
+              layout="fixed"
+             width={250}/>
+            </div>
+           <div className={aboutStyles.aboutSectionTopItem2}>
            <p>After college, while starting my career as a <span className={aboutStyles.pink}>graphic designer</span> designing stationary for major retail outlets, and print materials for the corporate world — I became fascinated by the web design and development. I fired up my left brain and taught myself a little bit of <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
            <StaticImage src="../images/books.png" 
             alt="megan burleson designer developer" 

@@ -15,7 +15,8 @@ const Header = () => {
             alt="megan burleson designer developer" 
             placeholder="blurred"
             layout="fixed"
-            width={300}/>    
+            width={300}
+            breakpoints={[320, 375, 750, 1080, 1366, 1920]}/>    
         </Link>
         <Link to ="/">
           <StaticImage src="../images/mblogo.png" 
@@ -23,7 +24,8 @@ const Header = () => {
             placeholder="blurred"
             layout="fixed"
             width={60}
-            height={60}/>
+            height={60}
+            breakpoints={[320, 375, 750, 1080, 1366, 1920]}/>
         </Link>
       </div>
       <nav>

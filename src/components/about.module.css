@@ -28,28 +28,43 @@ h3 {
 }
 
 .about-section-top {
+  display: flex;
+  flex-flow: column;
   padding: 0 0 50px 0;
+  width: min(90vw, 1000px);
+}
+
+.about-section-top-item{
+  display: flex;
+  flex-flow:row wrap-reverse;
+  justify-content: center;
 }
 
 .about-section-top p {
+  width: max(700px);
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-size: 1.35rem;
-  width:700px;
-  float:left;
   text-align: left;
   line-height: 35px;
 }
 
-.about-section-top img {
+
+.about-section-top-item2{
+  display: flex;
+  flex-flow:row-reverse wrap-reverse;
+  justify-content: center;
+}
+
+.about-section-top-item2 p{
   text-align: right;
 }
 
 .about-section-skills {
-  display:flex;
-  flex-flow:column;
-  align-self: stretch;
-  align-items: center;
+  display: flex;
+    flex-flow: column;
+    align-self: stretch;
+    align-items: center;
   background-color: black;
 }
 
@@ -57,7 +72,6 @@ h3 {
   display: flex;
   align-items: center;
   flex-flow:column;
-  padding: 0 100px;
   margin-bottom: 50px;
 }
 
@@ -70,30 +84,33 @@ h3 {
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-size: 1.5rem;
-  padding: 0 175px;
+  width: min(80vw,700px);
+  text-align: center;
 }
 
 .about-section-learning {
   display:flex;
-  flex-flow:column;
-  align-self: stretch;
+  flex-flow:column wrap;
   align-items: center;
   background-color: #333333;
+  padding-block: min(80vh, 100px);
 }
 
 .about-section-learning ul {
   display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: stretch;
   align-items: center;
   list-style: none;
-  padding: 100px 0;
 }
 
 li.about-section-learning-item {
   display: flex;
-  flex-flow:column;
+  flex-flow:column wrap;
   align-items: center;
+  justify-content: center;
+  padding-block: min(20vh, 20px);
 }
 
 .about-section-learning p {
@@ -102,18 +119,7 @@ li.about-section-learning-item {
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-size: 1.5rem;
- padding: 0 25px;
-}
-
-
-.books p{
-  float:right;
-  text-align: right;
-  width:700px;
-}
-
-.books img{
-  text-align: right;
+  width:max(20vw, 320px);
 }
 
 .pink {
