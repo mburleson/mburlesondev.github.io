@@ -16,8 +16,7 @@
 
 .swiper-slide-container {
   display: flex;
-  flex-flow: row wrap;
-  height: min(100vh,480px);
+  flex-flow: row wrap-reverse;
   text-align: left;
 }
 

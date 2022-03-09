@@ -16,15 +16,15 @@ const SocialContact = () => {
         <h2>Want to be Friends?</h2>
         <ul>
           <li className={socialStyles.socialSectionItem}> 
-          <FontAwesomeIcon icon={faFacebook} size='1x' />
+          <FontAwesomeIcon icon={faFacebook} size='2x' />
           <Link to="/" className={socialStyles.pink}><p>@CodeandCreativity</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>
-          <FontAwesomeIcon icon={faTwitter} size='1x' />
+          <FontAwesomeIcon icon={faTwitter} size='2x' />
           <Link to="/" className={socialStyles.green}><p>@CreativityandCode</p></Link>
           </li>
           <li className={socialStyles.socialSectionItem}>
-          <FontAwesomeIcon icon={faInstagram} size='1x' />
+          <FontAwesomeIcon icon={faInstagram} size='2x' />
           <Link to="/"><p>@CreativityandCode</p></Link>  
           </li>
         </ul>

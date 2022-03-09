@@ -19,16 +19,15 @@ blockquote{
   flex-flow: column;
   border: #FFCC00 solid 2px;
   border-radius: 20px;
-  padding:20px;
+  padding:50px;
   background-color: black;
-  width:80%;
   box-shadow: black 10px 10px;
 }
 
 blockquote p{
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 

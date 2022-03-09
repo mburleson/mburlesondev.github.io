@@ -45,12 +45,10 @@ const Slider = () => {
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/responsiveweb.png" 
+               src="../images/responsiveweb450.png" 
                alt="code and creativity" 
                placeholder="blurred"
-               layout="fixed"
-               width={460}   
-               breakpoints={[320, 375, 750, 1080, 1366, 1920]} 
+               layout="fixed" 
             />
             </div>
           </div>
