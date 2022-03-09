@@ -49,7 +49,8 @@ const Slider = () => {
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={460}    
+               width={460}   
+               breakpoints={[320, 375, 750, 1080, 1366, 1920]} 
             />
             </div>
           </div>
@@ -71,7 +72,8 @@ const Slider = () => {
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={500}    
+               width={500}  
+               breakpoints={[320, 375, 750, 1080, 1366, 1920]}  
             />
             </div>
           </div>
@@ -92,7 +94,8 @@ const Slider = () => {
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={500}    
+               width={500}  
+               breakpoints={[320, 375, 750, 1080, 1366, 1920]}  
             />
             </div>
           </div>

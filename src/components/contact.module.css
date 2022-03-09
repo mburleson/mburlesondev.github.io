@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap');
-
-body {
-  font-family: 'Dosis', sans-serif;
-  background-color: #333333;
+.contact-top {
+  display: flex;
+  flex-flow:column;
+  align-items: center;
 }
 
-.contact-top {
-display: flex;
-flex-flow:column;
-align-items: center;
-justify-content: center;
+.contact-top h2{
+ text-align: center;
 }
 
 .contact-top p {
@@ -20,12 +16,50 @@ justify-content: center;
 }
 
 
-.contact-section {
+.contact-form-section {
   display: flex;
   flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;  
+}
+
+.contact-form-section h2 {
+  text-align: left;
+  border-bottom: #cccccc solid 2px;
+  margin-bottom: 0px;
+  margin-top:75px;
+}
+
+.contact-form h3{
+  text-align: left;
 }
 
 .contact-form {
+  width: min(60vw, 1000px);
   display: flex;
   flex-flow:column;
+}
+
+.contact-form label{
+  display:flex;
+  flex-flow:column;
+}
+
+.contact-form input{
+  border-radius: 10px;
+  border: 2px #F2B218 solid;
+  height:50px;
+}
+
+.contact-form textarea{
+  border-radius: 10px;
+  border: 2px #F2B218 solid;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  align-self: center;
+  width:300px;
+  margin-top:30px;
 }

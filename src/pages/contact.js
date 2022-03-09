@@ -7,31 +7,35 @@ const ContactPage = () => {
     <Layout pageTitle="Contact Me">
      <section className={contactStyles.contactTop}>
        <h1>Contact Me</h1>
-       <p>Chances are, you have perused my site, and decided you would like to work with me. 
-         Great! I would love the chance to hear about your project, and see if we make a good team. 
+       <p>Chances are, you have perused my site, and decided you would like to work with me. Great! Or, you have some questions. Also, great!
+         I would love the chance to speak with you.
          Fill out the form below, and I will get back to as soon as I can!</p>
      </section>
-      <section className={contactStyles.contactSection}>
-        <form className={contactStyles.contactForm} method="post" action="https://getform.io/f/6f774ec7-0073-4a1b-b83b-8f6fe7a885eb}">
+      <section className={contactStyles.contactFormSection}>
+        <form className={contactStyles.contactForm} method="post" action="https://getform.io/f/6f774ec7-0073-4a1b-b83b-8f6fe7a885eb">
          <h2>About You</h2>
          <label>
-            Name
-           <input type="text" name="name" id="name" />
+            <h3>First Name:</h3>
+           <input type="text" name="firstname" id="firstname" />
         </label>
         <label>
-            Email
+            <h3>Last Name:</h3>
+           <input type="text" name="lastname" id="lastname" />
+        </label>
+        <label>
+            <h3>Email:</h3>
           <input type="email" name="email" id="email" />
         </label>
+        <h2>Message</h2>
         <label>
-          Subject
-          <input type="text" name="subject" id="subject" />
-        </label>
+    <h3>Subject:</h3>
+    <input type="text" name="subject" id="subject" />
+  </label>
         <label>
-          Message
-          <textarea name="message" id="message" rows="5" />
+        <h3>Your Message:</h3>
+          <textarea name="message" id="message" rows="10" />
         </label>
         <button type="submit">Send</button>
-        <input type="reset" value="Clear" />
       </form>
     </section>
   </Layout>
