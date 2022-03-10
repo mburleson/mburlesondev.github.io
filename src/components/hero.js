@@ -11,11 +11,10 @@ const Hero = () => {
           <StaticImage src="../images/cnc.svg" 
                 alt="code and creativity" 
                 placeholder="blurred"
-                layout="fixed"
+                layout="constrained"
                 quality={100}
                 width={600}
-                breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
-          </StaticImage>
+               />
         </div>
       </div>
       <div className={heroStyles.heroItem2}>
@@ -23,11 +22,10 @@ const Hero = () => {
           <StaticImage src="../images/bigunicorn.svg" 
                 alt="unicorn" 
                 placeholder="blurred"
-                layout="fixed"
+                layout="constrained"
                 quality={100}
                 width={380}
-                breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
-          </StaticImage>
+               />
         </div>
       </div>
     </div>
