@@ -8,17 +8,16 @@ component name should start with a capital letter. */
 const Intro = () => {
   return (
     <section className={introStyles.introSection}>
-    <h1>Hi!</h1>
-    <h2>My Name is Megan Burleson,</h2>
-    <h2>and I am a Designer & Developer</h2>
-    <h3>I spread happiness by combining</h3>
+    <h1 className={introStyles.yellow}>Hi!</h1>
+    <p>My Name is <span className={introStyles.purple}>Megan Burleson</span>, <br></br>
+    and I am a <span className={introStyles.green}>Designer</span> <span className={introStyles.yellow}>&</span> <span className={introStyles.pink}>Developer</span></p>
+    <h3>I Spread <span className={introStyles.yellow}>Happiness</span> By Combining</h3>
     <StaticImage src="../images/cnc2.svg" 
                 alt="code and creativity" 
                 placeholder="blurred"
-                layout="fixed"
+                layout="constrained"
                 width={600}
-                breakpoints={[320, 375, 750, 1080, 1366, 1920]}>
-          </StaticImage>
+               />
     </section>
 
   )

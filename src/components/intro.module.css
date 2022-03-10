@@ -10,21 +10,42 @@
 
 .intro-section h1{
   font-family: 'Dosis', sans-serif;
-  color: #FFCC00;
   font-size: 5rem;
+  font-weight: 800;
+  padding-bottom: 500px;
 }
 
-.intro-section h2{
+.intro-section p{
+  font-family: 'Dosis', sans-serif;
+  color:#CCCCCC;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  max-width:700px;
+  line-height: 70px;
+  padding-bottom: 500px;
+}
+
+.intro-section h3 {
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-size: 3rem;
-  margin-bottom: -20px;
+  font-weight: 600;
+  padding-bottom: 500px;
 }
 
-.intro-section h3{
-  font-family: 'Dosis', sans-serif;
-  color:#CCCCCC;
-  font-size: 3rem;
-  margin-top:300px;
-  margin-bottom: 300px;
+.pink {
+  color: #ff44a9;
+}
+
+.purple {
+  color: #856ffb;
+}
+
+.green {
+  color: #45d8dd;
+}
+
+.yellow {
+  color:#F2B21B;
 }

@@ -45,11 +45,11 @@ const Header = () => {
            About Me
          </Link>
        </li>
-       <li className={headerStyles.navLinkItem}>
+{/*        <li className={headerStyles.navLinkItem}>
          <Link to="/blog" className={headerStyles.navLinkText}>
            Blog
          </Link>
-       </li>
+       </li> */}
        <li className={headerStyles.navLinkItem}>
          <Link to="/contact" className={headerStyles.navLinkText}>
            Contact

@@ -11,9 +11,11 @@ const ProjectsIndex = () => {
         alt="megan burleson designer developer" 
         placeholder="blurred"
         layout="fixed"
-        width={100}/>projects
+        width={100}
+        />
+        And, I Love Doing It!
       </h2>
-      <p>I've worked on a variety of projects</p>
+      <p>I have worked on a variety of design and development projects!</p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <section className={footerStyles.thanksEnd}>
-        <h2>Thanks for stopping by!</h2>
+        <h2><span className={footerStyles.pink}>Thanks</span> for stopping by!</h2>
       </section>
       <section className={footerStyles.footerEnd}>
       <Link to="/"><p>2022 MeganBurleson.Dev</p></Link>

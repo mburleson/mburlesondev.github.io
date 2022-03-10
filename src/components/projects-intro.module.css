@@ -8,11 +8,12 @@
 
 .projects-intro h2 {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   font-family: 'Dosis', sans-serif;
   font-size: 3rem;
   color:black;
   margin-bottom: 0;
+  max-width: 700px;
 }
 
 .projects-intro p {
@@ -20,4 +21,16 @@
   font-family: 'Dosis', sans-serif;
   color:#fff;
   margin-top: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767.98px){
+  .projects-intro {
+    justify-content: center;
+  }
+  .projects-intro h2 {
+    justify-content: center;
+  }
+  .projects-intro p {
+    text-align: center;
+  }
 }

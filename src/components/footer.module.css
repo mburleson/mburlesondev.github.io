@@ -20,12 +20,39 @@ footer {
   color: black;
   background-image: url(../images/footer-bg.png);
   background-size: 20%;
-  padding:20px 0 0 20px;
+  display:flex;
+  flex-flow: row wrap;
+  align-self: stretch;
+  align-items: stretch;
+  padding:10px 20px;
 }
 
 .footer-end a {
+  display:flex;
+  flex-grow:1;
+  justify-content: flex-start;
   text-decoration: none;
   color:black;
   font-weight: 800;
 }
 
+.footer-end p{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.pink {
+  color: #ff44a9;
+}
+
+.purple {
+  color: #856ffb;
+}
+
+.green {
+  color: #45d8dd;
+}
+
+.yellow {
+  color:#F2B21B;
+}

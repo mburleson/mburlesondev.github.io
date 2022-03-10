@@ -18,8 +18,8 @@ const Slider = () => {
     <section className={swiperStyles.swiperContainer}>
       <Swiper 
       autoplay={{
-        delay: 3500,
-        disableOnInteraction: false,
+        delay: 10000,
+        disableOnInteraction: true,
       }}
       pagination={{
         clickable: true,

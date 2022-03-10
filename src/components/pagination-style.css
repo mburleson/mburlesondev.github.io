@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column-reverse;
   margin:0;
-  overflow: visible;
 }
 
 .swiper-pagination-horizontal{
@@ -14,7 +13,6 @@
 .swiper-pagination{
   position:initial;
 }
-
 
 
 .custom-bullet {
@@ -29,4 +27,16 @@
 .custom-bullet-active {
   opacity: 100%;
   background: #45d8dd;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  .swiper-pagination{
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px){
+  .swiper-pagination{
+    display: none;
+  }
 }
