@@ -37,24 +37,32 @@
 @media (min-width: 768px) and (max-width: 991.98px){
   .hero {
     display: flex;
-    flex-flow:column-reverse;
+    flex-flow:column;
     background-size:1000px;
+    background-position: -225px 5px;
+    padding-top: 240px;
+    height:50vh;
   }
 
   .hero-item1{
-    align-items: center;
-    flex-grow: 1;
+    display: block;
+    flex-grow: 0;
   }
 
   .cnc-container{
     margin:0;
     border-radius:0;
+    height: auto;
+    text-align: center;
   }
 
   .hero-item2 {
-    flex-grow: 1;
+    align-items: flex-start;
     justify-content: center;
+    padding: 50px 100px 0 100px;
   }
+
+
 }
 @media (min-width: 320px) and (max-width: 767.98px){
   .hero {
@@ -62,8 +70,8 @@
     flex-flow:column;
     background-size:500px;
     background-position: -135px 5px;
-    height:37vh;
-    padding-top: 200px;
+    height:50vh;
+    padding-top: 130px;
   }
 
   .hero-item1{
