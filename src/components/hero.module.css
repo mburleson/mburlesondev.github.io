@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  height: 89vh;
+  height: 100vh;
   flex-flow: row wrap-reverse;
   align-items: stretch;
   background-color: #333;
@@ -22,13 +22,12 @@
   display: flex;
   flex-flow: row;
   flex-grow: 1;
-  justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
+  padding:180px 0 0 0;
 }
 
 .cnc-container{
   background-color: black;
-  margin-top: min(20vh, 150px);
   padding:20px 45px;
   height:80px;
   border-radius: 0 20px 20px 0;
@@ -41,7 +40,7 @@
     background-size:1000px;
     background-position: -225px 5px;
     padding-top: 240px;
-    height:50vh;
+    height:60vh;
   }
 
   .hero-item1{
@@ -59,11 +58,11 @@
   .hero-item2 {
     align-items: flex-start;
     justify-content: center;
-    padding: 50px 100px 0 100px;
+    padding: 130px 100px 0 100px;
   }
-
-
 }
+
+
 @media (min-width: 320px) and (max-width: 767.98px){
   .hero {
     display: flex;
@@ -71,7 +70,7 @@
     background-size:500px;
     background-position: -135px 5px;
     height:50vh;
-    padding-top: 130px;
+    padding-top: 100px;
   }
 
   .hero-item1{
@@ -87,7 +86,7 @@
   .hero-item2 {
     align-items: flex-start;
     justify-content: center;
-    padding: 50px 100px 0 100px;
+    padding: 60px 100px 0 100px;
   }
 
 }

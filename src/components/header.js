@@ -16,7 +16,7 @@ const Header = () => {
             placeholder="blurred"
             layout="fixed"
             width={300}
-            breakpoints={[320, 375, 750, 1080, 1366, 1920]}/>    
+           />    
         </Link>
         <Link to ="/">
           <StaticImage src="../images/mblogo.png" 
@@ -25,20 +25,20 @@ const Header = () => {
             layout="fixed"
             width={60}
             height={60}
-            breakpoints={[320, 375, 750, 1080, 1366, 1920]}/>
+            />
         </Link>
       </div>
       <nav>
        <ul className={headerStyles.navLinks}>
        <li className={headerStyles.navLinkItem}>
-       <AnchorLink to="/#projects" title="projects">
-    <span className={headerStyles.navLinkText}>Projects</span>
-  </AnchorLink>
+        <AnchorLink to="/#projects" title="projects">
+          <span className={headerStyles.navLinkText}>Projects</span>
+         </AnchorLink>
        </li>
        <li className={headerStyles.navLinkItem}>
-       <AnchorLink to="/#testimonials" title="projects">
-    <span className={headerStyles.navLinkText}>Testimonials</span>
-  </AnchorLink>
+         <AnchorLink to="/#testimonials" title="projects">
+           <span className={headerStyles.navLinkText}>Testimonials</span>
+         </AnchorLink>
        </li>
        <li className={headerStyles.navLinkItem}>
          <Link to="/about" className={headerStyles.navLinkText}>
