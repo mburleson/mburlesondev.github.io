@@ -45,10 +45,11 @@ const Slider = () => {
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/responsiveweb450.png" 
+               src="../images/responsiveweb.png" 
                alt="code and creativity" 
                placeholder="blurred"
-               layout="fixed" 
+               layout="constrained"
+               width={450}
             />
             </div>
           </div>
@@ -69,9 +70,8 @@ const Slider = () => {
                src="../images/graphicdesign.png" 
                alt="code and creativity" 
                placeholder="blurred"
-               layout="fixed"
-               width={500}  
-               breakpoints={[320, 375, 750, 1080, 1366, 1920]}  
+               layout="constrained"
+               width={450}
             />
             </div>
           </div>
@@ -91,9 +91,8 @@ const Slider = () => {
                src="../images/andmore.png" 
                alt="code and creativity" 
                placeholder="blurred"
-               layout="fixed"
-               width={500}  
-               breakpoints={[320, 375, 750, 1080, 1366, 1920]}  
+               layout="constrained"
+               width={450}
             />
             </div>
           </div>
