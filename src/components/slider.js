@@ -98,7 +98,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-     <Link to="https://www.behance.net/meganburleson"><button>see more on Behance</button></Link>
+     <Link to="https://www.behance.net/meganburleson" target="_blank"><button>see more on Behance</button></Link>
     </section>
   );
 }

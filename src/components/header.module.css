@@ -79,7 +79,7 @@ nav {
   height: auto;
 }
 
-@media (min-width: 820px) and (max-width: 1920px){
+@media (min-width: 855px) and (max-width: 1920px){
   header {
     background-color: black;
     display: flex;
