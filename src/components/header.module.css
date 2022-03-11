@@ -60,3 +60,27 @@ nav {
   font-weight: 600;
   color: #fff;
 }
+
+.nav-toggle {
+  font-size: 1.5rem;
+}
+
+.nav-toggle:hover {}
+
+.links-container {
+  height: 0;
+  overflow: hidden;
+}
+
+.show-container {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  
+}
