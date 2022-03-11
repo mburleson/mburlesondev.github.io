@@ -4,10 +4,10 @@
   flex-flow: row wrap-reverse;
   align-items: stretch;
   background-color: #333;
-  background-image: url(../images/happiness.svg);
+  background-image: url(../images/happiness2.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: -200px 5px;
+  background-position: -200px 50px;
   overflow: hidden;
 }
 .hero-item1{
@@ -23,7 +23,7 @@
   flex-flow: row;
   flex-grow: 1;
   align-items: center;
-  padding:180px 0 0 0;
+  padding:100px 0 0 0;
 }
 
 .cnc-container{
@@ -38,9 +38,10 @@
     display: flex;
     flex-flow:column;
     background-size:1000px;
-    background-position: -225px 5px;
+    background-position: -225px 40px;
     padding-top: 240px;
     height:60vh;
+    overflow: hidden;
   }
 
   .hero-item1{
@@ -68,7 +69,7 @@
     display: flex;
     flex-flow:column;
     background-size:500px;
-    background-position: -135px 5px;
+    background-position: -135px 20px;
     height:50vh;
     padding-top: 100px;
   }
