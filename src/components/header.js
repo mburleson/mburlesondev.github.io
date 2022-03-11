@@ -15,7 +15,7 @@ const Header = () => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
 
     if (showLinks) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
+      linksContainerRef.current.style.height = "300px";
     } else {
       linksContainerRef.current.style.height = "0px";
     }
@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
+
       <div className={headerStyles.siteTitle}>
         <Link to="/">
           <StaticImage src="../images/mblogotype.png" 
@@ -37,9 +37,8 @@ const Header = () => {
           <StaticImage src="../images/mblogo.png" 
             alt="meganburlesonlogo" 
             placeholder="blurred"
-            layout="fixed"
-            width={60}
-            height={60}
+            layout="constrained"
+            width={70}
             />
         </Link>
       </div>
@@ -49,7 +48,7 @@ const Header = () => {
           >
             <FontAwesomeIcon icon={faBars} size='2x' />
           </button>
-      <div className={headerStyles.linksContainer} ref={linksContainerRef}>
+      <nav className={headerStyles.linksContainer} ref={linksContainerRef}>
         <ul className={headerStyles.navLinks} ref={linksRef}>
         <li className={headerStyles.navLinkItem}>
           <AnchorLink to="/#projects" title="projects">
@@ -77,7 +76,7 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-     </div>
+
     </nav>
   </header>
 

@@ -1,56 +1,48 @@
 header {
   background-color: black;
-  display: inline-flex;
-  flex-flow: row wrap;
-  padding:20px;
+  display: flex;
+  flex-flow: column wrap;
   align-content: stretch;
 }
 
-.site-title {
-  margin: 0 0 0 20px;
-  display: flex;
-  flex-flow:row wrap-reverse;
-  justify-content: flex-start;
-  font-family: 'Dosis', sans-serif;
-  align-content: center;
-  font-size: 1rem;
-  font-weight: 600;
-  align-items: center;
+
+header button {
+  background: black;
+  border-radius: 0;
 }
 
-.site-title img {
+.site-title {
   display: flex;
+  flex-flow:column-reverse;
+  align-items: center;
+  align-self: stretch;
+  padding:10px 0;
+}
+
+.site-title a {
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
 }
 
 nav {
-  background-color: black;
-  display: inline-flex;
-  flex-flow: row nowrap;
-  flex-grow: 1;
-  font-family: 'Dosis', sans-serif;
+  display:flex;
+  flex-flow:column;
+  align-items: center;
 }
 
 .nav-links {
-  display: inline-flex;
-  flex-flow: row nowrap;
-  flex-grow: 1;
-  justify-content: flex-end;
+  display: flex;
+  flex-flow: column;
+  padding:0;
+  text-decoration: none;
   text-transform: lowercase;
-  list-style: none;
-  padding-left: 0;
-
-}
-
-.nav-link-item {
-  padding-right: 2rem;
-}
-
-.nav-link-item a {
- text-decoration: none;
+  text-align: center;
+  gap:2rem;
 }
 
 .nav-link-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #FFCC00;
 }
@@ -60,9 +52,16 @@ nav {
   font-weight: 600;
   color: #fff;
 }
+.nav-link-item {
+
+}
+
+.nav-link-item a {
+  text-decoration: none;
+ }
 
 .nav-toggle {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .nav-toggle:hover {}
@@ -73,14 +72,77 @@ nav {
 }
 
 .show-container {
-  height: 10rem;
+  height: auto;
 }
-@media screen and (min-width: 800px) {
+
+@media (min-width: 820px) and (max-width: 991.98px){
+  header {
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    padding:20px;
+    align-content: stretch;
+  }
+
   .nav-toggle {
     display: none;
   }
+
   .links-container {
     height: auto !important;
   }
+
+  .site-title {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-flow:row wrap-reverse;
+    justify-content: flex-start;
+    font-family: 'Dosis', sans-serif;
+    align-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+  }
+  
+  
+  nav {
+    background-color: black;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    font-family: 'Dosis', sans-serif;
+  }
+  
+  .nav-links {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+    text-transform: lowercase;
+    list-style: none;
+    padding-left: 0;
+  
+  }
+  
+  .nav-link-item {
+    padding-right: 2rem;
+  }
+  
+  .nav-link-item a {
+   text-decoration: none;
+  }
+  
+  .nav-link-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFCC00;
+  }
+  
+  .nav-link-text:hover {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
   
 }
