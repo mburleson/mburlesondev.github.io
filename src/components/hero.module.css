@@ -21,7 +21,8 @@
 .hero-item2{
   display: flex;
   flex-flow: row;
-  flex-grow: 1;
+  flex-grow: 2;
+  justify-content: flex-start;
   align-items: center;
   padding:80px 0 0 0;
 }
