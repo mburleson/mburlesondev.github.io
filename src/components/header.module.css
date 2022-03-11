@@ -113,6 +113,9 @@ nav {
     align-items: center;
   }
   
+  .site-title a {
+    padding:0;
+  }
   
   nav {
     background-color: black;
