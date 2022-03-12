@@ -9,13 +9,5 @@ module.exports = {
       "gatsby-transformer-sharp",
       "gatsby-plugin-fontawesome-css",
       "gatsby-plugin-anchor-links",
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `blog`,
-          path: `${__dirname}/blog/`,
-        },
-      },
-      "gatsby-plugin-mdx",
     ],
   };
