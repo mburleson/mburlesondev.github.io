@@ -13,20 +13,21 @@ header {
 header button {
   background: black;
   border-radius: 0;
+  padding: 5px 25px;
 }
 
 .site-title {
   display: flex;
-  flex-flow:column-reverse;
+  flex-flow:row;
+  justify-content: center;
   align-items: center;
-  align-self: stretch;
-  padding:10px 0;
+  align-self: center;
+  padding:5px 20px;
 }
 
 .site-title a {
   display: flex;
   flex-flow:column;
-  justify-content: center;
   padding: 10px 0;
 }
 
@@ -80,7 +81,7 @@ nav {
   height: auto;
 }
 
-@media (min-width: 855px) and (max-width: 1920px){
+@media (min-width: 913px) and (max-width: 1920px){
   header {
     background-color: black;
     display: flex;

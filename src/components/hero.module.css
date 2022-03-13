@@ -60,6 +60,7 @@
     border-radius:0;
     height: auto;
     text-align: center;
+    
   }
 
   .hero-item2 {
@@ -70,14 +71,14 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 767.98px){
+@media (min-width: 375px) and (max-width: 767.98px){
   .hero {
     display: flex;
     flex-flow:column;
     background-size:500px;
     background-position: -135px 20px;
     height:50vh;
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   .hero-item1{
@@ -88,6 +89,7 @@
     margin:0;
     border-radius:0;
     height: auto;
+    padding: 20px 18px;
   }
 
   .hero-item2 {
