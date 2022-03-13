@@ -8,7 +8,7 @@ const Hero = () => {
     <div className={heroStyles.hero}>
       <div className={heroStyles.heroItem1}>
         <div className={heroStyles.cncContainer}>
-          <StaticImage src="../images/cnc.svg" 
+          <StaticImage src="../images/cnc.png" 
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="constrained"
@@ -19,12 +19,12 @@ const Hero = () => {
       </div>
       <div className={heroStyles.heroItem2}>
         <div>
-          <StaticImage src="../images/bigunicorn.svg" 
+          <StaticImage src="../images/bigunicorn.png" 
                 alt="unicorn" 
                 placeholder="blurred"
                 layout="constrained"
                 quality={100}
-                width={375}
+                width={365}
                />
         </div>
       </div>

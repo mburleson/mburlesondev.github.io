@@ -4,27 +4,29 @@
   flex-flow: row wrap-reverse;
   align-items: stretch;
   background-color: #333;
-  background-image: url(../images/happiness2.svg);
-  background-size: 100%;
+  background-image: url(../images/happiness2.png);
+  background-size: 95%;
   background-repeat: no-repeat;
-  background-position: -200px 30px;
+  background-position: 0px 30px;
   overflow: hidden;
 }
+
 .hero-item1{
   display: flex;
   flex-flow: row;
   flex-grow: 2;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 75px;
 }
 
-.hero-item2{
+.hero-item2 {
   display: flex;
   flex-flow: row;
   flex-grow: 2;
   justify-content: flex-start;
   align-items: center;
-  padding:80px 0 0 0;
+  padding:150px 0 0 0;
 }
 
 .cnc-container{
@@ -34,19 +36,12 @@
   border-radius: 0 20px 20px 0;
 }
 
-.star {
-  transform: translateY(150px);
-  animation: popup 10s 6.5s ease infinite;
-}
-
 @media (min-width: 768px) and (max-width: 991.98px){
   .hero {
     display: flex;
     flex-flow:column;
-    background-size:1000px;
-    background-position: -225px 40px;
-    padding-top: 240px;
-    height:60vh;
+    background-size:100%;
+    background-position: 0px 75px;
     overflow: hidden;
   }
 
@@ -56,7 +51,7 @@
   }
 
   .cnc-container{
-    margin:0;
+    margin: 200px 0 0 0;
     border-radius:0;
     height: auto;
     text-align: center;
@@ -75,14 +70,14 @@
   .hero {
     display: flex;
     flex-flow:column;
-    background-size:500px;
-    background-position: -135px 20px;
-    height:50vh;
-    padding-top: 80px;
+    background-size:100%;
+    background-position: 0px 20px;
+    height: fit-content;
   }
 
   .hero-item1{
     align-items: flex-end;
+    margin-top: 110px;
   }
 
   .cnc-container{
