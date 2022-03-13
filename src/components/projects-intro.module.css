@@ -21,6 +21,8 @@
   font-family: 'Dosis', sans-serif;
   color:#fff;
   margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media (min-width: 320px) and (max-width: 767.98px){

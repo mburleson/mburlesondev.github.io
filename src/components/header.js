@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
         <Link to ="/">
           <StaticImage src="../images/mblogo.png" 
-            alt="meganburlesonlogo" 
+            alt="megan burleson logo" 
             placeholder="blurred"
             layout="constrained"
             width={70}
@@ -51,17 +51,17 @@ const Header = () => {
       <nav className={headerStyles.linksContainer} ref={linksContainerRef}>
         <ul className={headerStyles.navLinks} ref={linksRef}>
         <li className={headerStyles.navLinkItem}>
-          <AnchorLink to="/#projects" title="projects">
+          <AnchorLink to="/#projects" title="Projects" alt="Projects">
             <span className={headerStyles.navLinkText}>Projects</span>
           </AnchorLink>
         </li>
         <li className={headerStyles.navLinkItem}>
-          <AnchorLink to="/#testimonials" title="projects">
+          <AnchorLink to="/#testimonials" title="Testimonials" alt="Testimonials">
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
         </li>
         <li className={headerStyles.navLinkItem}>
-          <Link to="/about" className={headerStyles.navLinkText}>
+          <Link to="/about" className={headerStyles.navLinkText} title="About Megan" alt="About Megan">
             About Me
           </Link>
         </li>
@@ -71,7 +71,7 @@ const Header = () => {
           </Link>
         </li> */}
         <li className={headerStyles.navLinkItem}>
-          <Link to="/contact" className={headerStyles.navLinkText}>
+          <Link to="/contact" className={headerStyles.navLinkText} title="Contact Megan" alt="Contact Megan">
             Contact
           </Link>
         </li>
