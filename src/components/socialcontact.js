@@ -17,7 +17,7 @@ const SocialContact = () => {
         <ul>
           <li className={socialStyles.socialSectionItem}> 
           <FontAwesomeIcon icon={faFacebook} size='2x' />
-          <Link to="https://www.facebook.com/CreativityandCode" target="_blank" className={socialStyles.pink} alt="CreativityandCode on Facebook"><p>@CodeandCreativity</p></Link>  
+          <Link to="https://www.facebook.com/CreativityandCode" target="_blank" className={socialStyles.pink} alt="CreativityandCode on Facebook"><p>@CreativityandCode</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faTwitter} size='2x' />
