@@ -5,14 +5,6 @@
   "description": "portfolio site",
   "author": "mburleson",
   "keywords": [
-    "graphic designer",
-    "web designer",
-    "web developer",
-    "product designer",
-    "app developer",
-    "freelance",
-    "freelance graphic designer michigan",
-    "freelance graphic designer"
   ],
   "scripts": {
     "develop": "gatsby develop",

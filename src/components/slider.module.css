@@ -15,7 +15,12 @@
   margin-left: 0 auto;
   width:300px;
   font-size: 1.5rem;
+  color:black;
 
+}
+
+.swiper-container button a{
+  color:black;
 }
 
 .swiper-slide-container {
