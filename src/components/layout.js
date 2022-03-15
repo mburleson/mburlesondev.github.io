@@ -23,7 +23,7 @@ const Layout = ({ pageTitle, children }) => {
       <Header></Header>
       <title>{pageTitle} | {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
       <Helmet>
-        <meta name="icon" href="../images/favicon.ico" />
+        <meta name="icon" href="./src/images/favicon.ico" />
       </Helmet>
       <main>
         {children}
