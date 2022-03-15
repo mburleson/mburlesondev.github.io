@@ -4,8 +4,7 @@
   "private": true,
   "description": "portfolio site",
   "author": "mburleson",
-  "keywords": [
-  ],
+  "keywords": [],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",

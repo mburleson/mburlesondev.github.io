@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import SocialContact from '../components/socialcontact'
 import * as layoutStyles from './layout.module.css'
+import { Helmet } from "react-helmet"
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -21,6 +22,9 @@ const Layout = ({ pageTitle, children }) => {
     <div className={layoutStyles.container}>
       <Header></Header>
       <title>{pageTitle} | {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
+      <Helmet>
+        <meta name="icon" href="../images/favicon.ico" />
+      </Helmet>
       <main>
         {children}
       </main>
