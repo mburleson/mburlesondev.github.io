@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as socialStyles from './socialcontact.module.css'
@@ -25,7 +25,11 @@ const SocialContact = () => {
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faInstagram} size='2x' />
-          <Link to="https://www.instagram.com/creativityandcode/" target="_blank" alt="CreativityandCode on Instagram"><p>@CreativityandCode</p></Link>  
+          <Link to="https://www.instagram.com/creativityandcode/" target="_blank" alt="CreativityandCode on Instagram" className={socialStyles.yellow}><p>@CreativityandCode</p></Link>  
+          </li>
+          <li className={socialStyles.socialSectionItem}>
+          <FontAwesomeIcon icon={faTwitch} size='2x' />
+          <Link to="https://www.twitch.tv/codeandcreativity" target="_blank" alt="CreativityandCode on Instagram"><p>@CodeAndCreativity</p></Link>  
           </li>
         </ul>
       </section>
