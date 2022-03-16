@@ -22,8 +22,7 @@ module.exports = {
           // The property ID; the tracking code won't be generated without it
           trackingId: "UA-64901912-1",
           // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: true,
-          // Avoids sending pageview hits from custom paths
+          head: false,
         },
       },
     ],

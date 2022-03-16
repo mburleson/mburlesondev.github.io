@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import SocialContact from '../components/socialcontact'
 import * as layoutStyles from './layout.module.css'
-import { Helmet } from "react-helmet"
+
 
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,10 +22,10 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={layoutStyles.container}>
       <Header></Header>
-      <Helmet>
-      <title>{pageTitle} | {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
-      <link rel="icon" href={data.site.siteMetadata.icon} />
-      </Helmet>
+ 
+      <title>{pageTitle}{data.site.siteMetadata.title}{data.site.siteMetadata.description}</title>
+      <link rel="icon" href={data.site.siteMetadata.icon}/>
+   
       <main>
         {children}
       </main>
