@@ -1,4 +1,5 @@
 module.exports = {
+
     siteMetadata: {
       title: "Megan Burleson",
       titleTemplate:"%s Designer and Developer",
@@ -15,6 +16,16 @@ module.exports = {
       "gatsby-plugin-anchor-links",
       "gatsby-plugin-react-helmet",
       "gatsby-plugin-gatsby-cloud",
+      {
+        resolve: "gatsby-plugin-google-analytics",
+        options: {
+          // The property ID; the tracking code won't be generated without it
+          trackingId: "UA-64901912-1",
+          // Defines where to place the tracking script - `true` in the head and `false` in the body
+          head: true,
+          // Avoids sending pageview hits from custom paths
+        },
+      },
     ],
     
   };

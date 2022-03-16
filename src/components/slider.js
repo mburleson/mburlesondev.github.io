@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from 'gatsby'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -8,6 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./pagination-style.css";
 import * as swiperStyles from './slider.module.css';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import { Autoplay, Pagination } from "swiper";
 
@@ -98,7 +98,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-     <Link to="https://www.behance.net/meganburleson" target="_blank"><button>see more on Behance</button></Link>
+     <OutboundLink href="https://www.behance.net/meganburleson" target="_blank"><button>see more on Behance</button></OutboundLink>
     </section>
   );
 }
