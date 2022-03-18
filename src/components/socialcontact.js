@@ -40,7 +40,7 @@ const SocialContact = () => {
             layout="fixed"
             width={150}/>
       <h2>Want to Work Together?</h2>
-      <Link to="/contact" alt="Contact Me To Get Started!"><button>Let's get started!</button></Link>
+      <Link to="/contact" alt="Contact Me To Get Started!"><button>let's get started!</button></Link>
       </section>
     </div>
   )
