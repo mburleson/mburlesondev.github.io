@@ -22,10 +22,8 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={layoutStyles.container}>
       <Header></Header>
- 
       <title>{pageTitle}{data.site.siteMetadata.title}{data.site.siteMetadata.description}</title>
       <link rel="icon" href={data.site.siteMetadata.icon}/>
-   
       <main>
         {children}
       </main>

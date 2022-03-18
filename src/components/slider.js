@@ -45,7 +45,7 @@ const Slider = () => {
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/responsiveweb.png" 
+               src="../images/responsiveweb2.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="constrained"
@@ -58,7 +58,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Graphic Design for Print and Web</h2>
+                <h2>Graphic Design for Print</h2>
                   <p>I have a degree in graphic design, and have experience with 
                     brand design, package design, brochure design -- you name it! 
                     I've probably done it! 
@@ -67,8 +67,8 @@ const Slider = () => {
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/graphicdesign.png" 
-               alt="code and creativity" 
+               src="../images/print.png" 
+               alt="graphic design" 
                placeholder="blurred"
                layout="constrained"
                width={450}
@@ -88,7 +88,7 @@ const Slider = () => {
               </div>
             <div className={swiperStyles.slideRight}>
             <StaticImage 
-               src="../images/andmore.png" 
+               src="../images/andmore2.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="constrained"

@@ -23,7 +23,6 @@ const Header = () => {
 
   return (
     <header>
-
       <div className={headerStyles.siteTitle}>
         <Link to="/">
           <StaticImage src="../images/mblogotype.png" 
