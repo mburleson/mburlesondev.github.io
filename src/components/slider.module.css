@@ -2,7 +2,7 @@
   display: flex;
   flex-flow:column;
   text-align: center;
-  background-color: #856FFB;
+  background-color: #333333;
   align-content: stretch;
   padding-bottom: 100px;
 }
@@ -50,7 +50,7 @@
 
 .slide-left h2{
   font-family: 'Dosis', sans-serif;
-  color:#fff;
+  color:#F2B21B;
   font-size: 2rem;
   margin:0 0 10px 0;
 }
@@ -60,6 +60,7 @@
   font-size: 1.5rem;   
   margin:0;
   max-width:400px;
+  color:#f2f2f2;
 }
 
 .slide-right{

@@ -1,7 +1,7 @@
 .testimonials-section{
   display: flex;
   flex-flow:column;
-  background-color: #333;
+  background-color: #000;
   justify-content: center;
   align-items: center;
   padding-block: min(20vh, 75px);
@@ -17,11 +17,11 @@
 blockquote{
   display: flex;
   flex-flow: column;
-  border: #FFCC00 solid 2px;
+  border: #856ffb solid 2px;
   border-radius: 20px;
   padding:50px;
-  background-color: black;
-  box-shadow: black 10px 10px;
+  background-color: #000;
+  box-shadow: #333 10px 10px;
 }
 
 blockquote p{
@@ -33,5 +33,5 @@ blockquote p{
 
 .quote-author{
   font-size: 1rem;
-  color:#856FFB;
+  color:#45d8dd;
 }

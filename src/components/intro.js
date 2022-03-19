@@ -10,9 +10,9 @@ const Intro = () => {
   return (
     <section className={introStyles.introSection}>
       <h1 className={introStyles.yellow}>Hi!</h1>
-      <p>My Name is <span className={introStyles.purple}>Megan Burleson</span><br></br>
-    I am a <span className={introStyles.green}>Designer</span> <span className={introStyles.yellow}>&</span> <span className={introStyles.pink}>Developer</span></p>
-    <p>and I Spread <span className={introStyles.yellow}>Happiness</span> with</p>
+      <p>My Name is <span className={introStyles.pink}>Megan Burleson</span><br></br>
+    I am a <span className={introStyles.purple}>Designer & Developer</span></p>
+    <p>and I Spread <span className={introStyles.green}>Happiness</span> with</p>
     <StaticImage src="../images/cnc2.png" 
                 alt="code and creativity" 
                 placeholder="blurred"
