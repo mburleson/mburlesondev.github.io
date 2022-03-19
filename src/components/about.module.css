@@ -74,7 +74,6 @@ h3 {
 }
 
 .about-section-skills-item h2 {
-  margin:10px 0;
   color:#ffffff;
 }
 
@@ -89,8 +88,9 @@ h3 {
 .about-section-learning {
   display:flex;
   flex-flow:column wrap;
+  align-self: stretch;
   align-items: center;
-  background-color: #333333;
+  background-color: #000;
   padding-block: min(80vh, 100px);
 }
 
