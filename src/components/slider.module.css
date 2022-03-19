@@ -71,6 +71,24 @@
 }
 
 
+h2.pink {
+  color: #ff44a9;
+}
+
+h2.purple {
+  color: #856ffb;
+}
+
+h2.green {
+  color: #45d8dd;
+}
+
+h2.yellow {
+  color:#F2B21B;
+}
+
+
+
 
 @media (min-width: 375px) and (max-width: 767.98px){
   .swiper-slide-container{

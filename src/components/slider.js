@@ -34,7 +34,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Web Design and Development</h2>
+                <h2 className={swiperStyles.purple}>Web Design and Development</h2>
                   <p>
                     I spread happiness by designing and developing websites and apps 
                     that that are attractive, usable and accessible to everyone.
@@ -58,7 +58,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>Graphic Design for Print</h2>
+                <h2 className={swiperStyles.green}>Graphic Design for Print</h2>
                   <p>I have a degree in graphic design, and have experience with 
                     brand design, package design, brochure design -- you name it! 
                     I've probably done it! 
@@ -80,7 +80,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2>And More!</h2>
+                <h2 className={swiperStyles.pink}>And More!</h2>
                   <p>Snazzy E-mail template? Need help designing your Facebook page? Are you a streamer in need of some awesome graphics?
                   Does your team need a unicorn? I can help!
                   </p>
