@@ -34,7 +34,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2 className={swiperStyles.purple}>Web Design and Development</h2>
+                <h2 className={swiperStyles.green}>Web Design and Development</h2>
                   <p>
                     I spread happiness by designing and developing websites and apps 
                     that that are attractive, usable and accessible to everyone.
@@ -58,7 +58,7 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2 className={swiperStyles.green}>Graphic Design for Print</h2>
+                <h2 className={swiperStyles.purple}>Graphic Design for Print</h2>
                   <p>I have a degree in graphic design, and have experience with 
                     brand design, package design, brochure design -- you name it! 
                     I've probably done it! 
