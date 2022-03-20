@@ -10,12 +10,11 @@ component name should start with a capital letter. */
 const Testimonials = () => {
   return (
     <section className={testimonalsStyles.testimonialsSection}>
-      <StaticImage src="../images/star.png"
-        alt="megan burleson designer developer" 
-        placeholder="blurred"
-        layout="fixed"
-        width={50}
-        id="testimonials"/>
+      <StaticImage src="../images/star2.png" 
+            alt="megan burleson designer developer" 
+            placeholder="blurred"
+            layout="fixed"
+            width={50}/>
       <h2>Testimonials</h2>
       <blockquote>
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
