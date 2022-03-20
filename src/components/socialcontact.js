@@ -38,7 +38,7 @@ const SocialContact = () => {
             alt="megan burleson contact me" 
             placeholder="blurred"
             layout="fixed"
-            width={150}/>
+            width={300}/>
       <h2>Want to Work Together?</h2>
       <Link to="/contact" alt="Contact Me To Get Started!"><button>let's get started!</button></Link>
       </section>
