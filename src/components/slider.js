@@ -49,7 +49,7 @@ const Slider = () => {
                alt="code and creativity" 
                placeholder="blurred"
                layout="constrained"
-               width={450}
+               width={425}
             />
             </div>
           </div>
@@ -92,7 +92,7 @@ const Slider = () => {
                alt="code and creativity" 
                placeholder="blurred"
                layout="constrained"
-               width={450}
+               width={425}
             />
             </div>
           </div>
