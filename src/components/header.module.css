@@ -87,7 +87,7 @@ nav {
     background-color: black;
     display: flex;
     flex-flow: row wrap;
-    padding:20px;
+    padding:10px;
     align-content: stretch;
     top:0;
     position:sticky;

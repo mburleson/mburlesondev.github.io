@@ -37,7 +37,7 @@ const Header = () => {
             alt="megan burleson logo" 
             placeholder="blurred"
             layout="constrained"
-            width={70}
+            width={50}
             />
         </Link>
       </div>
