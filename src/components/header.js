@@ -50,8 +50,13 @@ const Header = () => {
       <nav className={headerStyles.linksContainer} ref={linksContainerRef}>
         <ul className={headerStyles.navLinks} ref={linksRef}>
         <li className={headerStyles.navLinkItem}>
-          <AnchorLink to="/#projects" title="Projects" alt="Projects">
-            <span className={headerStyles.navLinkText}>Projects</span>
+          <Link to="/about" className={headerStyles.navLinkText} title="About Megan" alt="About Megan">
+            About Me
+          </Link>
+        </li>
+        <li className={headerStyles.navLinkItem}>
+          <AnchorLink to="/#projects" title="What I Do" alt="What I Do">
+            <span className={headerStyles.navLinkText}>What I Do</span>
           </AnchorLink>
         </li>
         <li className={headerStyles.navLinkItem}>
@@ -59,11 +64,7 @@ const Header = () => {
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
         </li>
-        <li className={headerStyles.navLinkItem}>
-          <Link to="/about" className={headerStyles.navLinkText} title="About Megan" alt="About Megan">
-            About Me
-          </Link>
-        </li>
+        
   {/*        <li className={headerStyles.navLinkItem}>
           <Link to="/blog" className={headerStyles.navLinkText}>
             Blog

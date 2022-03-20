@@ -24,7 +24,7 @@ const Hero = () => {
                 placeholder="blurred"
                 layout="constrained"
                 quality={100}
-                width={365}
+                width={480}
                />
         </div>
       </div>
