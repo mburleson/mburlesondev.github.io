@@ -32,7 +32,9 @@ button {
 }
 
 button:hover{
-  background-color: #ff44a9;
-  box-shadow: none;
+  background-color: #856ffb;
+  border: 3px #333 solid;
+  box-shadow: #fff 0px 0px 0px 4px;
+  color:#fff;
 }
 

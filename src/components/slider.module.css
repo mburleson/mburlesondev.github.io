@@ -24,6 +24,10 @@
   color:black;
 }
 
+.swiper-container button:hover{
+  color:#fff;
+}
+
 .swiper-slide-container {
   display: flex;
   align-items: stretch;

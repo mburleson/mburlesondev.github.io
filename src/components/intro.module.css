@@ -40,6 +40,10 @@
   padding: 20px 0px;
 }
 
+.intro-section button:hover{
+  color:#fff;
+}
+
 .pink {
   color: #ff44a9;
 }
