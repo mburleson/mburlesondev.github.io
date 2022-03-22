@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  background-color: #333333;
   display: flex;
   flex-flow: column wrap;
   align-content: stretch;
@@ -11,15 +11,16 @@ header {
 
 
 header button {
-  background: black;
+  background: #333333;
   border: none;
-  box-shadow:#000 0px 0px;
+  box-shadow:#333333 0px 0px;
   border-radius: 0;
   padding: 10px 25px;
 }
 
 header button:hover {
-  background: black;
+  background: #333333;
+  box-shadow:#333333 0px 0px;
 }
 
 .site-title {
@@ -52,15 +53,21 @@ nav {
   gap:2rem;
 }
 
+.nav-links ul {
+  list-style: none;
+}
+
+
 .nav-link-text {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 300;
   color: #FFCC00;
 }
 
 
 .nav-link-item {
-
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav-link-item a {
@@ -84,7 +91,7 @@ nav {
 
 @media (min-width: 913px) and (max-width: 1920px){
   header {
-    background-color: black;
+    background-color: #333333;
     display: flex;
     flex-flow: row wrap;
     padding:10px;
@@ -120,7 +127,7 @@ nav {
   }
   
   nav {
-    background-color: black;
+    background-color: #333333;
     display: inline-flex;
     flex-flow: row nowrap;
     flex-grow: 1;
@@ -146,14 +153,14 @@ nav {
   }
   
   .nav-link-text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 300;
     color: #FFCC00;
   }
   
   .nav-link-text:hover {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 400;
     color: #fff;
   }
   
