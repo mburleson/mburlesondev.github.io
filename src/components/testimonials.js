@@ -15,7 +15,7 @@ const Testimonials = () => {
             placeholder="blurred"
             layout="fixed"
             width={50}/>
-      <h2>Testimonials</h2>
+      <h2 id="testimonials">Testimonials</h2>
       <blockquote>
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
       <p>Megan is a pleasure to work with. She listens to your 

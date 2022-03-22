@@ -1,5 +1,6 @@
 // Step 1: Import React. This lets you use JSX inside your .js file.
 import * as React from 'react'
+import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as introStyles from './intro.module.css'
 
@@ -19,6 +20,7 @@ const Intro = () => {
                 layout="constrained"
                 width={600}
                />
+    <Link to="/about"><button>Read More About Me</button></Link>
     </section>
 
   )
