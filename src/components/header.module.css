@@ -153,14 +153,14 @@ nav {
   }
   
   .nav-link-text {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: #FFCC00;
   }
   
   .nav-link-text:hover {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
   }
   
