@@ -98,7 +98,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-     <OutboundLink href="https://www.behance.net/meganburleson" target="_blank"><button>see my work</button></OutboundLink>
+     <OutboundLink href="https://www.behance.net/meganburleson" target="_blank"><button>See My Work</button></OutboundLink>
     </section>
   );
 }
