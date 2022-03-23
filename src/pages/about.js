@@ -15,7 +15,7 @@ const AboutPage = () => {
         <div className={aboutStyles.aboutSectionTop}>
         <h2>how my story began...</h2>
           <div className={aboutStyles.aboutSectionTopItem}>
-            <p>I was raised on science fiction movies, books and video games. So, it wasn’t a surprise to my parents when after getting my first computer when I was 5 – a Commodore 64 – I exclaimed that I was going to be a <span className={aboutStyles.pink}>graphic designer</span> when I grew up. I really liked <span className={aboutStyles.green}>Print Shop</span> and <span className={aboutStyles.green}>Color Me</span>.  After drawing my way through high school, I went on to college to earn my degree in Graphic Design.</p>
+            <p>I was raised with science fiction movies, books, and video games. So, it wasn’t a surprise to my parents when after getting my first computer when I was 5 – a Commodore 64 – I exclaimed that I was going to be a <span className={aboutStyles.pink}>graphic designer</span> when I grew up. I really liked <span className={aboutStyles.green}>Print Shop</span> and <span className={aboutStyles.yellow}>Color Me</span>. After drawing my way through high school, I went on to college to earn my degree in Graphic Design.</p>
            <StaticImage src="../images/c64.png" 
               alt="megan burleson designer developer" 
               placeholder="blurred"
@@ -23,15 +23,14 @@ const AboutPage = () => {
              width={250}/>
             </div>
            <div className={aboutStyles.aboutSectionTopItem2}>
-           <p>After college, while starting my career as a <span className={aboutStyles.pink}>graphic designer</span> designing stationary for major retail outlets, and print materials for the corporate world — I became fascinated by the web design and development. I fired up my left brain and taught myself a little bit of <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
+           <p>After college, while starting my career as a graphic designer designing stationery for major retail outlets, and print materials for the corporate world — I became fascinated by web design and development. I fired up my left brain and taught myself a little bit of <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
            <StaticImage src="../images/books.png" 
             alt="megan burleson designer developer" 
             placeholder="blurred"
             layout="fixed"
             width={250}/>
         </div>
-        <h3><span className={aboutStyles.yellow}>Then, in 2006, I landed my first web development job and
- I was able to use my design skills too! </span></h3><h3>
+        <h3><span className={aboutStyles.yellow}>Then, in 2006, I landed my first web development job. I was able to bring my design skill to the position as well!</span></h3><h3>
 I began designing and developing professionally and never looked back.</h3>
         </div> 
         <div className={aboutStyles.aboutSectionSkills}>
@@ -43,10 +42,9 @@ I began designing and developing professionally and never looked back.</h3>
             layout="fixed"
             width={50}/>
             <h2 className={aboutStyles.green}>frontend development</h2>
-            <p>10+ years experience using and working with  HTML, CSS, and JavaScript 
-for responsive web development.</p>
-            <p>I have the ability to translate layered comps into HTML and CSS, and I can make anything look great across a variety of devices.</p>
-          <p>I utilize  open source tools, api’s and frameworks according to project needs and to maintain frontend code structure.</p>
+            <p>10+ years of experience using and working with HTML, CSS, and JavaScript for responsive web development.</p>
+            <p>I can translate layered comps into HTML and CSS, and I can make anything look great across a variety of devices.</p>
+            <p>I utilize open source tools, api’s, and frameworks according to project needs and to maintain frontend code structure.</p>
           </div>
           <div className={aboutStyles.aboutSectionSkillsItem}>
           <StaticImage src="../images/star2.png" 
@@ -55,7 +53,7 @@ for responsive web development.</p>
             layout="fixed"
             width={50}/>
             <h2 className={aboutStyles.purple}>web design</h2>
-            <p>I work with Figma, Adobe XD, Photoshop, to wireframe and conceptualize high fidelity comps.</p>
+            <p>I work with Figma, Adobe XD, and Photoshop to wireframe and conceptualize multi-fidelity comps.</p>
             </div>
             <div className={aboutStyles.aboutSectionSkillsItem}>
           <StaticImage src="../images/star2.png" 
@@ -64,23 +62,9 @@ for responsive web development.</p>
             layout="fixed"
             width={50}/>
             <h2 className={aboutStyles.pink}>graphic design</h2>
-            <p>I use digital illustration tools Adobe Illustrator, Photoshop and Procreate to design and create graphic assets for use across a variety of media.</p>
+            <p>I use digital illustration tools such as Adobe Illustrator, Photoshop, and Procreate to design graphic assets for use across a variety of media.</p>
             </div>
-            <div className={aboutStyles.aboutSectionSkillsItem}>
-          <StaticImage src="../images/star2.png" 
-            alt="megan burleson designer developer" 
-            placeholder="blurred"
-            layout="fixed"
-            width={50}/>
-            <h2>And More!</h2>
-            <p>From one on one, to a meeting room full of people, I have extensive experience 
- gathering project requirements, presenting ideas and receiving feedback.</p>
-            <p>I work well within a team of designers and programmers and am
-able to communicate clearly and consistently within a team environment.
-</p>
-<p>I have great multi-tasking skills able to prioritize under the tightest of
-deadlines.</p>
-            </div>
+            
         </div>
         <div className={aboutStyles.aboutSectionLearning}>
             <h1>Always Learning</h1>
