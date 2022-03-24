@@ -1,7 +1,3 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
-});
-
 module.exports = {
 
     siteMetadata: {
@@ -19,11 +15,6 @@ module.exports = {
       "gatsby-plugin-anchor-links",
       "gatsby-plugin-gatsby-cloud",
       {
-        resolve: `gatsby-source-contentful`,
-        options: {
-          spaceId: process.env.CONTENTFUL_SPACE_ID,
-          accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
-        },
         resolve: "gatsby-plugin-google-analytics",
         options: {
           // The property ID; the tracking code won't be generated without it
