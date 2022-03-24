@@ -17,19 +17,19 @@ const SocialContact = () => {
         <ul>
           <li className={socialStyles.socialSectionItem}> 
           <FontAwesomeIcon icon={faFacebook} size='2x' />
-          <Link to="https://www.facebook.com/CreativityandCode" target="_blank" className={socialStyles.pink} alt="CreativityandCode on Facebook"><p>@CreativityandCode</p></Link>  
+          <Link to="https://www.facebook.com/CreativityandCode" rel="noreferrer" target="_blank" className={socialStyles.pink} alt="CreativityandCode on Facebook"><p>@CreativityandCode</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faTwitter} size='2x' />
-          <Link to="https://twitter.com/CreativitynCode" target="_blank" className={socialStyles.green}  alt="CreativitynCode on Twitter"><p>@CreativitynCode</p></Link>
+          <Link to="https://twitter.com/CreativitynCode" target="_blank" className={socialStyles.green} rel="noreferrer" alt="CreativitynCode on Twitter"><p>@CreativitynCode</p></Link>
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faInstagram} size='2x' />
-          <Link to="https://www.instagram.com/creativityandcode/" target="_blank" alt="CreativityandCode on Instagram" className={socialStyles.yellow}><p>@CreativityandCode</p></Link>  
+          <Link to="https://www.instagram.com/creativityandcode/" target="_blank" alt="CreativityandCode on Instagram" rel="noreferrer"className={socialStyles.yellow}><p>@CreativityandCode</p></Link>  
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faTwitch} size='2x' />
-          <Link to="https://www.twitch.tv/codeandcreativity" target="_blank" alt="CreativityandCode on Instagram"><p>@CodeAndCreativity</p></Link>  
+          <Link to="https://www.twitch.tv/codeandcreativity" target="_blank" alt="CreativityandCode on Instagram" rel="noreferrer"><p>@CodeAndCreativity</p></Link>  
           </li>
         </ul>
       </section>
