@@ -39,7 +39,7 @@ const Slider = () => {
                     I spread happiness by designing and developing websites and apps 
                     that that are attractive, usable and accessible to everyone.
                     Over the course of my career, I have been lucky enough to work for small businesses, entreprenuers, design agencies, 
-                    as well as corporations doing what I love. 
+                    as well as corporations, doing design and development.  
                   </p>
                 </div>
               </div>
@@ -58,10 +58,9 @@ const Slider = () => {
           <div className={swiperStyles.swiperSlideContainer}>
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
-                <h2 className={swiperStyles.purple}>Graphic Design for Print</h2>
-                  <p>I have a degree in graphic design, and have experience with 
-                    brand design, package design, brochure design -- you name it! 
-                    I've probably done it! 
+                <h2 className={swiperStyles.purple}>Graphic Design</h2>
+                  <p>I have a degree in graphic design, and have been involved with many design projects for print and web. I have designed graphics for major retail outlets, print materials for major corporations, and brand design for small businesses. 
+                    
                   </p>
                 </div>
               </div>
@@ -81,7 +80,7 @@ const Slider = () => {
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
                 <h2 className={swiperStyles.pink}>And More!</h2>
-                  <p>Need a snazzy e-mail template or, social media graphics? Are you a streamer in need of some awesome brand design? I love a challenge.</p>
+                  <p>Need a snazzy e-mail template or, social media graphics? Are you a streamer in need of some awesome brand design? I want to design and develop cool stuff. When I'm not working with a client, I am always working on my own creative projects and coming up with ideas.</p>
                 </div>
               </div>
             <div className={swiperStyles.slideRight}>
