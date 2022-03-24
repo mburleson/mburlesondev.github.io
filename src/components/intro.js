@@ -20,7 +20,7 @@ const Intro = () => {
                 layout="constrained"
                 width={600}
                />
-    <Link to="/about"><button>Read More About Me</button></Link>
+    <Link to="/about"><button aria-label="click to read more">Read More About Me</button></Link>
     </section>
 
   )

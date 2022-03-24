@@ -34,7 +34,7 @@ const ContactPage = () => {
         <h3>Your Message:</h3>
           <textarea name="message" id="message" rows="10" />
         </label>
-        <button type="submit">Send</button>
+        <button type="submit" aria-label="click to send message">Send</button>
       </form>
     </section>
   </Layout>
