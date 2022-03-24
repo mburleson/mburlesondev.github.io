@@ -7,8 +7,7 @@ const ContactPage = () => {
     <Layout pageTitle="Contact Me">
      <section className={contactStyles.contactTop}>
        <h1>Contact Me</h1>
-       <p>Chances are, you have perused my site, and decided you would like to work with me. Great! Or, you have some questions. Also, great!
-         I would love the chance to speak with you.
+       <p>You have some questions? I would love the chance to speak with you. Just want to gab? Gab away!
          Fill out the form below, and I will get back to as soon as I can!</p>
      </section>
       <section className={contactStyles.contactFormSection}>
