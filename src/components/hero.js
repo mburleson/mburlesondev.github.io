@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import * as heroStyles from './hero.module.css'
-import 'animate.css';
+import 'animate.css'
 
 const Hero = () => {
   return (

@@ -14,6 +14,7 @@ module.exports = {
       "gatsby-plugin-fontawesome-css",
       "gatsby-plugin-anchor-links",
       "gatsby-plugin-gatsby-cloud",
+      "gatsby-plugin-scroll-reveal",
       {
         resolve: "gatsby-plugin-google-analytics",
         options: {

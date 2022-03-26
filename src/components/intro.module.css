@@ -1,21 +1,27 @@
 .intro-section {
   display: flex;
-  flex-flow:column nowrap;
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
+  flex-flow:row nowrap;
   background-color: #333;
   padding: 200px 0;
+  justify-content: space-evenly;
 }
 
-.intro-section h1{
+.middle-text{
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.middle-text h1{
   font-family: 'Dosis', sans-serif;
-  font-size: 5rem;
+  font-size: 9rem;
   font-weight: 800;
-  margin:0;
+  margin:0 0 100px 0;
 }
 
-.intro-section p{
+.middle-text p{
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-weight: 600;
@@ -23,17 +29,17 @@
   text-align: center;
   max-width:700px;
   line-height: 70px;
-  margin: 55px 0 20px 0;
+  margin: 0 0 200px 0;
 }
 
-.intro-section h3 {
+.middle-text h3 {
   font-family: 'Dosis', sans-serif;
   color:#CCCCCC;
   font-size: 3rem;
   font-weight: 600;
 }
 
-.intro-section button{
+.middle-text button{
   margin-top:150px;
   color:black;
   font-size: 1.5rem;
@@ -41,7 +47,7 @@
   padding: 20px 0px;
 }
 
-.intro-section button:hover{
+.middle-text button:hover{
   color:#fff;
 }
 
@@ -61,22 +67,49 @@
   color:#F2B21B;
 }
 
+.side-star{
+  display: flex;
+  flex-flow:column;
+  flex-grow: 1;
+}
 
+.side-star-start{
+  display: inline-flex;
+  justify-content: flex-start;
+  margin-bottom: 110px;
+}
+
+.side-star-middle{
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.side-star-end{
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-bottom: 110px;
+}
 
 @media (min-width: 320px) and (max-width: 767.98px){
-  .intro-section p {
+  .middle-text p {
     font-size: 1.85rem;
     text-align: center;
     max-width:700px;
     line-height: 50px;  
+    margin: 0 0 50px 0;
   }
 
-  .intro-section{
-    padding: 0 20px 200px;
+  .middle-text{
+    padding: 0 20px 0px;
   }
 
   p.two {
     font-size: 1.7rem;
+  }
+
+  .side-star{
+    display: none;
   }
 
 }

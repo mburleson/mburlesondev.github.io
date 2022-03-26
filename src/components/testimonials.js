@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faQuoteLeft, faQuoteRight} from '@fortawesome/free-solid-svg-icons'
 import * as testimonalsStyles from './testimonials.module.css'
+import 'animate.css'
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */

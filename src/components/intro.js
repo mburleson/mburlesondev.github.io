@@ -3,26 +3,226 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as introStyles from './intro.module.css'
-import 'animate.css';
+import 'animate.css'
+
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
 const Intro = () => {
   return (
     <section className={introStyles.introSection}>
-    
-      <h1 className={introStyles.yellow}>Hi!</h1>
-   
-   <p>My Name is <span className={introStyles.pink}>Megan Burleson</span></p>
-    <p>I am a <span className={introStyles.purple}>Designer & Developer</span></p>
-    <p>and I Spread Happiness with</p>
+    <div className={introStyles.sideStar}>
+    <div className={introStyles.sideStarEnd} 
+        data-sal="fade-in"
+        data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="800" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+      >
+    <StaticImage src="../images/pinkstar.png" 
+                  alt="code and creativity" 
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={80}
+                />
+    </div>
+    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+       >
+    <StaticImage src="../images/yellowstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={80}
+               />
+    </div>
+
+    <div className={introStyles.sideStarMiddle} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="800" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/purplestar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={60}
+               />
+    </div>
+    <div className={introStyles.sideStarEnd} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/greenstar.png" 
+                  alt="code and creativity" 
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={80}
+                />
+    </div>
+    <div className={introStyles.sideStarMiddle} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/pinkstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={40}
+               />
+    </div>
+
+    <div className={introStyles.sideStarStart} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/yellowstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={80}
+               />
+    </div>
+    <div className={introStyles.sideStarEnd} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/purplestar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={60}
+               />
+    </div>
+    </div>
+    <div className={introStyles.middleText}>
+    <h1 className={introStyles.yellow}>Hi!</h1>
+   <p data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+       >My Name is <span className={introStyles.pink}>Megan Burleson</span></p>
+    <p
+    data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+       >I am a <span className={introStyles.purple}>Designer <span className={introStyles.yellow}>&</span> Developer</span></p>
+    <p
+    data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >and I Spread Happiness with</p>
+    <div data-sal="slide-right" data-sal-delay="1000" data-sal-duration="2000" data-sal-easing="easeInOutBack"
+    >   
     <StaticImage src="../images/cnc2.png" 
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="constrained"
                 width={600}
                />
-    <Link to="/about"><button aria-label="click to read more">Read More About Me</button></Link>
+               </div> 
+    <Link to="/about"><button aria-label="click to read more"
+    data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >Read More About Me</button></Link>
+    </div>    
+    <div className={introStyles.sideStar}>
+
+    <div className={introStyles.sideStarStart} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/greenstar.png" 
+                  alt="code and creativity" 
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={80}
+                />
+    </div>
+    <div className={introStyles.sideStarMiddle} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/pinkstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={40}
+               />
+    </div>
+
+    <div className={introStyles.sideStarStart} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/yellowstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={80}
+               />
+    </div>
+    <div className={introStyles.sideStarEnd} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/purplestar.png" 
+                  alt="code and creativity" 
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={60}
+                />
+    </div>
+    <div className={introStyles.sideStarMiddle} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/greenstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={80}
+               />
+    </div>
+
+    <div className={introStyles.sideStarStart} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/pinkstar.png" 
+                alt="code and creativity" 
+                placeholder="blurred"
+                layout="constrained"
+                width={40}
+               />
+    </div>
+    <div className={introStyles.sideStarEnd} data-sal="fade-in"
+    data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="500" // adds delay to the animation (from 5 to 1000 ms)
+       data-sal-easing="ease" // sets easing for the animation (see easings.net for reference) 
+    >
+    <StaticImage src="../images/yellowstar.png" 
+                  alt="code and creativity" 
+                  placeholder="blurred"
+                  layout="constrained"
+                  width={80}
+                />
+    </div>
+    </div>
     </section>
 
   )
