@@ -3,16 +3,18 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import * as introStyles from './intro.module.css'
-
+import 'animate.css';
 
 /* Step 2: Define your component. Note that your
 component name should start with a capital letter. */
 const Intro = () => {
   return (
     <section className={introStyles.introSection}>
+    
       <h1 className={introStyles.yellow}>Hi!</h1>
-      <p>My Name is <span className={introStyles.pink}>Megan Burleson</span><br></br>
-    I am a <span className={introStyles.purple}>Designer & Developer</span></p>
+   
+   <p>My Name is <span className={introStyles.pink}>Megan Burleson</span></p>
+    <p>I am a <span className={introStyles.purple}>Designer & Developer</span></p>
     <p>and I Spread Happiness with</p>
     <StaticImage src="../images/cnc2.png" 
                 alt="code and creativity" 
