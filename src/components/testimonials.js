@@ -17,7 +17,7 @@ const Testimonials = () => {
             layout="fixed"
             width={50}/>
       <h2 id="testimonials">Testimonials</h2>
-      <blockquote>
+      <blockquote data-sal="slide-right" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
       <p>Megan is a pleasure to work with. She listens to your 
 ideas, and turns them into reality. I am thrilled with the work she did 
@@ -27,7 +27,7 @@ design</p>
       <FontAwesomeIcon icon={faQuoteRight} size="2x" />
       <p className={testimonalsStyles.quoteAuthor}>Emily Knight</p>
      </blockquote>
-     <blockquote>
+     <blockquote data-sal="slide-left" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
       <p>As a client, I am every designer's worst nightmare: last minute, 
 frequent changes, not sure of what I need - you get the picture. Megan 
@@ -37,7 +37,7 @@ have us!</p>
       <FontAwesomeIcon icon={faQuoteRight} size="2x" />
       <p className={testimonalsStyles.quoteAuthor}>Joel Rash</p>
      </blockquote>
-     <blockquote>
+     <blockquote data-sal="slide-right" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
       <p>Not only is Megan a design whiz, she codes like a demon – and delivers on time and under budget. She asked great questions to get clarity on what I wanted, and used her mad creative skills to give me the best website I’ve ever owned. Plus, she was professional, friendly, and knew her stuff – everything I needed in a web designer.</p>
       <FontAwesomeIcon icon={faQuoteRight} size="2x" />
@@ -47,6 +47,4 @@ have us!</p>
   )
 }
 
-/* Step 3: Export your component so it
-can be used by other parts of your app. */
 export default Testimonials
