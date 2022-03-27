@@ -12,7 +12,7 @@ const Footer = () => {
         <h2><span className={footerStyles.pink}>Thanks</span> for stopping by!</h2>
       </section>
       <section className={footerStyles.footerEnd}>
-      <Link to="/"><p>2022 MeganBurleson.Dev</p></Link>
+      <Link to="/"><p>&copy;2022 MeganBurleson.com</p></Link>
       <p>Built with Gatsby and React</p>
       </section>
     </footer>
