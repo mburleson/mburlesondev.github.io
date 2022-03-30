@@ -13,6 +13,7 @@ const Hero = () => {
                 alt="code and creativity" 
                 placeholder="blurred"
                 layout="constrained"
+                loading="eager"
                 quality={100}
                 width={600}
                 class="animate__animated animate__slideInLeft"
@@ -25,6 +26,7 @@ const Hero = () => {
                 alt="unicorn" 
                 placeholder="blurred"
                 layout="constrained"
+                loading="eager"
                 quality={100}
                 width={480}
                 class="animate__animated animate__slideInUp animate__delay-1s"
