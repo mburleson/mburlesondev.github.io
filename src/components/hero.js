@@ -11,7 +11,6 @@ const Hero = () => {
         <div className={heroStyles.cncContainer}>
           <StaticImage src="../images/cnc.png" 
                 alt="code and creativity" 
-                placeholder="blurred"
                 layout="constrained"
                 loading="eager"
                 quality={100}
@@ -24,7 +23,6 @@ const Hero = () => {
         <div>
           <StaticImage src="../images/bigunicorn.png" 
                 alt="unicorn" 
-                placeholder="blurred"
                 layout="constrained"
                 loading="eager"
                 quality={100}
