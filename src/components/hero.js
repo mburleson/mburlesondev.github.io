@@ -12,6 +12,7 @@ const Hero = () => {
           <StaticImage src="../images/cnc.png" 
                 alt="code and creativity" 
                 layout="constrained"
+                placeholder="blurred"
                 loading="eager"
                 quality={100}
                 width={600}
