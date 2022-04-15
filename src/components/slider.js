@@ -80,7 +80,7 @@ const Slider = () => {
             <div className={swiperStyles.slideLeft}>
                 <div className={swiperStyles.slideLeftContent}>
                 <h2 className={swiperStyles.pink}>And More!</h2>
-                  <p>Need a snazzy e-mail template or, social media graphics? Are you a streamer in need of some awesome brand design? I want to design and develop cool stuff. When I'm not working with a client, I am always working on my own creative projects and coming up with ideas.</p>
+                  <p>I design and develop cool stuff. When I'm not working with a client, I am always working on my own creative projects and coming up with ideas.</p>
                 </div>
               </div>
             <div className={swiperStyles.slideRight}>
