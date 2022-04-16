@@ -13,7 +13,6 @@ const Hero = () => {
                 alt="code and creativity" 
                 layout="constrained"
                 placeholder="blurred"
-                loading="eager"
                 quality={100}
                 width={600}
                 class="animate__animated animate__slideInLeft"
@@ -25,7 +24,6 @@ const Hero = () => {
           <StaticImage src="../images/bigunicorn.png" 
                 alt="unicorn" 
                 layout="constrained"
-                loading="eager"
                 quality={100}
                 width={480}
                 class="animate__animated animate__slideInUp animate__delay-1s"
