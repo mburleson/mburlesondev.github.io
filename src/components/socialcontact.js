@@ -29,7 +29,7 @@ const SocialContact = () => {
           </li>
           <li className={socialStyles.socialSectionItem}>
           <FontAwesomeIcon icon={faTwitch} size='2x' />
-          <Link to="https://www.twitch.tv/codeandcreativity" target="_blank" alt="CreativityandCode on Instagram" rel="noreferrer"><p>@CodeAndCreativity</p></Link>  
+          <Link to="https://www.twitch.tv/creativityandcode" target="_blank" alt="CreativityandCode on Twitch" rel="noreferrer"><p>@CreativityandCode</p></Link>  
           </li>
         </ul>
       </section>
