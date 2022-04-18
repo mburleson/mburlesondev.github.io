@@ -29,7 +29,7 @@ const Header = () => {
             alt="megan burleson designer developer" 
             placeholder="blurred"
             layout="fixed"
-            width={300}
+            width={175}
            />    
         </Link>
         <Link to ="/">
@@ -37,7 +37,7 @@ const Header = () => {
             alt="megan burleson logo" 
             placeholder="blurred"
             layout="constrained"
-            width={50}
+            width={75}
             />
         </Link>
       </div>
