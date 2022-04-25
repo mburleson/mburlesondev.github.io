@@ -1,0 +1,111 @@
+@import url(variables.css);
+@import url(global.css);
+
+.blog-top {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.article-container{
+  display: flex;
+  gap:15px;
+  width: 100%;
+  padding:0 25px;
+  margin-bottom: 100px;
+  flex-flow:row;
+  flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex-flow: column;
+  background-color: #000;
+  border-radius: 20px;
+  padding:15px 15px;
+  flex-basis: 32.5%;
+}
+
+article a img{
+  border-radius: 20px;
+  width: 100%;
+}
+
+.article-content {
+  padding:10px;
+}
+
+article h2 {
+  color:#FFCC00;
+  text-align: left;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+article p.meta{
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-page-container{
+  display: inline-flex;
+  margin-bottom: 100px;
+  justify-content: center;
+  gap:20px;
+  flex-basis: 100%;
+  padding: 0 25px;
+}
+
+main{
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #000;
+  border-radius: 20px;
+  padding:15px 15px;
+  flex-basis: 80%;
+}
+
+.blog-post-content{
+  padding:20px 50px;
+}
+
+.blog-post-content p{
+  font-size: 1.5rem;
+}
+
+.blog-post-content p.meta{
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.side-bar{
+  display: flex;
+  flex-flow: column;
+}
+
+.bio-pic{
+  width:80%;
+  border-radius: 200px;
+  margin:0 auto;
+}
+
+main img {
+  border-radius: 20px;
+}
+
+.blog-post h1{
+  color:#FFCC00;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p {
+color:#ffffff;
+}
+
+

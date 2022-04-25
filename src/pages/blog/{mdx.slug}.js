@@ -2,28 +2,27 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../../components/layout'
+
+import BlogLayout from '../../components/bloglayout'
+import * as blogStyles from '../../components/blog.module.css'
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
-      <GatsbyImage
+    <BlogLayout pageTitle={data.mdx.frontmatter.title}>
+    <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
       />
-      <p>
-        Photo Credit:{" "}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
+    <section className={blogStyles.blogPostContent}> 
+    <h1>{data.mdx.frontmatter.title}</h1>
+      <p className={blogStyles.meta}>{data.mdx.frontmatter.date} | {data.mdx.frontmatter.tags} | {data.mdx.frontmatter.category}</p> 
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
-    </Layout>
+      </section>
+    </BlogLayout>
   )
 }
 
@@ -33,9 +32,12 @@ export const query = graphql`
       frontmatter {
         title
         date
+        tags
+        category
+        thumbnail {
+          absolutePath
+        }
         hero_image_alt
-        hero_image_credit_link
-        hero_image_credit_text
         hero_image {
           childImageSharp {
             gatsbyImageData
