@@ -2,6 +2,8 @@
   /* primitives */
   /* font-family */
   --font-sans: 'Dosis';
+  --font-monospace: ;
+  --font-serif: ;
 
   /* palette */
   --white: #fff;
@@ -13,8 +15,10 @@
   --purple:#856ffb;
   --green:#45d8dd;
   
+
+
   /* radii */
-  --radius: 20px;
+  --radius-sm: 4px;
 
   /* spacing */
   --space-sm: 4px;
@@ -54,7 +58,7 @@
   /* colors */
   --primary: #4a90e2;
   --background: var(--gray);
-  --border: var(--black);
+  --border: var(--black-fade-5);
 
   /* text */
   /* color */
