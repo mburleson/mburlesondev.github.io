@@ -2,9 +2,7 @@ import * as React from 'react'
 import {useStaticQuery, graphql } from 'gatsby'
 import Header from '../components/header'
 import Footer from '../components/footer'
-import * as layoutStyles from './layout.module.css'
-
-
+import * as blogStyles from  './blogstyles.module.css'
 
 const BlogLayout = ({ pageTitle, children }) => {
 
@@ -20,7 +18,7 @@ const BlogLayout = ({ pageTitle, children }) => {
     }
   `)
   return (
-    <div className={layoutStyles.container}>
+    <div className={blogStyles.pageContainer}>
       <Header></Header>
       <title>{pageTitle} - {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
       <link rel="icon" href={data.site.siteMetadata.icon}/>

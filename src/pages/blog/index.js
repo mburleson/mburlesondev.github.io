@@ -1,10 +1,12 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import BlogLayout from '../../components/bloglayout'
+import * as blogStyles from  '../../components/blogstyles.module.css'
 
 const BlogPage = ({ data }) => {
   return (
     <BlogLayout pageTitle="My Blog Posts">
+    <section className={blogStyles.articleContainer}>
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
@@ -13,10 +15,11 @@ const BlogPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p>Posted: {node.frontmatter.date}</p>
+            <p className={blogStyles.meta}>Posted: {node.frontmatter.date}</p>
           </article>
         ))
       }
+      </section>
     </BlogLayout>
   )
 }

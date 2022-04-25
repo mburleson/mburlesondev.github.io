@@ -3,13 +3,15 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import BlogLayout from '../../components/bloglayout'
+import * as blogStyles from  '../../components/blogstyles.module.css'
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
 
   return (
     <BlogLayout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+    <section className={blogStyles.postContainer}>
+      <p className={blogStyles.meta}>{data.mdx.frontmatter.date}</p>
       <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
@@ -23,6 +25,7 @@ const BlogPost = ({ data }) => {
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
+      </section>
     </BlogLayout>
   )
 }
