@@ -58,7 +58,7 @@ h3 {
   text-align: right;
 }
 
-.cnc-image{
+.cnc-image-container{
   display: flex;
   justify-content: center;
 }
