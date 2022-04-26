@@ -18,8 +18,7 @@ footer {
 .footer-end {
   font-weight: 600;
   color: black;
-  background-image: url(../images/footer-bg.png);
-  background-size: 20%;
+  background-color: #856ffb;
   display:flex;
   flex-flow: row wrap;
   align-self: stretch;
