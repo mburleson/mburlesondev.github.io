@@ -18,7 +18,17 @@ body {
   }
 
  .post-container {
-   
+    display: inline-flex;
+ } 
+
+ .post{
+    display:flex;
+    flex-direction: column;
+ }
+
+ .sidebar{
+    display:flex;
+    flex-direction: column;
  } 
 
 .article-container{

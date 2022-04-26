@@ -23,15 +23,21 @@ const AboutPage = () => {
              width={250}/>
             </div>
            <div className={aboutStyles.aboutSectionTopItem2}>
-           <p>After college, while starting my career as a graphic designer designing stationery for major retail outlets, and print materials for the corporate world — I became fascinated by web design and development. I fired up my left brain and taught myself a little bit of <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
+           <p>After college, I started my career as a graphic designer by designing stationery for major retail outlets, and print materials for the corporate world, and then I became fascinated by web design and development. I fired up my left brain and taught myself a little bit of <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
            <StaticImage src="../images/books.png" 
             alt="megan burleson designer developer" 
             placeholder="blurred"
             layout="fixed"
             width={250}/>
         </div>
-        <h3><span className={aboutStyles.yellow}>Then, in 2006, I landed my first web development job. I was able to bring my design skill to the position as well!</span></h3><h3>
-I began designing and developing professionally and never looked back.</h3>
+        <h3><span className={aboutStyles.yellow}>In 2006, I found a job that combined my two loves: Graphic Design and Coding - and it confirmed to me that I had I found my passion.</span></h3>
+        <h3>Now, I Spread Happiness with</h3>
+        <StaticImage src="../images/cnc2.png" 
+                alt="creativity and code" 
+                placeholder="blurred"
+                layout="constrained"
+                width={400}
+               />
         </div> 
         <div className={aboutStyles.aboutSectionSkills}>
           <h1>Skills</h1>
