@@ -32,12 +32,13 @@ const AboutPage = () => {
         </div>
         <h3><span className={aboutStyles.yellow}>In 2006, I found a job that combined my two loves: Graphic Design and Coding - and it confirmed to me that I had I found my passion.</span></h3>
         <h3>Now, I Spread Happiness with</h3>
+        <div className={aboutStyles.cncImage}>
         <StaticImage src="../images/cnc2.png" 
-                alt="creativity and code" 
-                placeholder="blurred"
-                layout="constrained"
-                width={400}
-               />
+            alt="megan burleson designer developer" 
+            placeholder="blurred"
+            layout="fixed"
+            width={335}/>
+        </div>       
         </div> 
         <div className={aboutStyles.aboutSectionSkills}>
           <h1>Skills</h1>

@@ -58,6 +58,11 @@ h3 {
   text-align: right;
 }
 
+.cnc-image{
+  display: flex;
+  justify-content: center;
+}
+
 .about-section-skills {
   display: flex;
     flex-flow: column;
