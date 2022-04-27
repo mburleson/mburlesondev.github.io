@@ -43,7 +43,7 @@ article {
   border-radius: 20px;
 }  
 
-h2 {
+.article-container h2 {
   font-family: 'Dosis', sans-serif;
   color: #F2B21B;
   text-align: left;
@@ -51,7 +51,7 @@ h2 {
 }
 
 
-h2 a {
+.article-container h2 a {
   color: #F2B21B;
   text-decoration: none;
 }
