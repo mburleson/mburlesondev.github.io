@@ -15,6 +15,12 @@ module.exports = {
           path: `${__dirname}/blog`,
         }
       },
+      {
+        resolve: 'gatsby-plugin-manifest',
+        options: {
+          icon: 'src/images/favicon.png',
+        },
+      },
       "gatsby-plugin-mdx",
       "gatsby-plugin-image",
       "gatsby-plugin-sharp",
