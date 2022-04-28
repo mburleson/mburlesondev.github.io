@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import BlogLayout from '../../components/bloglayout'
 import * as blogStyles from  '../../components/blogstyles.module.css'
 
@@ -10,12 +11,22 @@ const BlogPage = ({ data }) => {
       {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
+            <Link to={`/blog/${node.slug}`}>
+              <GatsbyImage 
+                alt={node.frontmatter.thumbnail_alt} 
+                image={node.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
+                className={blogStyles.thumbnail_img}
+                />
+            </Link>
+            <section className={blogStyles.articleContent}>
             <h2>
               <Link to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p className={blogStyles.meta}>Posted: {node.frontmatter.date}</p>
+            <p>{node.frontmatter.excerpt}</p>
+            <Link to={`/blog/${node.slug}`}><button>read more</button></Link>
+            </section>
           </article>
         ))
       }
@@ -26,11 +37,19 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+    allMdx(sort: {fields: frontmatter___date, order: ASC}) {
       nodes {
         frontmatter {
-          date
           title
+          date
+          category
+          excerpt
+          thumbnail {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+          thumbnail_alt
         }
         id
         slug

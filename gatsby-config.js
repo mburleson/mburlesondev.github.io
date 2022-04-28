@@ -4,8 +4,8 @@ module.exports = {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",
       description: "Graphic Designer & Frontend Developer",
-      icon: "../images/favicon.ico",
-      image: "../images/favicon.ico",
+      icon: "../images/favicon.png",
+      image: "../images/favicon.png",
     },
     plugins: [
       {

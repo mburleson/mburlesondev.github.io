@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import BlogLayout from '../../components/bloglayout'
@@ -12,20 +12,18 @@ const BlogPost = ({ data }) => {
     <BlogLayout pageTitle={data.mdx.frontmatter.title}>
     <section className={blogStyles.postContainer}>
       <section className={blogStyles.post}>
-        <p className={blogStyles.meta}>{data.mdx.frontmatter.date}</p>
-        <GatsbyImage
+      <GatsbyImage
           image={image}
           alt={data.mdx.frontmatter.hero_image_alt}
+          className={blogStyles.hero_image}
         />
-        <p>
-          Photo Credit:{" "}
-          <a href={data.mdx.frontmatter.hero_image_credit_link}>
-            {data.mdx.frontmatter.hero_image_credit_text}
-          </a>
-        </p>
-        <MDXRenderer>
-          {data.mdx.body}
-        </MDXRenderer>
+            <p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p>
+      <h2>{data.mdx.frontmatter.title}</h2>
+        <section className={blogStyles.postContent}>
+          <MDXRenderer>
+            {data.mdx.body}
+          </MDXRenderer>
+        </section>  
         </section>
         <section className={blogStyles.sidebar}>
 
