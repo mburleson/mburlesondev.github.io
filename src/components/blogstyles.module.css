@@ -47,16 +47,53 @@ body {
   padding:10px 20px;
 }
 
+.post-content h2{
+  font-size: 2rem;
+}
+
+.post-content h3{
+  color:#856ffb;
+  font-size: 1.75rem;
+}
+
  .post-content p {
    color:#FFFFFF;
    font-size: 1.5rem;
  }
 
- .post-breadcrumb{
+ .post-content p a{
+  color:#45d8dd;
+  text-decoration: none;
+ }
+
+ .post-content hr {
+   margin:20px 0 25px 0;
+   color:#ff44a9;
+   font-weight: 600;
+ }
+
+ .post-content ol li, .post-content ul li {
   color:#FFFFFF;
+  font-size: 1.75rem;
+ }
+
+ .post-content ol li a, .post-content ul li a{
+   color:#45d8dd;
+   text-decoration: none;
+   font-weight: 500;
+ }
+
+ .post-content ol li a:hover, .post-content ul li a:hover{
+  color:#856ffb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+ .post-breadcrumb{
+  color:#ff44a9;
+   font-weight: 600;
   font-size: 1.5rem;
   margin:20px 0 0 15px;
-  font-weight: 600;
 
  }
 
