@@ -10,6 +10,7 @@ const BlogPost = ({ data }) => {
 
   return (
     <BlogLayout pageTitle={data.mdx.frontmatter.title}>
+    <section className={blogStyles.breadcrumbContainer}><p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p></section>
     <section className={blogStyles.postContainer}>
       <section className={blogStyles.post}>
       <GatsbyImage
@@ -17,7 +18,7 @@ const BlogPost = ({ data }) => {
           alt={data.mdx.frontmatter.hero_image_alt}
           className={blogStyles.hero_image}
         />
-            <p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p>
+            
       <h2>{data.mdx.frontmatter.title}</h2>
         <section className={blogStyles.postContent}>
           <MDXRenderer>

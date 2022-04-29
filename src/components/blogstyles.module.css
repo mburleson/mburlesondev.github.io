@@ -17,9 +17,10 @@ body {
   flex-direction: column;
   }
 
+
  .post-container {
     display: flex;
-    padding:20px 15px;
+    padding:10px 15px;
     align-items: stretch;
     gap:20px;
  } 
@@ -29,6 +30,7 @@ body {
     flex-direction: column;
     background-color: black;
     padding: 15px;
+    margin:0;
     border-radius: 20px;
     flex-basis: 70%;
  }
@@ -89,12 +91,15 @@ body {
   font-weight: 500;
 }
 
+.breadcrumb-container{
+  display: flex;
+  margin:20px 0 0 20px;
+ } 
+
  .post-breadcrumb{
   color:#ff44a9;
    font-weight: 600;
   font-size: 1.5rem;
-  margin:20px 0 0 15px;
-
  }
 
  .post-breadcrumb a{
@@ -172,3 +177,18 @@ article .thumbnail_img{
   color:black;
 }
 
+@media (min-width: 375px) and (max-width: 810px){
+  .post .hero_image{
+    display: none;
+  }
+
+  .post-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .sidebar{
+    display:flex;
+    flex-direction: row;
+}
+}
