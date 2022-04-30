@@ -7,6 +7,7 @@ import * as blogStyles from  '../../components/blogstyles.module.css'
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
+  const sidebarImage = getImage(data.mdx.frontmatter.sidebar_image)
 
   return (
     <BlogLayout pageTitle={data.mdx.frontmatter.title}>
@@ -27,7 +28,10 @@ const BlogPost = ({ data }) => {
         </section>  
         </section>
         <section className={blogStyles.sidebar}>
-
+        <GatsbyImage
+          image={sidebarImage}
+          alt="Megan Burleson"
+        />
         </section>
         </section>
     </BlogLayout>
@@ -44,6 +48,11 @@ export const query = graphql`
         hero_image_credit_link
         hero_image_credit_text
         hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        sidebar_image {
           childImageSharp {
             gatsbyImageData
           }
