@@ -97,6 +97,7 @@ body {
  } 
 
  .post-breadcrumb{
+  display:flex;
   color:#ff44a9;
    font-weight: 600;
   font-size: 1.5rem;
@@ -115,6 +116,7 @@ body {
  .sidebar{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: black;
     padding: 25px 15px;
     border-radius: 20px;
@@ -233,8 +235,9 @@ article .thumbnail_img{
     flex-flow: column;
   }
 
-  .sidebar{
-    display:flex;
-    flex-direction: row;
+  article {
+    flex-basis: 100%;
   }
+
+
 }
