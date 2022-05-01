@@ -116,10 +116,56 @@ body {
     display:flex;
     flex-direction: column;
     background-color: black;
-    padding: 15px;
+    padding: 25px 15px;
     border-radius: 20px;
     flex-basis: 30%;
  } 
+
+ .sidebar a {
+   text-decoration: none;
+ }
+
+.sidebar-image{
+  display: flex;
+  border: #F2B21B 2px solid;
+  border-radius: 50%;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.sidebar ul {
+  display:flex;
+  flex-flow: row;
+  gap: 25px;
+}
+
+.sidebar ul li {
+
+}
+
+.sidebar h2 {
+  margin:0;
+}
+
+.sidebar hr {
+  margin: 20px 0 25px 0;
+  color: #ff44a9;
+  font-weight: 600;
+}
+
+.sidebar p{
+  color: #FFFFFF;
+  padding:0 25px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 25px;
+}
+
+.sidebar button {
+  display: block;
+  margin: 15px auto;
+  width:50%;
+}
 
 .article-container{
   display: flex;
