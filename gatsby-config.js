@@ -3,6 +3,7 @@ module.exports = {
     siteMetadata: {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",
+      blogUrl: "https://MeganBurleson.com/blog",
       description: "Graphic Designer & Frontend Developer",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
@@ -29,6 +30,59 @@ module.exports = {
       "gatsby-plugin-anchor-links",
       "gatsby-plugin-gatsby-cloud",
       "gatsby-plugin-scroll-reveal",
+      {
+        resolve: `gatsby-plugin-feed`,
+        options: {
+          query: `
+            {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  siteUrl
+                  site_url: siteUrl
+                }
+              }
+            }
+          `,
+          feeds: [
+            {
+              serialize: ({ query: { site, allMarkdownRemark } }) => {
+                return allMarkdownRemark.edges.map(edge => {
+                  return Object.assign({}, edge.node.frontmatter, {
+                    description: edge.node.excerpt,
+                    date: edge.node.frontmatter.date,
+                    url: site.siteMetadata.blogUrl + edge.node.fields.slug,
+                    guid: site.siteMetadata.blogUrl + edge.node.fields.slug,
+                    custom_elements: [{ "content:encoded": edge.node.html }],
+                  })
+                })
+              },
+              query: `
+                {
+                  allMarkdownRemark(
+                    sort: { order: DESC, fields: [frontmatter___date] },
+                  ) {
+                    edges {
+                      node {
+                        excerpt
+                        html
+                        fields { slug }
+                        frontmatter {
+                          title
+                          date
+                        }
+                      }
+                    }
+                  }
+                }
+              `,
+              output: "/rss.xml",
+              title: "Megan Burleson Designer & Developer Unicorn",
+            },
+          ],
+        },
+      },
       {
         resolve: "gatsby-plugin-google-analytics",
         options: {
