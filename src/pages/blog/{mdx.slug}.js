@@ -36,7 +36,6 @@ const BlogPost = ({ data }) => {
           image={sidebarImage}
           alt="Megan Burleson"
           className={blogStyles.sidebarImage}
-          
         />
         <ul>
         <li><Link to="https://www.facebook.com/CreativityandCode" rel="noreferrer" target="_blank" alt="CreativityandCode on Facebook"> <FontAwesomeIcon icon={faFacebook} size='2x' /></Link></li>
@@ -77,6 +76,7 @@ export const query = graphql`
           }
         }
       }
+      body
     }
   }
 `
