@@ -3,6 +3,7 @@ module.exports = {
     siteMetadata: {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",
+      blogUrl: "https://MeganBurleson.com/blog",
       description: "Graphic Designer & Frontend Developer",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
@@ -38,6 +39,59 @@ module.exports = {
           head: false,
         },
       },
+      {
+        resolve: `gatsby-plugin-feed`,
+        options: {
+          query: `
+            {
+              site {
+                siteMetadata {
+                  title
+                  description
+                  blogUrl
+                  blog_url: blogUrl
+                }
+              }
+            }
+          `,
+          feeds: [
+            {
+              serialize: ({ query: { site, allMdx } }) => {
+                return (
+                   allMdx.nodes.map(node => {
+                    return Object.assign({}, node.frontmatter, {
+                      description: node.frontmatter.excerpt,
+                      date: node.frontmatter.date,
+                      url:
+                        site.siteMetadata.blogUrl +
+                        node.frontmatter.slug,
+                    })
+                  })
+                )
+              },
+              
+            
+              query: `
+              query {
+                allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+                  nodes {
+                    frontmatter {
+                      title
+                      date
+                      excerpt
+                    }
+                    id
+                    slug
+                  }
+                }
+              }
+            `,
+        output: '/rss.xml',
+        title: "Megan's RSS Feed",
+      },
+          ]
+        },
+      },
     ],
-    
   };
+
