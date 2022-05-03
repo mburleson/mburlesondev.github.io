@@ -3,7 +3,6 @@ module.exports = {
     siteMetadata: {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",
-      blogUrl: "https://MeganBurleson.com/blog",
       description: "Graphic Designer & Frontend Developer",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
@@ -42,37 +41,30 @@ module.exports = {
       {
         resolve: `gatsby-plugin-feed`,
         options: {
-          query: `
-            {
-              site {
-                siteMetadata {
-                  title
-                  description
-                  blogUrl
-                  blog_url: blogUrl
-                }
-              }
-            }
-          `,
           feeds: [
             {
               serialize: ({ query: { site, allMdx } }) => {
                 return (
-                   allMdx.nodes.map(node => {
+                  allMdx.nodes.map(node => {
                     return Object.assign({}, node.frontmatter, {
-                      description: node.frontmatter.excerpt,
-                      date: node.frontmatter.date,
-                      url:
-                        site.siteMetadata.blogUrl +
-                        node.frontmatter.slug,
+                      description: node.excerpt,
+                      date: node.date,
+                      guid: site.siteMetadata.siteUrl + '/blog/' + node.id,
+                      url: site.siteMetadata.siteUrl + '/blog/' + node.slug,
                     })
                   })
                 )
               },
-              
-            
               query: `
-              query {
+              {
+                site {
+                  siteMetadata {
+                    title
+                    description
+                    siteUrl
+                    site_url: siteUrl
+                  }
+                }
                 allMdx(sort: {fields: frontmatter___date, order: DESC}) {
                   nodes {
                     frontmatter {
@@ -87,7 +79,7 @@ module.exports = {
               }
             `,
         output: '/rss.xml',
-        title: "Megan's RSS Feed",
+        title: "Megan Burleson's Blog Feed",
       },
           ]
         },
