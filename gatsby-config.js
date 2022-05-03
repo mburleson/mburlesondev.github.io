@@ -48,9 +48,12 @@ module.exports = {
                   allMdx.nodes.map(node => {
                     return Object.assign({}, node.frontmatter, {
                       description: node.excerpt,
-                      date: node.date,
+                      pubDate: node.date,
                       guid: site.siteMetadata.siteUrl + '/blog/' + node.id,
-                      url: site.siteMetadata.siteUrl + '/blog/' + node.slug,
+                      url: encodeURI(site.siteMetadata.siteUrl + '/blog/' + node.slug),
+                      custom_elements: [
+                        
+                      ]
                     })
                   })
                 )
@@ -71,6 +74,11 @@ module.exports = {
                       title
                       date
                       excerpt
+                      thumbnail {
+                        childImageSharp {
+                          gatsbyImageData
+                        }
+                      }
                     }
                     id
                     slug
