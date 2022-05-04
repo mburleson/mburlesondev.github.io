@@ -64,11 +64,11 @@ const Header = () => {
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
         </li>
-        {/* <li className={headerStyles.navLinkItem}>
+       <li className={headerStyles.navLinkItem}>
           <Link to="/blog" className={headerStyles.navLinkText}>
             Blog
           </Link>
-        </li>  */}
+        </li> 
         <li className={headerStyles.navLinkItem}>
           <Link to="/contact" className={headerStyles.navLinkText} title="Contact Megan" alt="Contact Megan">
             Contact
