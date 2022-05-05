@@ -237,6 +237,7 @@ article .thumbnail_img{
 
   article {
     flex-basis: 100%;
+    margin-bottom: 10px;
   }
 
 

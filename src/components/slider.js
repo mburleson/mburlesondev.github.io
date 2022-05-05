@@ -36,10 +36,7 @@ const Slider = () => {
                 <div className={swiperStyles.slideLeftContent}>
                 <h2 className={swiperStyles.green}>Web Design and Development</h2>
                   <p>
-                    I spread happiness by designing and developing websites and apps 
-                    that that are attractive, usable and accessible to everyone.
-                    Over the course of my career, I have been lucky enough to work for small businesses, entreprenuers, design agencies, 
-                    as well as corporations, doing design and development.  
+                  I spread happiness by designing and developing websites and apps that are attractive, usable, and accessible to everyone. Over the course of my career, I have been lucky enough to work for small businesses, entrepreneurs, design agencies, as well as corporations, doing graphic design and web development.
                   </p>
                 </div>
               </div>
