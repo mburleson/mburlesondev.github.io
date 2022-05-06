@@ -7,6 +7,7 @@ import { } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram, faTwitch, faTwitter, faPinterest, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import BlogLayout from '../../components/bloglayout'
+import SubscriptionForm from '../../components/subscriptionform'
 import * as blogStyles from  '../../components/blogstyles.module.css'
 
 const BlogPost = ({ data }) => {
@@ -52,6 +53,7 @@ const BlogPost = ({ data }) => {
           I spread happiness by combining code and creativity to design graphics and build websites, apps and digital products that are fun, usable and accessible to everyone. Basically, I like to create art and code fun things!</p>
         <Link to="/about"><button>read more</button></Link>
         <hr/>
+        <SubscriptionForm></SubscriptionForm>
         </section>
         </section>
     </BlogLayout>
