@@ -42,13 +42,13 @@ const SubscriptionForm = () => {
 
     return (
         <div className="sub">
-            <h2>Join My Newsletter</h2>
+            <h2>don't miss out!</h2>
             <p>
-               If you've found any of my articles useful, subscribe to receive more quality articles straight to your inbox.
+               If you've found any of my articles useful (or fun!), subscribe to receive more ME straight to your inbox! I'll make it interesting, I promise.
             </p>
 
-            {status === 'SUCCESS' && <p>Please go confirm your subscription!</p>}
-            {status === 'ERROR' && <p>Oops, Something went wrong! try again.</p>}
+            {status === 'SUCCESS' && <p className={blogStyles.success}>Thank You! Now, Go Check Your E-mail!</p>}
+            {status === 'ERROR' && <p className={blogStyles.error}>Oops, Something went wrong! try again.</p>}
 
             <form className="sub__form"
                 action={FORM_URL}

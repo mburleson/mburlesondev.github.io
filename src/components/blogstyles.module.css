@@ -181,6 +181,9 @@ p.sub-tag{
   font-size: 12px;
 }
 
+p.success{color:#45d8dd; font-weight: 300;}
+p.error{color:#F2B21B; font-weight: 300;}
+
 .article-container{
   display: flex;
   flex-wrap: wrap;
