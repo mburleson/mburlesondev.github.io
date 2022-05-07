@@ -60,6 +60,11 @@ const Header = () => {
           </AnchorLink>
         </li>
         <li className={headerStyles.navLinkItem}>
+          <Link to="https://www.behance.net/meganburleson" title="Portfolio" alt="Portfolio" rel="noopener noreferrer" target="_blank">
+            <span className={headerStyles.navLinkText}>Portfolio</span>
+          </Link>
+        </li>
+        <li className={headerStyles.navLinkItem}>
           <AnchorLink to="/#testimonials" title="Testimonials" alt="Testimonials">
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
