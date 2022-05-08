@@ -34,9 +34,9 @@ const ContactPage = () => {
         <h3>Your Message:</h3>
           <textarea name="message" id="message" rows="10" required/>
         </label>
-        <div
+        <div className={contactStyles.recaptcha}
   class="g-recaptcha"
-  data-sitekey="6Ld2QckfAAAAAHz637JKzd-JE-yQ_WREldzTgL-P"
+  data-sitekey="6LdW99MfAAAAAH3qThBDYqjqbVMnnAwkpgsJ4-ky"
 />
         <button type="submit" aria-label="click to send message">Send</button>
         

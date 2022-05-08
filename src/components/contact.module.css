@@ -77,6 +77,11 @@
   margin-bottom: 20px;
 }
 
+.recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-form button {
   align-self: center;
   font-size: 1.5rem;
