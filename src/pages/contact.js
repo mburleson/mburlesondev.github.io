@@ -15,7 +15,7 @@ const ContactPage = () => {
          <h2>About You</h2>
          <label>
             <h3>First Name:</h3>
-           <input type="text" name="firstname" id="firstname" />
+           <input type="text" name="firstname" id="firstname" required/>
         </label>
         <label>
             <h3>Last Name:</h3>
@@ -23,7 +23,7 @@ const ContactPage = () => {
         </label>
         <label>
             <h3>Email:</h3>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required/>
         </label>
         <h2>Message</h2>
         <label>
@@ -32,7 +32,7 @@ const ContactPage = () => {
   </label>
         <label>
         <h3>Your Message:</h3>
-          <textarea name="message" id="message" rows="10" />
+          <textarea name="message" id="message" rows="10" required/>
         </label>
         <button type="submit" aria-label="click to send message">Send</button>
       </form>

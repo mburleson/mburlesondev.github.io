@@ -68,7 +68,7 @@ body {
   text-decoration: none;
  }
 
- .post-content hr {
+ .post-content hr, .sidebar hr {
    margin:20px 0 25px 0;
    color:#ff44a9;
    font-weight: 600;
@@ -147,12 +147,6 @@ body {
 
 .sidebar h2 {
   margin:0;
-}
-
-.sidebar hr {
-  margin: 20px 0 25px 0;
-  color: #ff44a9;
-  font-weight: 600;
 }
 
 .sidebar p{
