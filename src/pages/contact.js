@@ -34,7 +34,12 @@ const ContactPage = () => {
         <h3>Your Message:</h3>
           <textarea name="message" id="message" rows="10" required/>
         </label>
+        <div
+  class="g-recaptcha"
+  data-sitekey="6Ld2QckfAAAAAHz637JKzd-JE-yQ_WREldzTgL-P"
+/>
         <button type="submit" aria-label="click to send message">Send</button>
+        
       </form>
     </section>
   </Layout>

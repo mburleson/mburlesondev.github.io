@@ -8,6 +8,7 @@ module.exports = {
       image: "../images/favicon.png",
     },
     plugins: [
+      `gatsby-plugin-recaptcha`,
       {
         resolve: 'gatsby-plugin-manifest',
         options: {
