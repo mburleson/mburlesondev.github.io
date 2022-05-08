@@ -15,7 +15,7 @@ const Header = () => {
     // const linksHeight = linksRef.current.getBoundingClientRect().height;
 
     if (showLinks) {
-      linksContainerRef.current.style.height = "300px";
+      linksContainerRef.current.style.height = "350px";
     } else {
       linksContainerRef.current.style.height = "0px";
     }
