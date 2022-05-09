@@ -37,7 +37,7 @@ const ContactPage = () => {
         <div className={contactStyles.recaptcha}>
         <div
   class="g-recaptcha"
-  data-sitekey="6LdW99MfAAAAAH3qThBDYqjqbVMnnAwkpgsJ4-ky"
+  data-sitekey="6Lfn9NMfAAAAAOf6eW5pWOFA0kjr0P-blHEFqytR"
 />
         </div>
         
