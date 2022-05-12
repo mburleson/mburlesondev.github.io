@@ -42,6 +42,13 @@ module.exports = {
           path: `${__dirname}/blog`,
         }
       },
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+          name: `portfolio`,
+          path: `${__dirname}/portfolio`,
+        }
+      },
       "gatsby-plugin-fontawesome-css",
       "gatsby-plugin-anchor-links",
       "gatsby-plugin-gatsby-cloud",
