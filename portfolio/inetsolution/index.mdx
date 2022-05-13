@@ -1,0 +1,68 @@
+---
+title: "InetSolution Inc."
+date: 1-1-2017
+excerpt: "I had the pleasure of working with InetSolution Inc. as a graphic designer and frontend developer consultant."
+thumbnail : "./thumb.png"
+thumbnail_alt: "InetSolution"
+---
+import * as portfolioStyles from "../../src/components/portfoliostyles.module.css"
+import { StaticImage } from "gatsby-plugin-image"
+
+import inet1Image from "./dfcu.png"
+import inet2Image from "./CNB.png"
+import inet3Image from "./coulee.jpg"
+import inet4Image from "./mocse.png"
+import inet5Image from "./Mountain_Pacific_HomePage.jpg"
+import inet6Image from "./inetscroll.mp4"
+
+<section className={portfolioStyles.gallery}>
+  <div className={portfolioStyles.galleryItem}>
+    <img src={inet1Image} alt="DFCU"/>
+    <h2>DFCU Financial</h2>
+    <h3>Responsibilities</h3>
+    <p>Front-end Development with HTML/CSS/JavaScript and Kentico, site updates.</p>
+  </div>
+
+  <div className={portfolioStyles.galleryItem}>
+    <img src={inet3Image} alt="Coulee Bank"/>
+    <h2>Coulee Bank</h2>
+    <h3>Responsibilities</h3>
+    <p>Front-end Development and site updates with HTML/CSS/JavaScript and Kentico</p>
+  </div>
+
+
+
+  <div className={portfolioStyles.galleryItem}>
+    <img src={inet4Image} alt="Mocse Bank"/>
+    <h2>Mocse Bank</h2>
+    <h3>Responsibilities</h3>
+    <p>I was the primary UX/UI designer on this project. I gathered client requirements, conducted research, and designed their site with their already established style guidelines. Then, worked with the team to complete the web development using HTML/CSS/JavaScript and Kentico.</p>
+  </div>
+
+
+
+  <div className={portfolioStyles.galleryItem}>
+    <img src={inet5Image} alt="Mountain Pacific Bank (concept)"/>
+    <h2>Mountain Pacific Bank</h2>
+    <h3>Responsibilities</h3>
+    <p>Designed and mocked up layout concept for client using PhotoShop.</p>
+  </div>
+
+  <div className={portfolioStyles.galleryItem}>
+    <img src={inet2Image} alt="CNB"/>
+    <h2>CNB Bank</h2>
+    <h3>Responsibilities</h3>
+    <p>Front-end Development and site updates with HTML/CSS and ASP.Net</p>
+  </div>
+
+
+  <div className={portfolioStyles.galleryItem}>
+  <div className={portfolioStyles.galleryVideo}>
+<video controls><source src={inet6Image} type="video/mp4"/></video>
+</div>
+    <h2>InetSolution Website Concept</h2>
+    <h3>Responsibilities</h3>
+    <p>I was tasked with coming up with a concept to redesign the company website. I used PhotoShop & Illustrator.</p>
+  </div>
+</section>
+
