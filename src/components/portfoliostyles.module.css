@@ -32,7 +32,6 @@ body {
     padding: 15px;
     margin:0;
     border-radius: 20px;
-    width: 100%;
  }
 
  .post .hero_image{
@@ -111,7 +110,8 @@ video{
 .gallery {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 50%;
+  grid-template-rows: masonry;
 }
 
 .gallery-item{
@@ -148,7 +148,7 @@ video{
 }
 
 .gallery-video video {
-  max-width:612px;
+  width:100%;
   display: block;
   margin: 0 auto 20px auto;
 }
@@ -277,6 +277,7 @@ article {
 }
 
 article .thumbnail_img{
+  width:100%;
   border-radius: 10px;
 }
 
@@ -309,7 +310,6 @@ article .thumbnail_img{
   .post-container {
     display: flex;
     flex-flow: column;
-    margin:0;
   }
 
   article {

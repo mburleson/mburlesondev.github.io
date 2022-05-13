@@ -16,6 +16,7 @@ const PortfolioPage = ({ data }) => {
                 alt={node.frontmatter.thumbnail_alt} 
                 image={node.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
                 className={portfolioStyles.thumbnail_img}
+                layout="constrained"
                 />
             </Link>
             <section className={portfolioStyles.articleContent}>

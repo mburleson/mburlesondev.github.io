@@ -16,6 +16,7 @@ const BlogPage = ({ data }) => {
                 alt={node.frontmatter.thumbnail_alt} 
                 image={node.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
                 className={blogStyles.thumbnail_img}
+                layout="constrained"
                 />
             </Link>
             <section className={blogStyles.articleContent}>
