@@ -94,6 +94,9 @@ video{
   max-width:80%;
   display: block;
   margin: 0 auto 20px auto;
+  padding:10px;
+  background-color: #333333;
+  border-radius: 20px;
 }
 
 .portfolio-image{
@@ -110,8 +113,7 @@ video{
 .gallery {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 50%;
-  grid-template-rows: masonry;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .gallery-item{
@@ -124,6 +126,7 @@ video{
 .gallery-item img {
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .gallery-item h2 {

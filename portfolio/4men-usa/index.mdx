@@ -9,14 +9,19 @@ thumbnail_alt: "4Men USA"
 import * as portfolioStyles from "../../src/components/portfoliostyles.module.css"
 import menVideo from "./4menscroll.mp4"
 import menImage from "./4men.png"
+import men2Image from "./4men2.png"
 
-<section className={portfolioStyles.video}>
-<video controls><source src={menVideo} type="video/mp4"/></video>
+
+  <video controls><source src={menVideo} type="video/mp4"/></video>
+<section className={portfolioStyles.gallery}>
+  <div className={portfolioStyles.galleryItem}>
+    <img src={menImage} alt="4Men USA Design 2014"/>
+  </div>
+    <div className={portfolioStyles.galleryItem}>
+    <img src={men2Image} alt="4Men USA Design 2014"/>
+  </div>
 </section>
 
-<section className={portfolioStyles.portfolioImage}>
-<img src={menImage} alt="4Men USA Design 2014"/>
-</section>
 
 ***
 
