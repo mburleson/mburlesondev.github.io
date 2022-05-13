@@ -98,12 +98,12 @@ video{
 }
 
 .portfolio-image{
-  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
 .portfolio-image img{
+  width:100%;
   display: block;
   margin: 0 auto;
 }
