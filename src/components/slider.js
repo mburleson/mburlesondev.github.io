@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./pagination-style.css";
 import * as swiperStyles from './slider.module.css';
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { Link } from 'gatsby'
 
 import { Autoplay, Pagination } from "swiper";
 
@@ -92,7 +92,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-     <OutboundLink href="https://www.behance.net/meganburleson" target="_blank" rel="noreferrer" aria-label="click to see more on Behance"><button>See My Work</button></OutboundLink>
+     <Link to="/portfolio" rel="noreferrer" aria-label="click to see my portfolio"><button>See My Work</button></Link>
     </section>
   );
 }

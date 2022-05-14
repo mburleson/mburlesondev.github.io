@@ -179,11 +179,10 @@ p.success{color:#45d8dd; font-weight: 300;}
 p.error{color:#F2B21B; font-weight: 300;}
 
 .article-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding:20px 15px;
-
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  padding:15px;
 }
 
 article {
@@ -193,7 +192,7 @@ article {
   background-color: black;
   padding: 15px 15px;
   border-radius: 20px;
-  flex-basis: 30%;
+
 }  
 
 .article-container h2{
@@ -243,6 +242,11 @@ article .thumbnail_img{
   .post-container {
     display: flex;
     flex-flow: column;
+  }
+
+  .article-container{  
+    display: flex;
+    flex-direction: column;
   }
 
   article {
