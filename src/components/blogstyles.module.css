@@ -138,11 +138,12 @@ body {
 .sidebar ul {
   display:flex;
   flex-flow: row;
-  gap: 25px;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
-.sidebar ul li {
-
+.sidebar ul li a{
+ text-decoration: none;
 }
 
 .sidebar h2 {
