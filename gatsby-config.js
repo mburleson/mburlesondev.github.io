@@ -8,6 +8,7 @@ module.exports = {
       image: "../images/favicon.png",
     },
     plugins: [
+      `gatsby-plugin-react-helmet`,
       `gatsby-plugin-recaptcha`,
       {
         resolve: 'gatsby-plugin-manifest',
@@ -94,6 +95,12 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      description
+                      image {
+                        childImageSharp {
+                          gatsbyImageData
+                        }
+                      }
                       excerpt
                       thumbnail {
                         childImageSharp {

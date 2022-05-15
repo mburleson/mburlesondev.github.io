@@ -9,13 +9,22 @@ import { faFacebook, faInstagram, faTwitch, faTwitter, faPinterest, faLinkedin }
 import BlogLayout from '../../components/bloglayout'
 import SubscriptionForm from '../../components/subscriptionform'
 import * as blogStyles from  '../../components/blogstyles.module.css'
+import Seo from '../../components/seo.js';
 
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
+  const post = data.mdx;
+  const { imageO } = post.frontmatter;
+  const imagePath = imageO || imageO.childImageSharp.fixed.src;
   const sidebarImage = getImage(data.mdx.frontmatter.sidebar_image)
 
   return (
-    <BlogLayout pageTitle={data.mdx.frontmatter.title}>
+    <BlogLayout>
+      <Seo 
+        pageTitle={data.mdx.frontmatter.title}
+        description={post.frontmatter.description}
+        imageO={imagePath} 
+      />
     <section className={blogStyles.breadcrumbContainer}><p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p></section>
     <section className={blogStyles.postContainer}>
       <section className={blogStyles.post}>
@@ -24,7 +33,6 @@ const BlogPost = ({ data }) => {
           alt={data.mdx.frontmatter.hero_image_alt}
           className={blogStyles.hero_image}
         />
-            
       <h2>{data.mdx.frontmatter.title}</h2>
         <section className={blogStyles.postContent}>
           <MDXRenderer>
@@ -65,7 +73,13 @@ export const query = graphql`
     mdx(id: {eq: $id}) {
       frontmatter {
         title
+        description
         date
+        imageO{
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
         hero_image_alt
         hero_image_credit_link
         hero_image_credit_text
