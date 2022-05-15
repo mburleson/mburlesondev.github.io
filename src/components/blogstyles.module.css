@@ -70,7 +70,7 @@ body {
 
  .post-content hr, .sidebar hr {
    margin:20px 0 25px 0;
-   color:#ff44a9;
+   color:#ff44a9 !important;
    font-weight: 600;
  }
 
@@ -98,7 +98,7 @@ body {
 
  .post-breadcrumb{
     display:flex;
-    color:#ff44a9;
+    color:#ff44a9 !important;
     font-weight: 600;
     font-size: 1.5rem;
  }
