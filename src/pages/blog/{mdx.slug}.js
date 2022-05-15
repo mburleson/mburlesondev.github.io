@@ -12,10 +12,10 @@ import * as blogStyles from  '../../components/blogstyles.module.css'
 import Seo from '../../components/seo.js';
 
 const BlogPost = ({ data }) => {
-  const image = getImage(data.mdx.frontmatter.hero_image)
+  const hero = getImage(data.mdx.frontmatter.hero_image)
   const post = data.mdx;
-  const { imageO } = post.frontmatter;
-  const imagePath = imageO || imageO.childImageSharp.fixed.src;
+  const { image } = post.frontmatter;
+  const imagePath = image || imageO.childImageSharp.fixed.src;
   const sidebarImage = getImage(data.mdx.frontmatter.sidebar_image)
 
   return (
@@ -23,13 +23,13 @@ const BlogPost = ({ data }) => {
       <Seo 
         pageTitle={data.mdx.frontmatter.title}
         description={post.frontmatter.description}
-        imageO={imagePath} 
+        image={imagePath} 
       />
     <section className={blogStyles.breadcrumbContainer}><p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p></section>
     <section className={blogStyles.postContainer}>
       <section className={blogStyles.post}>
       <GatsbyImage
-          image={image}
+          image={hero}
           alt={data.mdx.frontmatter.hero_image_alt}
           className={blogStyles.hero_image}
         />
@@ -75,7 +75,7 @@ export const query = graphql`
         title
         description
         date
-        imageO{
+        image{
           childImageSharp {
             gatsbyImageData
           }
