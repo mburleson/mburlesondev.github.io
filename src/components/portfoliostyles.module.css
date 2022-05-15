@@ -12,6 +12,10 @@ body {
   background-color: #333333;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page-container {
   display:flex;
   flex-direction: column;
@@ -259,59 +263,66 @@ p.error{color:#F2B21B; font-weight: 300;}
 
 .article-container{
   display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3,1fr);
-  padding:15px;
+  grid-template-rows: auto;
+  padding:25px 175px;
 }
 
-article {
-  display: flex;
-  flex-flow: column;
-  flex-wrap: wrap;
+.article-container h1{
+  text-align: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns:35% 65%;
   background-color: black;
   padding: 15px 15px;
   margin-bottom: 10px;
   border-radius: 20px;
-  flex-basis: 30%;
 }  
 
-.article-container h2{
+.article-content{
+  color:#FFFFFF;
+  padding: 10px;
+}
+
+
+.article-container h2, .article-container h2 a{
   font-family: 'Dosis', sans-serif;
   color: #F2B21B;
   text-align: left;
   font-size: 2rem;
-}
-
-
-.article-container h2 a {
-  color: #F2B21B;
   text-decoration: none;
 }
 
+
 article .thumbnail_img{
-  width:100%;
   border-radius: 10px;
+  width:100%;
 }
 
-.article-content{
-  padding:10px;
-  color:#FFFFFF;
+.article-content h2 {
+  padding: 0 25px;
+  margin: 0;
 }
 
 .article-content p{
-  font-size: 1rem;
-  line-height: 25px;
-  padding-bottom: 10px;
+  display: block;
+  font-size: 1.5rem;
+  padding: 0 25px 10px 25px;
 }
 
 .article-content button {
-  width:100%;
+  margin: 0 25px;
 }
 
 .article-content a button{
   font-size: 1.5rem;
-  text-decoration: none;
+  bottom: 0;
   color:black;
+  display: block;
+  text-decoration: none;
+  bottom: 0;
+  width:50%;
 }
 
 @media (min-width: 375px) and (max-width: 810px){
@@ -324,9 +335,42 @@ article .thumbnail_img{
     flex-flow: column;
   }
 
-  article {
-    flex-basis: 100%;
-    margin-bottom: 10px;
+  .article-container{  
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .article {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 20px;
+  }  
+
+  .article .thumbnail_img{
+    width:100%;
+    border-radius: 10px;
+  }
+
+  .article-content{
+    display: block;
+    padding:10px;
+  }
+
+  .article-content h2, .article-content h2 a, .article-content p {
+    padding: 10px;
+  }
+
+  
+  .article-content a button{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:black;
+    width:100%;
+    margin:0;
   }
 
   .gallery {

@@ -7,10 +7,13 @@ import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
 const PortfolioPage = ({ data }) => {
   return (
     <PortfolioLayout pageTitle="Portfolio">
+   
     <section className={portfolioStyles.articleContainer}>
+    <h1>Portfolio</h1>
       {
         data.allMdx.nodes.map(node => (
-          <article key={node.id}>
+          <article className={portfolioStyles.article} key={node.id}>
+          <section className={portfolioStyles.articleContent}>
             <Link to={`/portfolio/${node.slug}`}>
               <GatsbyImage
                 alt={node.frontmatter.thumbnail_alt} 
@@ -19,6 +22,7 @@ const PortfolioPage = ({ data }) => {
                 layout="constrained"
                 />
             </Link>
+            </section>
             <section className={portfolioStyles.articleContent}>
             <h2>
               <Link to={`/portfolio/${node.slug}`}>
