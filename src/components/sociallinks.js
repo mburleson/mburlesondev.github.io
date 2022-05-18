@@ -7,7 +7,7 @@ const SocialLinks = () => {
 
   return (
     <section className={linkStyles.container}>
-    <h1>Links</h1>
+    <h1>Freebies</h1>
         <section className={linkStyles.linkSection}>
         <Link to="https://unique-composer-7271.ck.page/a734f1c63a">
         <StaticImage
