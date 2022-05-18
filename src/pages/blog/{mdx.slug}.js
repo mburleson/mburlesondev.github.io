@@ -9,22 +9,14 @@ import { faFacebook, faInstagram, faTwitch, faTwitter, faPinterest, faLinkedin }
 import BlogLayout from '../../components/bloglayout'
 import SubscriptionForm from '../../components/subscriptionform'
 import * as blogStyles from  '../../components/blogstyles.module.css'
-import Seo from '../../components/seo.js';
+
 
 const BlogPost = ({ data }) => {
   const hero = getImage(data.mdx.frontmatter.hero_image)
-  const post = data.mdx;
-  const { image } = post.frontmatter;
-  const imagePath = image || imageO.childImageSharp.fixed.src;
   const sidebarImage = getImage(data.mdx.frontmatter.sidebar_image)
 
   return (
     <BlogLayout>
-      <Seo 
-        pageTitle={data.mdx.frontmatter.title}
-        description={post.frontmatter.description}
-        image={imagePath} 
-      />
     <section className={blogStyles.breadcrumbContainer}><p className={blogStyles.postBreadcrumb}><Link to={`/blog`}>Blog</Link> / <Link to={`/blog/${data.mdx.slug}`}>{data.mdx.frontmatter.title}</Link></p></section>
     <section className={blogStyles.postContainer}>
       <section className={blogStyles.post}>
