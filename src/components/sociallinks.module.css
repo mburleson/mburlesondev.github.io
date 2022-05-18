@@ -61,3 +61,12 @@ body {
   margin: 0 auto;
   border: #F2B21B 2px solid;
 }
+
+@media (min-width: 375px) and (max-width: 810px){
+  .container {
+    margin:10px;
+  }
+  .link-section{
+    display: flex;
+  }
+}
