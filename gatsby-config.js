@@ -51,7 +51,12 @@ module.exports = {
         }
       },
       "gatsby-plugin-fontawesome-css",
-      "gatsby-plugin-anchor-links",
+      {
+        resolve: "gatsby-plugin-anchor-links",
+        options: {
+          offset: -150
+        }
+      },
       "gatsby-plugin-gatsby-cloud",
       "gatsby-plugin-scroll-reveal",
       {

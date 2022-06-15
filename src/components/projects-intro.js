@@ -13,9 +13,8 @@ const ProjectsIndex = () => {
         layout="fixed"
         width={100}
         />
-        And, I Love Doing It!
+        What I Do
       </h2>
-      <p>I have worked on a variety of design and development projects!</p>
     </div>
   )
 }
