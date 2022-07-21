@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGamepad, faWheelchair, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faCube, faPallet, faPalette } from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import Layout from '../components/layout'
 import * as aboutStyles from '../components/about.module.css'
@@ -77,9 +77,8 @@ const AboutPage = () => {
         <div className={aboutStyles.aboutSectionLearning}>
             <h1>Always Learning</h1>
             <ul>
-              <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.yellow} icon={faWheelchair} size='2x' /><p>Right now I am working on earning a certificate in web accessibility</p></li>
-              <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.purple} icon={faReact} size='2x' /><p>I am teaching myself Reactjs and Gatsbyjs by building this site!</p></li>
-              <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.green} icon={faGamepad} size='2x' /><p>Next, I want to design and build games with three.js and blender.</p></li>
+            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.purple} icon={faCube} size='2x' /><p>Currently, I am learning 3D modeling with Blender!</p></li>
+            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.green} icon={faPalette} size='2x' /><p>I am also making a bunch of art, and posting it on Instagram.</p></li>
               <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.pink} icon={faHeart} size='2x' /><p>I love what I do, and I keep myself up to date with current design and coding trends and practices on a regular basis.</p></li>
             </ul>
         </div>
