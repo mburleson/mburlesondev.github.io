@@ -1,5 +1,4 @@
 module.exports = {
-
     siteMetadata: {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",

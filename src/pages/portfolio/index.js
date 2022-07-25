@@ -7,7 +7,6 @@ import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
 const PortfolioPage = ({ data }) => {
   return (
     <PortfolioLayout pageTitle="Portfolio">
-   
     <section className={portfolioStyles.articleContainer}>
     <h1>Portfolio</h1>
       {
@@ -29,6 +28,7 @@ const PortfolioPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
+            <p>{node.frontmatter.tags}</p>
             <p>{node.frontmatter.excerpt}</p>
             <Link to={`/portfolio/${node.slug}`}><button>read more</button></Link>
             </section>
@@ -54,6 +54,7 @@ export const query = graphql`
             }
           }
           thumbnail_alt
+          tags
         }
         id
         slug
