@@ -1,0 +1,43 @@
+.what-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  background-color: black;
+  padding-bottom: 100px;
+
+}
+
+.what-container-item {
+  display: flex;
+  flex-flow:column wrap;
+  align-items: center;
+  justify-content: center;
+  padding-block: min(20vh, 20px);
+}
+
+.what-container-item p{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;   
+  margin:0;
+  max-width:400px;
+  color:#f2f2f2;
+  line-height: 35px;
+}
+
+h2.pink {
+  color: #ff44a9;
+}
+
+h2.purple {
+  color: #856ffb;
+}
+
+h2.green {
+  color: #45d8dd;
+}
+
+h2.yellow {
+  color:#F2B21B;
+}

@@ -84,10 +84,6 @@ const Intro = () => {
                 width={600}
                />
                </div> 
-    <Link to="/about">
-    <button aria-label="click to read more" data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    Read More About Me</button>
-    </Link>
     </div>    
     <div className={introStyles.sideStar}>
 
