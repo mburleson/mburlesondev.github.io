@@ -28,7 +28,6 @@ const PortfolioPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p>{node.frontmatter.tags}</p>
             <p>{node.frontmatter.excerpt}</p>
             <Link to={`/portfolio/${node.slug}`}><button>read more</button></Link>
             </section>
