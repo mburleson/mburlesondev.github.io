@@ -261,6 +261,58 @@ p.sub-tag{
 p.success{color:#45d8dd; font-weight: 300;}
 p.error{color:#F2B21B; font-weight: 300;}
 
+
+.tag-container {
+  display:flex;
+  flex-flow:row;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+
+.tag-container button{
+  background-color: #000;
+  text-transform: lowercase;
+  box-shadow: none;
+}
+
+nav.tag-container button a{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+nav.tag-container button:hover{
+  background-color: #856ffb;
+  box-shadow: none;
+}
+
+.tag-list {
+  display:flex;
+  flex-flow:row;
+  padding: 0 25px;
+}
+
+.tag-list li {
+  padding: 0 2px;
+  list-style: none;
+  background-color: #333;
+  padding:5px 10px;
+  border-radius: 5px;
+  margin: 0 5px 0 0;
+}
+
+.tag-list li a{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  
+}
+
+.tag-list li:hover{
+  background-color:#856ffb;
+}
+
+
 .article-container{
   display: grid;
   grid-template-rows: auto;

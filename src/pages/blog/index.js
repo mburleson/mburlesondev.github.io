@@ -44,6 +44,7 @@ export const query = graphql`
           title
           date
           excerpt
+          tags
           thumbnail {
             childImageSharp {
               gatsbyImageData

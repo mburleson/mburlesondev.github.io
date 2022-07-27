@@ -4,20 +4,16 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import PortfolioLayout from '../../components/portfoliolayout'
 import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
 
-const PortfolioPage = ({ data }) => {
+const Tags = ({ pageContext, data }) => {
+  const { tag } = pageContext;
+  const tagHeader = `${tag}`;
   return (
     <PortfolioLayout pageTitle="Portfolio">
     <section className={portfolioStyles.articleContainer}>
-    <h1>Portfolio</h1>
+    <h1>{tagHeader}</h1>
     <nav className={portfolioStyles.tagContainer}>
-      {data.allMdx.group.map(({ fieldValue }) => (
-        <button>
-         <Link key={fieldValue} to={`/portfolio/${(fieldValue)}`}>
-            {fieldValue}
-          </Link>
-          </button>
-      ))}
-      </nav>
+    <button><Link to={`/portfolio/`}>Back to Portfolio</Link></button>
+    </nav>
       {
         data.allMdx.nodes.map(node => (
           <article className={portfolioStyles.article} key={node.id}>
@@ -39,7 +35,7 @@ const PortfolioPage = ({ data }) => {
             </h2>
             <ul className={portfolioStyles.tagList}>
             {node.frontmatter.tags.map((tag) => (
-              <li><Link key={tag} to={`/portfolio/${tag}`}>{tag}</Link></li>
+              <li><Link to={`/portfolio/${tag}`}>{tag}</Link></li>
           ))}
           </ul>
             <p>{node.frontmatter.excerpt}</p>
@@ -51,37 +47,38 @@ const PortfolioPage = ({ data }) => {
       </section>
     </PortfolioLayout>
   )
-}
+  }
 
-export const query = graphql`
-  query {
-    allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
-      filter: {fileAbsolutePath: {regex: "/portfolio/"}}
-    ) {
-      nodes {
-        frontmatter {
-          title
-          excerpt
-          date
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData
-            }
+  export const query = graphql`
+query($tag: String){
+  allMdx(
+    sort: {fields: frontmatter___date, order: DESC}
+    filter: {fileAbsolutePath: {regex: "/portfolio/"}, frontmatter: { tags: { in: [$tag] } } }
+  )
+  {
+    nodes {
+      frontmatter {
+        title
+        excerpt
+        date
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData
           }
-          thumbnail_alt
-          tags
         }
-        id
-        slug
+        thumbnail_alt
+        tags
       }
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
+      id
+      slug
+    }
+    group(field: frontmatter___tags) {
+      fieldValue
       totalCount
     }
-  }  
+    totalCount
+  }
+}
 `
 
-export default PortfolioPage
+  export default Tags;
