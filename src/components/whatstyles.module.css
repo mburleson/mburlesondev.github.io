@@ -1,20 +1,19 @@
 .what-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-self: stretch;
-  align-items: center;
+  justify-content: center;
   background-color: black;
   padding-bottom: 100px;
-
+  gap:20px;
 }
 
 .what-container-item {
   display: flex;
   flex-flow:column wrap;
   align-items: center;
-  justify-content: center;
-  padding-block: min(20vh, 20px);
+  background:#333;
+  padding:20px;
 }
 
 .what-container-item p{
@@ -24,6 +23,7 @@
   max-width:400px;
   color:#f2f2f2;
   line-height: 35px;
+  text-align: center;
 }
 
 h2.pink {
