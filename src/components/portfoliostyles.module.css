@@ -324,9 +324,10 @@ nav.tag-container button:hover{
 
 
 .article-container{
-  display: grid;
-  grid-template-rows: auto;
-  padding:25px 175px;
+display: grid;
+grid-gap: 10px;
+grid-template-columns: repeat(3,1fr);
+padding: 15px;
 }
 
 .article-container h1{
@@ -335,13 +336,14 @@ nav.tag-container button:hover{
 }
 
 .article {
-  display: grid;
-  grid-template-columns:35% 65%;
+  display: flex;
+  flex-flow: column;
+    flex-wrap: nowrap;
+  flex-wrap: wrap;
   background-color: black;
   padding: 15px 15px;
-  margin-bottom: 10px;
   border-radius: 20px;
-}  
+}
 
 .article-content{
   color:#FFFFFF;
@@ -457,5 +459,7 @@ h1{font-family: 'Dosis', sans-serif;
     -webkit-border-radius:50%;
     margin: 0 auto;
   }
+
+  .tag-container {display:none;}
 
 }

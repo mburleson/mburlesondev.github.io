@@ -9,11 +9,11 @@ const Tags = ({ pageContext, data }) => {
   const tagHeader = `${tag}`;
   return (
     <PortfolioLayout pageTitle="Portfolio">
-    <section className={portfolioStyles.articleContainer}>
-    <h1>{tagHeader}</h1>
+        <h1>{tagHeader}</h1>
     <nav className={portfolioStyles.tagContainer}>
     <button><Link to={`/portfolio/`}>Back to Portfolio</Link></button>
     </nav>
+    <section className={portfolioStyles.articleContainer}>
       {
         data.allMdx.nodes.map(node => (
           <article className={portfolioStyles.article} key={node.id}>
@@ -39,7 +39,6 @@ const Tags = ({ pageContext, data }) => {
           ))}
           </ul>
             <p>{node.frontmatter.excerpt}</p>
-            <Link to={`/portfolio/${node.slug}`}><button>read more</button></Link>
             </section>
           </article>
         ))

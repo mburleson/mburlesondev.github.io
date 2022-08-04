@@ -7,8 +7,7 @@ import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
 const PortfolioPage = ({ data }) => {
   return (
     <PortfolioLayout pageTitle="Portfolio">
-    <section className={portfolioStyles.articleContainer}>
-    <h1>Portfolio</h1>
+        <h1>Portfolio</h1>
     <nav className={portfolioStyles.tagContainer}>
       {data.allMdx.group.map(({ fieldValue }) => (
         <button>
@@ -18,6 +17,7 @@ const PortfolioPage = ({ data }) => {
           </button>
       ))}
       </nav>
+    <section className={portfolioStyles.articleContainer}>
       {
         data.allMdx.nodes.map(node => (
           <article className={portfolioStyles.article} key={node.id}>
@@ -43,7 +43,7 @@ const PortfolioPage = ({ data }) => {
           ))}
           </ul>
             <p>{node.frontmatter.excerpt}</p>
-            <Link to={`/portfolio/${node.slug}`}><button>read more</button></Link>
+            
             </section>
           </article>
         ))
