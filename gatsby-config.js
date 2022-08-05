@@ -5,9 +5,9 @@ module.exports = {
       description: "Graphic Designer & Frontend Developer",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
+      twitterUsername: "CreativityandCode"
     },
     plugins: [
-      `gatsby-plugin-react-helmet`,
       `gatsby-plugin-recaptcha`,
       {
         resolve: 'gatsby-plugin-manifest',
