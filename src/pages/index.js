@@ -10,6 +10,7 @@ import WhatIDo from '../components/whatIdo'
 const IndexPage = () => {
 
   return (
+<>
     <Layout>
       <Hero></Hero>
       <Intro></Intro>
@@ -17,7 +18,9 @@ const IndexPage = () => {
       <WhatIDo></WhatIDo>
       <Testimonials></Testimonials>
     </Layout>
+  </>  
   )
 }
 
 export default IndexPage
+
