@@ -13,9 +13,6 @@ export const Seo = ({ title, description, location, pathname, children }) => {
     twitterUsername,
   }
 
-
-
-
   return (
     <>
       <title>{seo.title} | {seo.description} | {seo.location}</title>

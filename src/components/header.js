@@ -42,6 +42,8 @@ const Header = () => {
         </Link>
       </div>
       <button
+            name="Menu"
+            value="Menu"
             className={headerStyles.navToggle}
             onClick={() => setShowLinks(!showLinks)}
           >
