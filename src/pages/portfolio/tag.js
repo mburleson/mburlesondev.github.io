@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
+import Seo from '../../components/seo'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import PortfolioLayout from '../../components/portfoliolayout'
 import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
@@ -81,3 +82,7 @@ query($tag: String){
 `
 
   export default Tags;
+
+  export const Head = () => {
+    return <Seo />;
+    };

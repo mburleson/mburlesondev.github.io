@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faCube, faPallet} from '@fortawesome/free-solid-svg-icons'
@@ -89,3 +90,7 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+export const Head = () => {
+  return <Seo title="About Me | Megan Burleson"/>;
+  };

@@ -1,4 +1,5 @@
 import * as React from "react"
+import Seo from '../components/seo'
 import { Link } from "gatsby"
 
 // styles
@@ -52,3 +53,7 @@ const NotFoundPage = () => {
 }
 
 export default NotFoundPage
+
+export const Head = () => {
+  return <Seo title="404 | Megan Burleson"/>;
+  };

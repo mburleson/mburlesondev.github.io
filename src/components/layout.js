@@ -1,5 +1,4 @@
 import * as React from 'react'
-import Seo from '../components/seo'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SocialContact from '../components/socialcontact'
@@ -22,6 +21,3 @@ const Layout = ({ children }) => {
 
 export default Layout
 
-export const Head = () => {
-  return <Seo title="Megan Burleson | Graphic Designer & Web Developer"/>;
-  };

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 import Layout from '../components/layout'
 import { StaticImage } from "gatsby-plugin-image"
 import * as contactStyles from '../components/contact.module.css'
@@ -22,3 +23,7 @@ const ContactThanksPage = () => {
 }
 
 export default ContactThanksPage
+
+export const Head = () => {
+  return <Seo title="Thanks! | Megan Burleson"/>;
+  };

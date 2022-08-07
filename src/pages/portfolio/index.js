@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Seo from '../../components/seo'
 import PortfolioLayout from '../../components/portfoliolayout'
 import * as portfolioStyles from  '../../components/portfoliostyles.module.css'
 
 const PortfolioPage = ({ data }) => {
   return (
-    <PortfolioLayout pageTitle="Portfolio">
+    <PortfolioLayout>
         <h1>Portfolio</h1>
     <nav className={portfolioStyles.tagContainer}>
       {data.allMdx.group.map(({ fieldValue }) => (
@@ -85,3 +86,7 @@ export const query = graphql`
 `
 
 export default PortfolioPage
+
+export const Head = () => {
+  return <Seo title="Portfolio | Megan Burleson"/>;
+  };

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../../components/seo'
 import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
@@ -38,3 +39,7 @@ export const query = graphql`
 `
 
 export default PortfolioPost
+
+export const Head = () => {
+  return <Seo />;
+  };

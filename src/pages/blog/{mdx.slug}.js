@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
+import Seo from '../../components/seo'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -92,3 +93,7 @@ export const query = graphql`
 `
 
 export default BlogPost
+
+export const Head = () => {
+  return <Seo />;
+  };

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../../components/seo'
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import BlogLayout from '../../components/bloglayout'
@@ -6,7 +7,7 @@ import * as blogStyles from  '../../components/blogstyles.module.css'
 
 const BlogPage = ({ data }) => {
   return (
-    <BlogLayout pageTitle="My Blog Posts">
+    <BlogLayout pageTitle="Megan Burleson's Blog">
     <section className={blogStyles.articleContainer}>
       {
         data.allMdx.nodes.map(node => (
@@ -60,3 +61,7 @@ export const query = graphql`
 `
 
 export default BlogPage
+
+export const Head = () => {
+  return <Seo title="Blog | Megan Burleson"/>;
+  };

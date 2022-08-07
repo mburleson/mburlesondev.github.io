@@ -2,10 +2,12 @@ module.exports = {
     siteMetadata: {
       title: "Megan Burleson",
       siteUrl: "https://MeganBurleson.com",
-      description: "Graphic Designer & Frontend Developer",
+      description: "Graphic Designer & Web Developer",
+      location: "Michigan",
+      keywords: "Web Designer, Graphic Designer, Michigan",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
-      twitterUsername: "CreativityandCode"
+      twitterUsername: "@CreativityandCode"
     },
     plugins: [
       `gatsby-plugin-recaptcha`,

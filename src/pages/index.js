@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Intro from '../components/intro'
@@ -21,6 +22,10 @@ const IndexPage = () => {
   </>  
   )
 }
+
+export const Head = () => {
+  return <Seo title="Megan Burleson"/>;
+  };
 
 export default IndexPage
 

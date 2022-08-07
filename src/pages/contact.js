@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Seo from '../components/seo'
 import Layout from '../components/layout'
 import * as contactStyles from '../components/contact.module.css'
 
@@ -50,3 +51,7 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+export const Head = () => {
+  return <Seo title="Contact Me | Megan Burleson"/>;
+  };

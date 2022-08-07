@@ -1,4 +1,5 @@
 import * as React from 'react'
+import SEO from '../components/seo'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
@@ -6,7 +7,7 @@ import * as linkStyles from '../components/links.module.css'
 
 const Links = () => {
   return (
-    <Layout pageTitle="Links">
+    <Layout>
       <section className={linkStyles.container}>
       <h1>Freebies</h1>
       <section className={linkStyles.linkSection}>
@@ -39,5 +40,9 @@ const Links = () => {
     </Layout>
   )
 }
+
+export const Head = () => {
+  return <SEO title="Contact Me | Megan Burleson"/>;
+  };
 
 export default Links
