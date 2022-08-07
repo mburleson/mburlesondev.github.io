@@ -7,7 +7,7 @@ module.exports = {
       keywords: "Web Designer, Graphic Designer, Michigan",
       icon: "../images/favicon.png",
       image: "../images/favicon.png",
-      twitterUsername: "@CreativityandCode",
+      twitterUsername: "@CreativitynCode",
     },
     plugins: [
       `gatsby-plugin-recaptcha`,
