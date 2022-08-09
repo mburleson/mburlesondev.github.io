@@ -283,12 +283,12 @@ p.error{color:#F2B21B; font-weight: 300;}
   background-color: #000;
   text-transform: lowercase;
   box-shadow: none;
+  color: #FFFFFF;
 }
 
 nav.tag-container button a{
   font-size: 1rem;
   font-weight: 600;
-  color: #FFFFFF;
 }
 
 nav.tag-container button:hover{

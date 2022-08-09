@@ -12,7 +12,7 @@ const Tags = ({ pageContext, data }) => {
     <PortfolioLayout pageTitle="Portfolio">
         <h1>{tagHeader}</h1>
     <nav className={portfolioStyles.tagContainer}>
-    <button><Link to={`/portfolio/`}>Back to Portfolio</Link></button>
+    <Link alt="back to portfolio" to={`/portfolio/`}><button name="back to portfolio">Back to Portfolio</button></Link>
     </nav>
     <section className={portfolioStyles.articleContainer}>
       {
@@ -36,7 +36,7 @@ const Tags = ({ pageContext, data }) => {
             </h2>
             <ul className={portfolioStyles.tagList}>
             {node.frontmatter.tags.map((tag) => (
-              <li><Link to={`/portfolio/${tag}`}>{tag}</Link></li>
+              <li><Link name={tag} to={`/portfolio/${tag}`}>{tag}</Link></li>
           ))}
           </ul>
             <p>{node.frontmatter.excerpt}</p>

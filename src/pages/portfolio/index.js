@@ -11,11 +11,11 @@ const PortfolioPage = ({ data }) => {
         <h1>Portfolio</h1>
     <nav className={portfolioStyles.tagContainer}>
       {data.allMdx.group.map(({ fieldValue }) => (
-        <button>
-         <Link key={fieldValue} to={`/portfolio/${(fieldValue)}`}>
-            {fieldValue}
+        
+         <Link title={fieldValue} key={fieldValue} to={`/portfolio/${(fieldValue)}`}>
+         <button title={fieldValue}>{fieldValue}</button>            
           </Link>
-          </button>
+
       ))}
       </nav>
     <section className={portfolioStyles.articleContainer}>

@@ -32,7 +32,7 @@ const Header = () => {
             width={175}
            />    
         </Link>
-        <Link to ="/">
+        <Link title="link to meganburleson.com" to ="/">
           <StaticImage src="../images/mblogo.png" 
             alt="megan burleson logo" 
             placeholder="blurred"
@@ -42,8 +42,8 @@ const Header = () => {
         </Link>
       </div>
       <button
-            name="Menu"
-            value="Menu"
+            title="menu dropdown"
+            value="menu dropdown"
             className={headerStyles.navToggle}
             onClick={() => setShowLinks(!showLinks)}
           >
@@ -57,7 +57,7 @@ const Header = () => {
           </Link>
         </li>
         <li className={headerStyles.navLinkItem}>
-          <AnchorLink to="/#projects" title="What I Do" alt="What I Do">
+          <AnchorLink title="what I do" to="/#projects" alt="what I do">
             <span className={headerStyles.navLinkText}>What I Do</span>
           </AnchorLink>
         </li>
