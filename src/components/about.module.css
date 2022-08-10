@@ -41,10 +41,11 @@ h3 {
 .about-section-top p {
   width: max(700px);
   font-family: 'Dosis', sans-serif;
-  color:#CCCCCC;
+  color:#ffffff;
   font-size: 1.35rem;
   text-align: left;
   line-height: 35px;
+  font-weight:500;
 }
 
 
