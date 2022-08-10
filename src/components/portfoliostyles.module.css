@@ -64,6 +64,7 @@ a {
  .post-content p {
    color:#FFFFFF;
    font-size: 1.5rem;
+   line-height: 1.5em;
  }
 
  .post-content p a{
@@ -168,6 +169,7 @@ video{
   padding:25px;
   margin:0;
   text-align: center;
+  line-height: 1.5em;
 }
 
 .gallery-video {
@@ -247,7 +249,7 @@ video{
   padding:0 25px;
   font-size: 1.2rem;
   text-align: center;
-  line-height: 25px;
+  line-height: 1.5em;
 }
 
 .sidebar button {
@@ -374,6 +376,7 @@ article .thumbnail_img{
   display: block;
   font-size: 1.5rem;
   padding: 0 25px 10px 25px;
+  line-height: 1.5em;
 }
 
 .article-content button {
