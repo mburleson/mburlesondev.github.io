@@ -5,8 +5,8 @@ module.exports = {
       description: "Graphic Designer & Web Developer",
       location: "Michigan",
       keywords: "Web Designer, Graphic Designer, Michigan",
-      icon: "../images/favicon.png",
-      image: "https://MeganBurleson.com/src/images/ogimage.png",
+      icon: "/src/images/favicon.png",
+      image: "/src/images/ogimage.png",
       twitterUsername: "@CreativitynCode",
     },
     plugins: [
