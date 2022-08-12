@@ -6,7 +6,7 @@ module.exports = {
       location: "Michigan",
       keywords: "Web Designer, Graphic Designer, Michigan",
       icon: "../images/favicon.png",
-      image: "../images/ogimage.png"
+      image: "../images/ogimage.png",
       twitterUsername: "@CreativitynCode",
     },
     plugins: [
