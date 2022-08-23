@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import * as whatStyles from './whatstyles.module.css';
+import 'animate.css'
 
 const WhatIDo = () => {
   return (
     <section className={whatStyles.whatContainer}>
-      <article className={whatStyles.whatContainerItem}>
+      <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <StaticImage 
                src="../images/responsiveweb2.png" 
                alt="code and creativity" 
@@ -18,7 +19,7 @@ const WhatIDo = () => {
                     I have designed and developed websites and apps for small businesses, e-commerce, blogging platforms, branding/brochure sites, and many more.
                   </p>
       </article>
-      <article className={whatStyles.whatContainerItem}>
+      <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <StaticImage 
                src="../images/print.png" 
                alt="code and creativity" 
@@ -31,7 +32,7 @@ const WhatIDo = () => {
                   I have designed graphics and have created artwork for major retail outlets, print materials for major corporations, and brand designs for various clients.
                   </p>
       </article>
-      <article className={whatStyles.whatContainerItem}>
+      <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
           <StaticImage 
                src="../images/andmore2.png" 
                alt="code and creativity" 

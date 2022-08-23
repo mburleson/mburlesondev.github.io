@@ -39,7 +39,8 @@ const SocialContact = () => {
             alt="megan burleson contact me" 
             placeholder="blurred"
             layout="fixed"
-            width={300}/>
+            width={300}
+            />
       <h2>Want to Contact Me?</h2>
       <Link to="/contact" alt="Contact Me" aria-label="click to see contact form"><button title="say hi and contact me">Say Hi!</button></Link>
       </section>
