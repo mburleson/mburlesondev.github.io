@@ -140,6 +140,12 @@ video{
   grid-template-columns: repeat(2,1fr);
 }
 
+.gallery-small {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+}
+
 .gallery-item{
   background-color: #333333;
   padding: 15px 15px;
