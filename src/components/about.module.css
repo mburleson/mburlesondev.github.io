@@ -70,6 +70,7 @@ h3 {
     align-self: stretch;
     align-items: center;
   background-color: black;
+  padding-top: 50px;
 }
 
 .about-section-skills-item {

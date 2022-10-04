@@ -31,7 +31,6 @@ const AboutPage = () => {
             layout="fixed"
             width={250}/>
         </div>
-        <h3><span className={aboutStyles.yellow}>In 2006, I found a job that combined my two loves: Graphic Design and Coding - and it confirmed to me that I had I found my passion.</span></h3>
         <h3>Now, I Spread Happiness with</h3>
         <div className={aboutStyles.cncImageContainer}>
         <StaticImage src="../images/cnc2.png" 
@@ -50,20 +49,12 @@ const AboutPage = () => {
             placeholder="blurred"
             layout="fixed"
             width={50}/>
-            <h2 className={aboutStyles.green}>frontend development</h2>
-            <p>10+ years of experience using and working with HTML, CSS, and JavaScript for responsive web development.</p>
-            <p>I can translate layered comps into HTML and CSS, and I can make anything look great across a variety of devices.</p>
+            <h2 className={aboutStyles.green}>Web Design and Development</h2>
+            <p>Experienced using and working with HTML, CSS, JavaScript, CMS frameworks, and more for responsive web development.</p>
+            <p>I work with tools like Adobe XD and Photoshop to wireframe and conceptualize multi-fidelity website comps.</p>
+            <p>I can translate layered comps into pixel perfect code and make anything look great across a variety of devices.</p>
             <p>I utilize open source tools, api’s, and frameworks according to project needs and to maintain frontend code structure.</p>
           </div>
-          <div className={aboutStyles.aboutSectionSkillsItem}>
-          <StaticImage src="../images/star2.png" 
-            alt="megan burleson designer developer" 
-            placeholder="blurred"
-            layout="fixed"
-            width={50}/>
-            <h2 className={aboutStyles.purple}>web design</h2>
-            <p>I work with Figma, Adobe XD, and Photoshop to wireframe and conceptualize multi-fidelity comps.</p>
-            </div>
             <div className={aboutStyles.aboutSectionSkillsItem}>
           <StaticImage src="../images/star2.png" 
             alt="megan burleson designer developer" 
@@ -71,15 +62,17 @@ const AboutPage = () => {
             layout="fixed"
             width={50}/>
             <h2 className={aboutStyles.pink}>graphic design</h2>
-            <p>I use digital illustration tools such as Adobe Illustrator, Photoshop, and Procreate to design graphic assets for use across a variety of media.</p>
+            <p>I use digital illustration tools including Adobe Illustrator and Photoshop to design graphic assets for use across a variety of multimedia that inspires and informs.</p>
+            <p>Experience developing both digital / print design projects (brochures, logos, posters, infographics, advertisements)</p>
+            <p>I am also adept in setting up files for production, photo editing and color correction.</p>
             </div>
             
         </div>
         <div className={aboutStyles.aboutSectionLearning}>
             <h1>Always Learning</h1>
             <ul>
-            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.green} icon={faReact} size='2x' /><p>Becoming besties with React</p></li>
-            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.purple} icon={faCube} size='2x' /><p>Currently, I am learning 3D modeling with Blender!</p></li>
+            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.green} icon={faReact} size='2x' /><p>Working on various coding projects using JavaScript, and React frameworks.</p></li>
+            <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.purple} icon={faCube} size='2x' /><p>Currently, I am learning 3D modeling with Blender to use with 3D printing projects.</p></li>
             <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.yellow} icon={faPallet} size='2x' /><p>I am also making a bunch of art, and posting it on Instagram.</p></li>
             <li className={aboutStyles.aboutSectionLearningItem}><FontAwesomeIcon className={aboutStyles.pink} icon={faHeart} size='2x' /><p>I love what I do, and I keep myself up to date with current design and coding trends and practices on a regular basis.</p></li>
             </ul>
