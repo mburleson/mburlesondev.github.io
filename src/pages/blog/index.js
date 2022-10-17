@@ -39,7 +39,7 @@ const BlogPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMdx(sort: {fields: frontmatter___date order: DESC}filter: {fileAbsolutePath: {regex: "/blog/"}}) {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}filter: {fileAbsolutePath: {regex: "/blog/"}}) {
       nodes {
         frontmatter {
           title
