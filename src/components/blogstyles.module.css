@@ -71,7 +71,7 @@ body {
   text-decoration: none;
  }
 
- .post-content hr, .sidebar hr {
+ .post-content hr, .sidebar hr , hr{
    margin:20px 0 25px 0;
    color:#ff44a9 !important;
    font-weight: 600;

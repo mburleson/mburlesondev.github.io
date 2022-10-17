@@ -16,6 +16,21 @@ a {
   text-decoration: none;
 }
 
+hr{
+  margin:20px 0 25px 0;
+  color:#ff44a9 !important;
+  font-weight: 600;
+}
+
+.spooky-game{
+  display:flex;
+  flex-direction: row;
+}
+
+.spooky-game a img{
+  width:300px;
+}
+
 .page-container {
   display:flex;
   flex-direction: column;
