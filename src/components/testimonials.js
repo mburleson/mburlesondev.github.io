@@ -43,6 +43,12 @@ have us!</p>
       <FontAwesomeIcon icon={faQuoteRight} size="2x" />
       <p className={testimonalsStyles.quoteAuthor}>Lisa Robbin Young</p>
      </blockquote>
+     <blockquote data-sal="slide-right" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
+      <FontAwesomeIcon icon={faQuoteLeft} size="2x" />
+      <p>Megan helped create a website for my business that is very user-friendly and attractive. I was overwhelmed when thinking about designing my own website since I am not computer savvy and had unique needs as a healthcare provider. With Megan’s help the process was smooth and stress-free. Even after the designing process was over and on to this day she continues to help me troubleshoot and update. I receive comments on the website design and functionality weekly. Megan went above and beyond in creating everything that I had asked for and I am confident that she will do the same for you!</p>
+      <FontAwesomeIcon icon={faQuoteRight} size="2x" />
+      <p className={testimonalsStyles.quoteAuthor}>Ashley Lucas, PhD, RD</p>
+     </blockquote>
     </section>
   )
 }
