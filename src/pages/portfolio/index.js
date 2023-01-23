@@ -57,7 +57,7 @@ const PortfolioPage = ({ data }) => {
 export const query = graphql`
   query {
     allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: {fields: frontmatter___tags, order:DESC}
       filter: {fileAbsolutePath: {regex: "/portfolio/"}}
     ) {
       nodes {
