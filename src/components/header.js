@@ -71,16 +71,17 @@ const Header = () => {
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
         </li>
-{/*        <li className={headerStyles.navLinkItem}>
-          <Link to="/blog" className={headerStyles.navLinkText}>
-            Blog
-          </Link>
-        </li>  */}
         <li className={headerStyles.navLinkItem}>
           <Link to="/contact" className={headerStyles.navLinkText} title="Contact Megan" alt="Contact Megan">
             Contact
           </Link>
         </li>
+ <li className={headerStyles.navLinkItem}>
+          <a href="https://www.patreon.com/MeganBurleson/posts?filters%5Btag%5D=blog" target="_blank" rel="noreferrer" className={headerStyles.navLinkText}  title="Blog" alt="Blog">
+            Blog
+          </a>
+        </li> 
+
       </ul>
 
     </nav>
