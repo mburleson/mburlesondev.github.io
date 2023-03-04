@@ -8,10 +8,14 @@ const ContactPage = () => {
     <Layout pageTitle="Contact Me">
      <section className={contactStyles.contactTop}>
        <h1>Contact Me</h1>
-       <p>You have some questions? I would love the chance to speak with you. Just want to gab? Gab away!
-         Fill out the form below, and I will get back to as soon as I can!</p>
+       <p>You have some questions? I would love the chance to speak with you.
+         {/* Fill out the form below, and I will get back to as soon as I can!*/}</p> 
      </section>
-      <section className={contactStyles.contactFormSection}>
+     <section className={contactStyles.contactFormSection}>
+    <h2>Contact Form Temporarily unavailable.</h2> 
+    <h3>Feel free to contact me through any of my social media channels.</h3>
+     </section>
+      {/* <section className={contactStyles.contactFormSection}>
         <form className={contactStyles.contactForm} method="post" action="https://getform.io/f/6f774ec7-0073-4a1b-b83b-8f6fe7a885eb">
          <h2>About You</h2>
          <label>
@@ -45,7 +49,7 @@ const ContactPage = () => {
         <button type="submit" aria-label="click to send message">Send</button>
         
       </form>
-    </section>
+    </section> */}
   </Layout>
   )
 }
