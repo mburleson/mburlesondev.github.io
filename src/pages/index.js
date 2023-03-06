@@ -14,7 +14,6 @@ const IndexPage = () => {
 <>
     <Layout>
       <Hero></Hero>
-      <Intro></Intro>
       <ProjectsIntro></ProjectsIntro>
       <WhatIDo></WhatIDo>
       <Testimonials></Testimonials>

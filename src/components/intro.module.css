@@ -6,12 +6,22 @@
   justify-content: space-evenly;
 }
 
+.intro-text{
+
+}
+
 .middle-text{
   display: flex;
   flex-flow:column;
   justify-content: center;
   align-items: center;
   flex-grow: 2;
+}
+
+.intro-text p{
+  color:#CCCCCC;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .middle-text h1{
