@@ -76,11 +76,11 @@ const Header = () => {
             Contact
           </Link>
         </li>
- <li className={headerStyles.navLinkItem}>
+ {/* <li className={headerStyles.navLinkItem}>
           <a href="https://www.patreon.com/MeganBurleson/posts?filters%5Btag%5D=blog" target="_blank" rel="noreferrer" className={headerStyles.navLinkText}  title="Blog" alt="Blog">
             Blog
           </a>
-        </li> 
+        </li>  */}
 
       </ul>
 
