@@ -1,7 +1,9 @@
 import * as React from 'react'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import * as contactStyles from '../components/contact.module.css'
+
 
 const ContactPage = () => {
   return (
@@ -12,8 +14,9 @@ const ContactPage = () => {
          {/* Fill out the form below, and I will get back to as soon as I can!*/}</p> 
      </section>
      <section className={contactStyles.contactFormSection}>
-    <h2>Contact Form Temporarily unavailable.</h2> 
-    <h3>Feel free to contact me through any of my social media channels.</h3>
+    <h2>Contact Form temporarily unavailable.</h2> 
+    <h3>Feel free to contact me through LinkedIn:</h3>
+    <Link to="https://www.linkedin.com/in/meganburleson/" title="Megan Burleson on LinkedIn">https://www.linkedin.com/in/meganburleson/</Link> 
      </section>
       {/* <section className={contactStyles.contactFormSection}>
         <form className={contactStyles.contactForm} method="post" action="https://getform.io/f/6f774ec7-0073-4a1b-b83b-8f6fe7a885eb">

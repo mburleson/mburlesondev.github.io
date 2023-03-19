@@ -49,6 +49,17 @@
   text-align: left;
 }
 
+.contact-form-section a{
+  color: #45d8dd;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-form-section a:hover{
+  color: #856FFB;
+}
+
 .contact-form {
   min-width:900px;
   display: flex;
