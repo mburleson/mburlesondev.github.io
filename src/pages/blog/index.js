@@ -4,10 +4,12 @@ import { Link, graphql } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import BlogLayout from '../../components/bloglayout'
 import * as blogStyles from  '../../components/blogstyles.module.css'
+import Sidebar from '../../components/sidebar'
 
 const BlogPage = ({ data }) => {
   return (
     <BlogLayout pageTitle="Megan Burleson's Blog">
+    <section className={blogStyles.blogPageContainer}>
     <section className={blogStyles.articleContainer}>
       {
         data.allMdx.nodes.map(node => (
@@ -32,6 +34,8 @@ const BlogPage = ({ data }) => {
           </article>
         ))
       }
+      </section>
+      <Sidebar></Sidebar>
       </section>
     </BlogLayout>
   )

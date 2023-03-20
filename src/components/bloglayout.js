@@ -3,7 +3,6 @@ import {useStaticQuery, graphql } from 'gatsby'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import * as blogStyles from  './blogstyles.module.css'
-
 const BlogLayout = ({ pageTitle, children }) => {
 
   const data = useStaticQuery(graphql`
