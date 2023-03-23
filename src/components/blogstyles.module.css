@@ -245,7 +245,7 @@ article .thumbnail_img{
   color:black;
 }
 
-@media (min-width: 375px) and (max-width: 810px){
+@media (min-width: 320px) and (max-width: 810px){
   .post .hero_image{
     display: none;
   }
@@ -260,15 +260,34 @@ article .thumbnail_img{
     flex-direction: column;
   }
 
-  article {
-    flex-basis: 100%;
-    margin-bottom: 10px;
+  .article-container h2{
+    margin: 15px;
+    text-align: center;
   }
+
+  article {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .article-content {
+padding:0;
+  }
+
+  .blog-page-container {
+    flex-direction: column;
+  }
+ 
 
   .sidebar-image{
     border-radius: 50%;
     -webkit-border-radius:50%;
     margin: 0 auto;
+  }
+
+  .spooky-game{
+
   }
 
 }

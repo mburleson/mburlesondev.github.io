@@ -19,6 +19,8 @@ const BlogLayout = ({ pageTitle, children }) => {
   return (
     <div className={blogStyles.pageContainer}>
       <Header></Header>
+      <h1>Creativity & Code</h1>
+      <h2>Megan Burleson's Blog</h2>
       <title>{pageTitle} - {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
       <link rel="icon" href={data.site.siteMetadata.icon}/>
       <main>

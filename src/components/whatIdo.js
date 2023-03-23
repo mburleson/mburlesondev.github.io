@@ -16,7 +16,7 @@ const WhatIDo = () => {
             /> 
       <h2 className={whatStyles.green}>Web Design and Development</h2>
                   <p>
-                    I have designed and developed websites and apps for small businesses, e-commerce, blogging platforms, branding/brochure sites, and many more.
+                  Throughout my career, I have had the pleasure of working on a diverse range of projects, designing and developing websites and apps for a wide variety of clients. My experience includes small business websites, e-commerce stores, blogging platforms, branding/brochure sites, and much more.
                   </p>
       </article>
       <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
@@ -29,7 +29,7 @@ const WhatIDo = () => {
           /> 
       <h2 className={whatStyles.pink}>Graphic Design</h2>
                   <p>
-                  I have designed graphics and have created artwork for major retail outlets, print materials for major corporations, and brand designs for various clients.
+                  I'm proud to have been a part of some really exciting projects, designing graphics and have creating artwork for big-name retail outlets, as well as print materials for major corporations. I've also had the opportunity to work on brand designs for a wide range of clients.
                   </p>
       </article>
       <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
