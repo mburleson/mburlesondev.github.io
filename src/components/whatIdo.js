@@ -7,13 +7,13 @@ const WhatIDo = () => {
   return (
     <section className={whatStyles.whatContainer}>
       <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-      <StaticImage 
-               src="../images/responsiveweb2.png" 
+<StaticImage 
+               src="../images/keyboard.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={250}
-            />
+               width={150}
+            /> 
       <h2 className={whatStyles.green}>Web Design and Development</h2>
                   <p>
                     I have designed and developed websites and apps for small businesses, e-commerce, blogging platforms, branding/brochure sites, and many more.
@@ -21,27 +21,27 @@ const WhatIDo = () => {
       </article>
       <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
       <StaticImage 
-               src="../images/print.png" 
+               src="../images/projectseye.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={300}
-            />
-      <h2 className={whatStyles.purple}>Graphic Design</h2>
+               width={150}
+          /> 
+      <h2 className={whatStyles.pink}>Graphic Design</h2>
                   <p>
                   I have designed graphics and have created artwork for major retail outlets, print materials for major corporations, and brand designs for various clients.
                   </p>
       </article>
       <article className={whatStyles.whatContainerItem} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-          <StaticImage 
-               src="../images/andmore2.png" 
+      <StaticImage 
+               src="../images/book.png" 
                alt="code and creativity" 
                placeholder="blurred"
                layout="fixed"
-               width={280}
-          />
-          <h2 className={whatStyles.pink}>And More!</h2>
-          <p>When I'm not working with a client or agency, I am always working on my own creative projects and coming up with ideas.</p>
+               width={100}
+          /> 
+          <h2 className={whatStyles.purple}>And More!</h2>
+          <p>When I'm not collaborating with clients or firms, I enjoy keeping up with industry standards, learning new things and pursuing my own creative projects by exploring new ideas.</p>
       </article>
     </section>
   )

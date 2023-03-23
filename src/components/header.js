@@ -56,21 +56,21 @@ const Header = () => {
             About Me
           </Link>
         </li>
-        <li className={headerStyles.navLinkItem}>
+        {/* <li className={headerStyles.navLinkItem}>
           <AnchorLink title="what I do" to="/#projects" alt="what I do">
             <span className={headerStyles.navLinkText}>What I Do</span>
           </AnchorLink>
-        </li>
+        </li> */}
         <li className={headerStyles.navLinkItem}>
           <Link to="/portfolio" title="Portfolio" alt="Portfolio">
             <span className={headerStyles.navLinkText}>Portfolio</span>
           </Link>
         </li>
-        <li className={headerStyles.navLinkItem}>
+        {/* <li className={headerStyles.navLinkItem}>
           <AnchorLink to="/#testimonials" title="Testimonials" alt="Testimonials">
             <span className={headerStyles.navLinkText}>Testimonials</span>
           </AnchorLink>
-        </li>
+        </li> */}
         <li className={headerStyles.navLinkItem}>
           <Link to="/contact" className={headerStyles.navLinkText} title="Contact Megan" alt="Contact Megan">
             Contact

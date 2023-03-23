@@ -2,151 +2,26 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 import * as introStyles from './intro.module.css'
-import 'animate.css'
+
 
 
 const Intro = () => {
   return (
-    <section className={introStyles.introSection}>
-    <div className={introStyles.sideStar}>
-    <div className={introStyles.sideStarEnd} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease">
-    <StaticImage src="../images/pinkstar.png" 
-                  alt="code and creativity" 
-                  placeholder="blurred"
-                  layout="constrained"
-                  width={80}
-                />
-    </div>
-    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease" >
-    <StaticImage src="../images/yellowstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={80}
-               />
-    </div>
-
-    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="800" data-sal-easing="ease">
-    <StaticImage src="../images/purplestar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={60}
-               />
-    </div>
-    <div className={introStyles.sideStarEnd} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/greenstar.png" 
-                  alt="code and creativity" 
-                  placeholder="blurred"
-                  layout="constrained"
-                  width={80}
-                />
-    </div>
-    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/pinkstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={40}
-               />
-    </div>
-
-    <div className={introStyles.sideStarStart} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/yellowstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={80}
-               />
-    </div>
-    <div className={introStyles.sideStarEnd} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/purplestar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={60}
-               />
-    </div>
-    </div>
-    <div className={introStyles.middleText}>
-    <h1 className={introStyles.yellow}>Hi!</h1>
-   <p data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-   My Name is <span className={introStyles.pink}>Megan Burleson</span></p>
-    <p data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    I am a <span className={introStyles.purple}>Designer <span className={introStyles.yellow}>&</span> Developer</span></p>
-    <p data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">and I Spread Happiness with</p>
-    <div data-sal="slide-right" data-sal-delay="1000" data-sal-duration="2000" data-sal-easing="easeInOutBack">   
-    <StaticImage src="../images/cnc2.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={600}
-               />
-               </div> 
-    </div>    
-    <div className={introStyles.sideStar}>
-
-    <div className={introStyles.sideStarStart} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/greenstar.png" 
-                  alt="code and creativity" 
-                  placeholder="blurred"
-                  layout="constrained"
-                  width={80}
-                />
-    </div>
-    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/pinkstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={40}
-               />
-    </div>
-
-    <div className={introStyles.sideStarStart} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/yellowstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={80}
-               />
-    </div>
-    <div className={introStyles.sideStarEnd} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/purplestar.png" 
-                  alt="code and creativity" 
-                  placeholder="blurred"
-                  layout="constrained"
-                  width={60}
-                />
-    </div>
-    <div className={introStyles.sideStarMiddle} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/greenstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={80}
-               />
-    </div>
-
-    <div className={introStyles.sideStarStart} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/pinkstar.png" 
-                alt="code and creativity" 
-                placeholder="blurred"
-                layout="constrained"
-                width={40}
-               />
-    </div>
-    <div className={introStyles.sideStarEnd} data-sal="fade-in" data-sal-duration="2000" data-sal-delay="500" data-sal-easing="ease">
-    <StaticImage src="../images/yellowstar.png" 
-                  alt="code and creativity" 
-                  placeholder="blurred"
-                  layout="constrained"
-                  width={80}
-                />
-    </div>
-    </div>
-    </section>
-
+   <section className={introStyles.introContainer}>
+      <section className={introStyles.introSectionLeft}>
+      <StaticImage src="../images/megangatsbysquareNEW.png"
+        alt="megan burleson designer developer" 
+        placeholder="blurred"
+        layout="constrained"
+        width={400}
+        />
+      </section>
+      <section className={introStyles.introSectionRight}>
+      <h2>About Megan</h2>
+      <p>Hi there! I'm Megan Burleson, a skilled Graphic Designer and Software Engineer who's passionate about spreading happiness with creativity and code!</p>
+      <p>Throughout my 20-year professional journey as a highly creative and detail-oriented designer with experience in designing engaging digital assets for print, web, and social media, I have crafted and launched websites and applications, as well as developed brand designs for a diverse clientele, including small businesses, e-commerce, major retail outlets, and government agencies.</p>
+      </section>
+   </section>
   )
 }
 

@@ -2,13 +2,14 @@
   display:flex;
   flex-flow:column;
   align-items: center;
-  background-color: #333333;
+  background-color: #000000;
 }
 
 h1 {
   font-family: 'Dosis', sans-serif;
   color:#F2B21B;
   font-size: 3rem;
+  margin: 50px 0 10px 0;
 }
 
 h2 {
@@ -20,7 +21,7 @@ h2 {
 
 h3 {
   font-family: 'Dosis', sans-serif;
-  color:#ffffff;
+  color: #f2f2f2;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -41,7 +42,7 @@ h3 {
 .about-section-top p {
   width: max(700px);
   font-family: 'Dosis', sans-serif;
-  color:#ffffff;
+  color:#f2f2f2;
   font-size: 1.35rem;
   text-align: left;
   line-height: 35px;
@@ -81,12 +82,12 @@ h3 {
 }
 
 .about-section-skills-item h2 {
-  color:#ffffff;
+  color:#f2f2f2;
 }
 
 .about-section-skills-item p {
   font-family: 'Dosis', sans-serif;
-  color:#CCCCCC;
+  color:#f2f2f2;
   font-size: 1.5rem;
   width: min(80vw,700px);
   text-align: center;

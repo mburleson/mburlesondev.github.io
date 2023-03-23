@@ -50,7 +50,7 @@ const AboutPage = () => {
             </ul>
         </div>
       </section>
-        <div className={aboutStyles.aboutSectionSkills}>
+        {/* <div className={aboutStyles.aboutSectionSkills}>
           <h1>Skills</h1>
           <div className={aboutStyles.aboutSectionSkillsItem}>
           <StaticImage src="../images/star2.png" 
@@ -76,7 +76,7 @@ const AboutPage = () => {
             <p>I am also adept in setting up files for production, photo editing and color correction.</p>
             </div>
             
-        </div>
+        </div> */}
     </Layout>
   )
 }
