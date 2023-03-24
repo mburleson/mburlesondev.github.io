@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {useStaticQuery, graphql } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import * as blogStyles from  './blogstyles.module.css'
@@ -19,8 +20,14 @@ const BlogLayout = ({ pageTitle, children }) => {
   return (
     <div className={blogStyles.pageContainer}>
       <Header></Header>
-      <h1>Creativity & Code</h1>
-      <h2>Megan Burleson's Blog</h2>
+    <section className={blogStyles.blogHeader}>
+      <StaticImage src="../images/cnc2.svg"
+        alt="megan burleson designer developer" 
+        placeholder="blurred"
+        layout="fixed"
+        width={500}
+        />
+       </section>  
       <title>{pageTitle} - {data.site.siteMetadata.title} - {data.site.siteMetadata.description}</title>
       <link rel="icon" href={data.site.siteMetadata.icon}/>
       <main>

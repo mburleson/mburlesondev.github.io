@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faCube, faPallet} from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import * as aboutStyles from '../components/about.module.css'
 
 
@@ -22,23 +23,28 @@ const AboutPage = () => {
               layout="fixed"
              width={250}/>
             </div>
-           <div className={aboutStyles.aboutSectionTopItem2}>
+           <section className={aboutStyles.aboutSectionTopItem2}>
            <p>After college, I started my career as a graphic designer by designing stationery for major retail outlets, and print materials for the corporate world, and then I became fascinated by web design and development. I fired up my left brain and taught myself <span className={aboutStyles.pink}>HTML</span>, <span className={aboutStyles.purple}>CSS</span>, and <span className={aboutStyles.yellow}>JavaScript</span>.</p>
            <StaticImage src="../images/books.png" 
             alt="megan burleson designer developer" 
             placeholder="blurred"
             layout="fixed"
             width={250}/>
-        </div>
+        </section>
         <h2>Now, I spread happiness with</h2>
         <div className={aboutStyles.cncImageContainer}>
-        <StaticImage src="../images/cnc2.png" 
+        <StaticImage src="../images/cnc2.svg" 
             alt="creativity and code" 
             placeholder="blurred"
             layout="constrained"
             width={550}
            />
-        </div>       
+        </div>
+        <section className={aboutStyles.aboutSectionTopItem3}>
+        <p>Throughout my 20-year professional journey as a creative and detail-oriented designer and developer with experience in designing engaging digital assets for print, web, and social media, I have crafted and launched websites and applications, as well as developed brand designs for a diverse clientele, including small businesses, e-commerce, major retail outlets, and government agencies.</p>       
+        <p>If you are interested in seeing my portfolio and how I can help put my experience to work for you:</p>
+        <Link to="/portfolio"><button>check out my portfolio</button></Link>
+        </section>
         </div> 
         <div className={aboutStyles.aboutSectionLearning}>
        <h1>What I'm Up To Now</h1>

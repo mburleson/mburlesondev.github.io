@@ -60,6 +60,23 @@ h3 {
   text-align: right;
 }
 
+.about-section-top-item3 {
+    display: flex;
+  flex-flow: column;
+  align-items: center;
+    width: 100%;
+}
+
+
+.about-section-top-item3 p{
+  text-align: center;
+  width: 100%;
+}
+
+.about-section-top-item3 button{
+  width:300px;
+}
+
 .cnc-image-container{
   display: flex;
   justify-content: center;
