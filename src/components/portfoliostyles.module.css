@@ -148,6 +148,15 @@ video{
   border-radius: 20px;
 }
 
+.portfolio-image4 img{
+  width:50%;
+  display: block;
+  margin: 0 auto 15px auto;
+  background-color: #333333;
+  padding: 25px;
+  border-radius: 20px;
+}
+
 
 .gallery {
   display: grid;
