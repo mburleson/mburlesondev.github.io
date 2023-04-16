@@ -32,6 +32,7 @@ const Sidebar = () => {
 
 Throughout my 20-year professional journey as a creative and detail-oriented designer and developer with experience in designing engaging digital assets for print, web, and social media, I have crafted and launched websites and applications, as well as developed brand designs for a diverse clientele, including small businesses, e-commerce, major retail outlets, and government agencies.</p>
   <Link to="/about"><button>read more</button></Link>
+  <iframe src="https://meganburleson.substack.com/embed" title="Subscribe to Megan Burleson on Substack"></iframe>
 </section>
   )
 }

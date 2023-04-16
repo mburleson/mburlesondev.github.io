@@ -21,7 +21,9 @@ const BlogPost = ({ data }) => {
           alt={data.mdx.frontmatter.hero_image_alt}
           className={blogStyles.hero_image}
         />
+         
       <h2>{data.mdx.frontmatter.title}</h2>
+      <h3>{data.mdx.frontmatter.date}</h3>
         <section className={blogStyles.postContent}>
           <MDXRenderer>
             {data.mdx.body}

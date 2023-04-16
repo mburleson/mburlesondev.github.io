@@ -23,11 +23,13 @@ const BlogPage = ({ data }) => {
                 />
             </Link>
             <section className={blogStyles.articleContent}>
+            
             <h2>
               <Link to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
+            <h3>{node.frontmatter.date}</h3>
             <p>{node.frontmatter.excerpt}</p>
             <Link to={`/blog/${node.slug}`}><button>read more</button></Link>
             </section>

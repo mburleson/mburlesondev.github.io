@@ -66,7 +66,7 @@ module.exports = {
           // The property ID; the tracking code won't be generated without it
           trackingId: "G-XFFM3FTTYS",
           // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: false,
+          head: true,
         },
       },
       {
@@ -82,6 +82,7 @@ module.exports = {
                       pubDate: node.date,
                       guid: site.siteMetadata.siteUrl + '/blog/' + node.id,
                       url: encodeURI(site.siteMetadata.siteUrl + '/blog/' + node.slug),
+                      custom_elements: [{ "content:encoded": node.html }],
                     })
                   })
                 )
@@ -121,7 +122,7 @@ module.exports = {
               }
             `,
         output: '/rss.xml',
-        title: "Megan Burleson's Blog Feed",
+        title: "Creativity and Code - Blog by Megan Burleson",
       },
           ]
         },
