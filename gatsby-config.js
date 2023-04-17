@@ -82,7 +82,7 @@ module.exports = {
                       pubDate: node.date,
                       guid: site.siteMetadata.siteUrl + '/blog/' + node.id,
                       url: encodeURI(site.siteMetadata.siteUrl + '/blog/' + node.slug),
-                      custom_elements: [{ "content:encoded": node.html }],
+                      custom_elements: [{ "content:encoded": node.body }],
                     })
                   })
                 )
@@ -117,6 +117,7 @@ module.exports = {
                     }
                     id
                     slug
+                    body
                   }
                 }
               }
