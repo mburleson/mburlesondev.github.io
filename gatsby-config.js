@@ -61,73 +61,18 @@ module.exports = {
       "gatsby-plugin-gatsby-cloud",
       "gatsby-plugin-scroll-reveal",
       {
-        resolve: "gatsby-plugin-google-analytics",
-        options: {
-          // The property ID; the tracking code won't be generated without it
-          trackingId: "G-XFFM3FTTYS",
-          // Defines where to place the tracking script - `true` in the head and `false` in the body
-          head: true,
-        },
-      },
-      {
-        resolve: `gatsby-plugin-feed`,
-        options: {
-          feeds: [
-            {
-              serialize: ({ query: { site, allMdx } }) => {
-                return (
-                  allMdx.nodes.map(node => {
-                    return Object.assign({}, node.frontmatter, {
-                      description: node.excerpt,
-                      pubDate: node.date,
-                      guid: site.siteMetadata.siteUrl + '/blog/' + node.id,
-                      url: encodeURI(site.siteMetadata.siteUrl + '/blog/' + node.slug),
-                      custom_elements: [{ "content:encoded": node.body }],
-                    })
-                  })
-                )
-              },
-              query: `
-              {
-                site {
-                  siteMetadata {
-                    title
-                    description
-                    siteUrl
-                    site_url: siteUrl
-                  }
-                }
-                allMdx(sort: {fields: frontmatter___date, order: DESC}) {
-                  nodes {
-                    frontmatter {
-                      title
-                      date
-                      description
-                      image {
-                        childImageSharp {
-                          gatsbyImageData
-                        }
-                      }
-                      excerpt
-                      thumbnail {
-                        childImageSharp {
-                          gatsbyImageData
-                        }
-                      }
-                    }
-                    id
-                    slug
-                    body
-                  }
-                }
-              }
-            `,
-        output: '/rss.xml',
-        title: "Creativity and Code - Blog by Megan Burleson",
-      },
-          ]
-        },
-      },
+  resolve: `gatsby-plugin-google-gtag`,
+  options: {
+    trackingIds: [
+    "G-XFFM3FTTYS", // Google Analytics / GA
+    ],
+    pluginConfig: {
+      // Puts tracking script in the head instead of the body
+      head: true
+    },
+  },
+},
+
     ],
   };
 
