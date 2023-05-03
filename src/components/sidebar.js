@@ -14,7 +14,7 @@ const Sidebar = () => {
 <StaticImage src="../images/megangatsbysquareNEW.png"
         alt="megan burleson designer developer" 
         placeholder="blurred"
-        layout="fixed"
+        layout="constrained"
         width={250}
         />
         </section>        

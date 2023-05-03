@@ -266,7 +266,7 @@ article .thumbnail_img{
 }
 
 iframe {
-  width:480px;
+  display: flex;
   height:320px;
   border:1px solid #EEE; 
   background:white; 
